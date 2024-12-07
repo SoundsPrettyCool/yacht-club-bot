@@ -1,10 +1,10 @@
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 import os
 import logging
-
-
-from discord_utils import send_command_list, send_gif, send_rko, get_nba_scores, ask_chat_gpt, reply_to_message_with_embed
+import pytz
+from datetime import datetime
+from discord_utils import send_command_list, send_gif, send_rko, send_nba_summary_message_embed_in_channel
 
 # Regex patterns for RKO commands
 import re
@@ -23,9 +23,12 @@ Commands = {
     "commands": send_command_list,
 }
 
-SPORTS_DATA_SUMMARY = {
-    "NBA": [],
+CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO = {
+    "1012741716970844220" : send_nba_summary_message_embed_in_channel
 }
+
+EASTERN = pytz.timezone("America/New_York")
+
 # Intents
 intents = discord.Intents.default()
 intents.messages = True
@@ -37,9 +40,31 @@ intents.members = True
 # Create bot client
 client = commands.Bot(command_prefix="!", intents=intents)
 
+
+# Define East Coast timezone
+
+@tasks.loop(minutes=1)  # Check every minute
+async def check_new_day():
+    """Checks if it's the start of a new day in East Coast time."""
+    now = datetime.now(EASTERN)
+    logger.info(now.hour)
+    if now.hour == 0 and now.minute == 0:  # Midnight in East Coast time
+        for channel_id, callback in CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.items():
+            channel_id = int(channel_id)  # Replace with your channel ID
+            channel = client.get_channel(channel_id)
+            if channel:
+                await callback(channel)
+
+@check_new_day.before_loop
+async def before_check_new_day():
+    """Wait until the bot is ready before starting the task."""
+    logger.info("banana")
+    await client.wait_until_ready()
+
 @client.event
 async def on_ready():
     logger.info(f"Logged in as {client.user}!")
+    check_new_day.start()
 
 @client.event
 async def on_message(msg):
@@ -51,44 +76,6 @@ async def on_message(msg):
         elif rko_regex_comp.match(msg.content) or rko_regex_phone.match(msg.content):
             person_to_rko = msg.content.split(" ")[1]
             await send_rko(msg, person_to_rko)
-        elif msg.content == "!nbasummary":
-            if len(SPORTS_DATA_SUMMARY["NBA"]) == 0:
-                data = get_nba_scores()
-                SPORTS_DATA_SUMMARY["NBA"] = data
-            question_to_ask = f"""give me a quick summary of the scores for the following nba game data that is less than 1024 in length: {SPORTS_DATA_SUMMARY["NBA"]}"""
-            gpt_response = ask_chat_gpt(question_to_ask)
-            fields = [
-                {
-                    "name": "Summary", 
-                    "value": gpt_response, 
-                    "inline": False
-                }
-            ]
-
-            message_embed_configs = {
-                "title": "Response", 
-                "field_configs": fields
-            }
-            await reply_to_message_with_embed(msg, message_embed_configs)
-        elif "!askgpt" in msg.content:
-            question_to_ask = msg.content.split("!askgpt")
-            final_question_to_ask = " ".join(question_to_ask)
-            gpt_response = ask_chat_gpt(final_question_to_ask)
-
-            fields = [
-                {
-                    "name": "Response", 
-                    "value": gpt_response, 
-                    "inline": False
-                }
-            ]
-
-            message_embed_configs = {
-                "title": "Ask GPT", 
-                "field_configs": fields
-            }
-            await reply_to_message_with_embed(msg, message_embed_configs)
-
     except Exception as e:
         logger.error(e)
 

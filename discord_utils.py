@@ -5,6 +5,10 @@ import json
 from datetime import datetime, timedelta
 from logger import logger
 
+SPORTS_DATA_SUMMARY = {
+    "NBA": [],
+}
+
 def shorten_game_data_with_scores(data):
     """
     Shortens game data to include scores (per quarter and total), team names, and if there was overtime.
@@ -109,6 +113,28 @@ def get_nba_scores():
         logger.error(f"An error occurred: {e}")
         return None
 
+async def send_nba_summary_message_embed_in_channel(channel):
+    data = get_nba_scores()
+    SPORTS_DATA_SUMMARY["NBA"] = data
+    question_to_ask = f"""give me a quick summary of the scores for the following nba game data that is less than 1024 in length: {SPORTS_DATA_SUMMARY["NBA"]}"""
+    gpt_response = ask_chat_gpt(question_to_ask)
+    fields = [
+        {
+            "name": "Summary", 
+            "value": gpt_response, 
+            "inline": False
+        }
+    ]
+    now = datetime.now()
+
+    previous_day = now - timedelta(days=1)
+
+    message_embed_configs = {
+        "title": f"""NBA Summary of Scores for {previous_day.strftime("%Y-%m-%d")}""", 
+        "field_configs": fields
+    }
+    await send_message_in_channel(channel, message_embed_configs)
+
 def get_player_stats_by_date(date):
     """
     Fetch NBA player stats for all games on a given date using the API-Basketball API.
@@ -194,3 +220,7 @@ async def send_command_list(msg):
 
 async def reply_to_message_with_embed(msg, message_embed_configs):
     await msg.reply(embed=create_message_embed(message_embed_configs))
+
+async def send_message_in_channel(channel, message_embed_configs):
+    await channel.send(embed=create_message_embed(message_embed_configs))
+
