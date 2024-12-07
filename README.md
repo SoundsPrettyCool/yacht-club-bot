@@ -29,6 +29,10 @@ NBA_CHAT_CHANNEL_ID=1234
 - once you create the account and subscribe you will get an api key that can be used for any api you subscribe to
 
 # heroku commands
-- building docker file in heroku env: `heroku container:push web --app yacht-club-bot  `
+- building docker file in heroku env: `heroku container:push worker --app yacht-club-bot  `
 - release the image:
-`heroku container:release web --app yacht-club-bot`
+`heroku container:release worker --app yacht-club-bot`
+- to look at logs of the app:
+`heroku logs --tail --app yacht-club-bot`
+- restart app:
+`heroku restart --app your-app-name`
