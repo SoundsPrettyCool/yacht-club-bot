@@ -1,6 +1,8 @@
 # Yacht-Club-Bot
 
 # getting started
-- to get started, get the .env file from someone that already works on project
-- that will setup the credentials to start working on the bot
-- the main script starts at `index.js` 
+- To get started, get the .env file from someone that already works on project
+- Then make sure your an environment that has docker and docker-compose installed
+- Then build the docker-container
+- Then bring up the docker-contianer
+- you should now see a message that says something along the lines that you connected successfully
