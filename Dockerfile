@@ -5,12 +5,10 @@ FROM python:3.10
 WORKDIR /app
 
 # Copy the current directory contents into the container
-COPY . /app
-
 # Install dependencies
+COPY ./requirements.txt /app/requirements.txt
 RUN pip install -r requirements.txt
 
-# Expose port 5000 (or the port your app uses)
-EXPOSE 5000
+COPY . /app
 
 ENTRYPOINT ["/app/start.sh"]

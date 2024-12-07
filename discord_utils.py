@@ -3,11 +3,19 @@ import requests
 import os
 import json
 from datetime import datetime, timedelta
+from tenacity import retry, stop_after_attempt, wait_exponential
+
 from logger import logger
 
 SPORTS_DATA_SUMMARY = {
     "NBA": [],
 }
+
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=1, max=10))
+async def attempt_to_send_message(client, channel_id, channel_attributes):
+    channel = client.get_channel(channel_id)
+    if channel:
+        await channel_attributes["callback"](channel)
 
 def shorten_game_data_with_scores(data):
     """
@@ -222,5 +230,9 @@ async def reply_to_message_with_embed(msg, message_embed_configs):
     await msg.reply(embed=create_message_embed(message_embed_configs))
 
 async def send_message_in_channel(channel, message_embed_configs):
+    logger.info("banana")
+    logger.info(channel)
+    logger.info(message_embed_configs)
+
     await channel.send(embed=create_message_embed(message_embed_configs))
 

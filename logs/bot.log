@@ -253,3 +253,82 @@ In embeds.0.fields.0.value: Must be 1024 or fewer in length.
 2024-12-07 18:35:14,740 - bot_logger - INFO - Logged in as yacht-club-bot#6339!
 2024-12-07 18:35:14,744 - bot_logger - INFO - banana
 2024-12-07 18:35:14,745 - bot_logger - INFO - 13
+2024-12-07 20:04:07,467 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-07 20:04:07,470 - bot_logger - INFO - banana
+2024-12-07 20:04:07,471 - bot_logger - INFO - 15
+2024-12-07 20:05:12,971 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-07 20:05:12,973 - bot_logger - INFO - banana
+2024-12-07 20:05:12,973 - bot_logger - INFO - 15
+2024-12-07 20:06:13,056 - bot_logger - INFO - 15
+2024-12-07 20:07:13,028 - bot_logger - INFO - 15
+2024-12-07 20:08:12,997 - bot_logger - INFO - 15
+2024-12-07 20:09:13,024 - bot_logger - INFO - 15
+2024-12-07 20:10:12,984 - bot_logger - INFO - 15
+2024-12-07 20:11:13,017 - bot_logger - INFO - 15
+2024-12-07 20:13:14,068 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-07 20:13:14,070 - bot_logger - INFO - banana
+2024-12-07 20:14:14,105 - bot_logger - INFO - daily start messages channels
+2024-12-07 20:14:19,642 - bot_logger - INFO - sent 1 messages
+2024-12-07 20:36:51,552 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-07 20:36:51,554 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-07 20:36:51,555 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-07 20:36:51,571 - bot_logger - INFO - sent 1 messages
+2024-12-07 20:36:51,571 - bot_logger - INFO - correct number of messages sent
+2024-12-07 20:37:35,473 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-07 20:37:54,052 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-07 20:37:54,056 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-07 20:37:54,056 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-07 20:37:57,073 - bot_logger - INFO - 
+                            There was an error retrieving the nba-chat channel or 
+                            sending a message to the nba-chat channel.
+                            error: RetryError[<Future at 0xffff8a410430 state=finished raised NameError>]
+                            
+2024-12-07 20:37:57,074 - bot_logger - INFO - sent 0 messages
+2024-12-07 20:37:57,075 - bot_logger - ERROR - there was less/more messages sent than expected
+2024-12-07 20:40:17,938 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-07 20:40:17,940 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-07 20:40:17,941 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-07 20:40:20,951 - bot_logger - INFO - 
+                            There was an error retrieving the nba-chat channel or 
+                            sending a message to the nba-chat channel.
+                            error: RetryError[<Future at 0xffff883203d0 state=finished raised NameError>]
+                            
+2024-12-07 20:40:20,951 - bot_logger - INFO - sent 0 messages
+2024-12-07 20:40:20,952 - bot_logger - ERROR - there was less/more messages sent than expected
+2024-12-07 20:41:48,076 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-07 20:41:48,078 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-07 20:41:48,079 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-07 20:41:48,080 - bot_logger - INFO - {'callback': <function send_nba_summary_message_embed_in_channel at 0xffff962b0af0>, 'name': 'nba-chat'}
+2024-12-07 20:41:49,085 - bot_logger - INFO - {'callback': <function send_nba_summary_message_embed_in_channel at 0xffff962b0af0>, 'name': 'nba-chat'}
+2024-12-07 20:41:51,093 - bot_logger - INFO - {'callback': <function send_nba_summary_message_embed_in_channel at 0xffff962b0af0>, 'name': 'nba-chat'}
+2024-12-07 20:41:51,095 - bot_logger - INFO - 
+                            There was an error retrieving the nba-chat channel or 
+                            sending a message to the nba-chat channel.
+                            error: RetryError[<Future at 0xffff95fd82e0 state=finished raised NameError>]
+                            
+2024-12-07 20:41:51,095 - bot_logger - INFO - sent 0 messages
+2024-12-07 20:41:51,095 - bot_logger - ERROR - there was less/more messages sent than expected
+2024-12-07 20:43:44,404 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-07 20:43:44,409 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-07 20:43:44,409 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-07 20:43:44,411 - bot_logger - INFO - {'callback': <function send_nba_summary_message_embed_in_channel at 0xffff97638af0>, 'name': 'nba-chat'}
+2024-12-07 20:43:45,420 - bot_logger - INFO - {'callback': <function send_nba_summary_message_embed_in_channel at 0xffff97638af0>, 'name': 'nba-chat'}
+2024-12-07 20:43:47,426 - bot_logger - INFO - {'callback': <function send_nba_summary_message_embed_in_channel at 0xffff97638af0>, 'name': 'nba-chat'}
+2024-12-07 20:43:47,428 - bot_logger - INFO - 
+                            There was an error retrieving the nba-chat channel or 
+                            sending a message to the nba-chat channel.
+                            error: RetryError[<Future at 0xffff96b203d0 state=finished raised NameError>]
+                            
+2024-12-07 20:43:47,428 - bot_logger - INFO - sent 0 messages
+2024-12-07 20:43:47,429 - bot_logger - ERROR - there was less/more messages sent than expected
+2024-12-07 20:44:49,177 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-07 20:44:49,180 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-07 20:44:49,180 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-07 20:44:49,181 - bot_logger - INFO - {'callback': <function send_nba_summary_message_embed_in_channel at 0xffff8d5e4af0>, 'name': 'nba-chat'}
+2024-12-07 20:44:49,181 - bot_logger - INFO - general
+2024-12-07 20:44:49,182 - bot_logger - INFO - 1272309387888689175
+2024-12-07 20:44:53,328 - bot_logger - INFO - banana
+2024-12-07 20:44:53,330 - bot_logger - INFO - general
+2024-12-07 20:44:53,330 - bot_logger - INFO - {'title': 'NBA Summary of Scores for 2024-12-06', 'field_configs': [{'name': 'Summary', 'value': "Here's a summary of the NBA game scores:\n\n1. Philadelphia 76ers vs. Orlando Magic: The 76ers won with a score of 102 to the Magic's 94. No overtime.\n\n2. Atlanta Hawks vs. Los Angeles Lakers: The Hawks narrowly defeated the Lakers, 134-132, in an overtime game.\n\n3. Boston Celtics vs. Milwaukee Bucks: The Celtics won 111-105 against the Bucks. No overtime.\n\n4. Chicago Bulls vs. Indiana Pacers: The Pacers defeated the Bulls 132 to 123. No overtime.\n\n5. San Antonio Spurs vs. Sacramento Kings: The Kings had a significant victory over the Spurs, scoring 140 to the Spurs' 113. No overtime.\n\n6. Portland Trail Blazers vs. Utah Jazz: The Jazz dominated the Trail Blazers, winning 141-99. No overtime.\n\n7. Golden State Warriors vs. Minnesota Timberwolves: The Timberwolves won 107-90 against the Warriors. No overtime.", 'inline': False}]}
+2024-12-07 20:44:53,535 - bot_logger - INFO - sent 1 messages
+2024-12-07 20:44:53,537 - bot_logger - INFO - correct number of messages sent

@@ -1,12 +1,7 @@
-version: '3.8'
-
 services:
   discord-bot:
     build: .
     container_name: discord-bot
     restart: always
-    environment:
-      - CLIENT_TOKEN=${CLIENT_TOKEN_PROD}
-      - RAPID_API=${RAPID_API}
     volumes:
-      - .:/app  # Maps the local `bot` directory to `/app` in the container
+      - .:/app

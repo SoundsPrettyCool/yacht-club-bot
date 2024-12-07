@@ -6,4 +6,4 @@ if [ -f .env ]; then
 fi
 
 # Run the application
-exec "python index.py"
+exec python /app/index.py

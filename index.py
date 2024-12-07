@@ -4,7 +4,8 @@ import os
 import logging
 import pytz
 from datetime import datetime
-from discord_utils import send_command_list, send_gif, send_rko, send_nba_summary_message_embed_in_channel
+
+from discord_utils import send_command_list, send_gif, send_rko, send_nba_summary_message_embed_in_channel, attempt_to_send_message
 
 # Regex patterns for RKO commands
 import re
@@ -13,6 +14,8 @@ from logger import logger
 
 rko_regex_comp = re.compile(r"!rko <@!")
 rko_regex_phone = re.compile(r"!rko <@")
+
+NBA_CHAT = "nba-chat"
 
 # Command dictionary
 Commands = {
@@ -24,7 +27,10 @@ Commands = {
 }
 
 CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO = {
-    os.getenv("NBA_CHAT_CHANNEL_ID") : send_nba_summary_message_embed_in_channel
+    os.getenv("NBA_CHAT_CHANNEL_ID") : {
+        "callback": send_nba_summary_message_embed_in_channel,
+        "name": NBA_CHAT
+    }
 }
 
 EASTERN = pytz.timezone("America/New_York")
@@ -47,27 +53,48 @@ client = commands.Bot(command_prefix="!", intents=intents)
 async def check_new_day():
     """Checks if it's the start of a new day in East Coast time."""
     now = datetime.now(EASTERN)
-    logger.info(now.hour)
     if now.hour == 0 and now.minute == 0:  # Midnight in East Coast time
-        for channel_id, callback in CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.items():
-            channel_id = int(channel_id)  # Replace with your channel ID
-            channel = client.get_channel(channel_id)
-            if channel:
-                await callback(channel)
+        logger.info("It's a new day, lets send the daily messages for each channel")
+
+        expected_number_of_channels_to_send_msgs_to = len(CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.keys())
+        logger.info(f"""Expecting to send messages to {len(CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.keys())} channels""")
+
+        amount_of_messages_sent = 0
+        for channel_id, channel_attributes in CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.items():
+            logger.info
+            channel_id = int(channel_id)
+            try:
+                await attempt_to_send_message(client, channel_id, channel_attributes)
+                amount_of_messages_sent += 1
+            except Exception as e:
+                logger.info(f"""
+                            There was an error retrieving the {channel_attributes["name"]} channel or 
+                            sending a message to the {channel_attributes["name"]} channel.
+                            error: {e}
+                            """
+                )
+
+        logger.info(f"""sent {amount_of_messages_sent} messages""")
+        if amount_of_messages_sent == expected_number_of_channels_to_send_msgs_to:
+            logger.info("correct number of messages sent")
+        else:
+            logger.error("there was less/more messages sent than expected")
+
 
 @check_new_day.before_loop
 async def before_check_new_day():
     """Wait until the bot is ready before starting the task."""
-    logger.info("banana")
     await client.wait_until_ready()
 
 @client.event
 async def on_ready():
+    """once client is ready, this code will run"""
     logger.info(f"Logged in as {client.user}!")
     check_new_day.start()
 
 @client.event
 async def on_message(msg):
+    """starting point for when a new message comes in"""
     try:
         if msg.content in Commands:
             await send_gif(msg, Commands[msg.content])
