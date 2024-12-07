@@ -13,6 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Bypass Interactive Login
+        run: export HEROKU_AUTOMATIC_LOGIN=1
+
       - name: Log in to Heroku Container Registry
         run: |
           echo ${{ secrets.HEROKU_API_KEY }} | docker login --username=_ --password-stdin registry.heroku.com
@@ -21,6 +24,7 @@ jobs:
         run: |
           docker build -t registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/worker .
           docker push registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/worker
+
 
       - name: Release the app
         run: |
