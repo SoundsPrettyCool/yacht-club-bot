@@ -105,6 +105,8 @@ async def on_message(msg):
     except Exception as e:
         logger.error(e)
 
+print("banana")
+print(f"""length of client token is {len(os.getenv("CLIENT_TOKEN"))}""")
 logger.info(f"""length of client token is {len(os.getenv("CLIENT_TOKEN"))}""")
 # Start the bot
 client.run(os.getenv("CLIENT_TOKEN"))
