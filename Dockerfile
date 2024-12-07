@@ -12,3 +12,5 @@ RUN pip install -r requirements.txt
 
 # Expose port 5000 (or the port your app uses)
 EXPOSE 5000
+
+ENTRYPOINT ["/app/start.sh"]

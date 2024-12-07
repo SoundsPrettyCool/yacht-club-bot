@@ -24,7 +24,7 @@ Commands = {
 }
 
 CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO = {
-    "1012741716970844220" : send_nba_summary_message_embed_in_channel
+    os.getenv("NBA_CHAT_CHANNEL_ID") : send_nba_summary_message_embed_in_channel
 }
 
 EASTERN = pytz.timezone("America/New_York")
