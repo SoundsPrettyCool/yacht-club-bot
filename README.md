@@ -27,3 +27,8 @@ NBA_CHAT_CHANNEL_ID=1234
     - [chatgpt](https://rapidapi.com/swift-api-swift-api-default/api/gpt-4o/playground/apiendpoint_113789a0-d775-41db-8f5d-d129c3ff952b)
         - have to pay 1 dollar a month for this one
 - once you create the account and subscribe you will get an api key that can be used for any api you subscribe to
+
+# heroku commands
+- building docker file in heroku env: `heroku container:push web --app yacht-club-bot  `
+- release the image:
+`heroku container:release web --app yacht-club-bot`
