@@ -209,6 +209,7 @@ def create_message_embed_command_list():
     embed = discord.Embed(title="Yacht-Club Bot Commands")
     embed.add_field(name="!ayo", value="Get ayo! gif", inline=False)
     embed.add_field(name="!soon", value="Get soon gif", inline=False)
+    embed.add_field(name="!pause", value="Get pause gif", inline=False)
     return embed
 
 def create_message_embed(message_embed_configs):

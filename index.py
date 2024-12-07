@@ -19,7 +19,6 @@ NBA_CHAT = "nba-chat"
 
 # Command dictionary
 Commands = {
-    "!vibes": "https://media.giphy.com/media/I1mNkDcsedsNjCr4LB/giphy-downsized-large.gif",
     "!ayo": "https://media.giphy.com/media/zGlR7xPioTWaRXGZDZ/giphy.gif",
     "!soon": "https://media.giphy.com/media/tzHn7A5mohSfe/giphy.gif",
     "!pause": "https://media.giphy.com/media/ai1UxGMqU7G5TZQmJa/giphy.gif",
