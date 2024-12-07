@@ -1,0 +1,2 @@
+class SmilesssGiveaway < ApplicationRecord
+end

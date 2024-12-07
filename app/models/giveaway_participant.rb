@@ -1,0 +1,2 @@
+class GiveawayParticipant < ApplicationRecord
+end
