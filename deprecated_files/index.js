@@ -7,26 +7,7 @@ import {
   sendRko
 } from "./discord_utils.js";
 
-import pkg from "pg";
-const { Pool } = pkg;
 dotenv.config();
-
-let clientDB;
-if (process.env.NODE_ENV === "production") {
-  clientDB = new Pool({
-    connectionString: process.env.DATABASE_URL,
-    ssl: {
-      rejectUnauthorized: false
-    }
-  });
-} else if (process.env.NODE_ENV === "development") {
-  clientDB = new Pool({
-    connectionString: process.env.DATABASE_URL
-  });
-}
-
-//No current db connection needed
-// clientDB.connect();
 
 const rkoRegexComp = new RegExp("!rko <@!");
 const rkoRegexPhone = new RegExp("!rko <@");
