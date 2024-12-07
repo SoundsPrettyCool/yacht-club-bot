@@ -1,6 +1,9 @@
 import dotenv from "dotenv";
 dotenv.config();
 
+
+//DEPRECATED
+//EVERYTHING BELOW THIS LINE IS DEPRECATED
 async function fetchGiveaways(client, messageId) {
   try {
     const queryText = `SELECT * FROM smilesss_giveaways WHERE open = true and discord_message_id = $1`;
