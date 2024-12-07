@@ -1,24 +1,6 @@
-# README
+# Yacht-Club-Bot
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# getting started
+- to get started, get the .env file from someone that already works on project
+- that will setup the credentials to start working on the bot
+- the main script starts at `index.js` 

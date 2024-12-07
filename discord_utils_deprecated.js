@@ -95,17 +95,6 @@ async function paginateMessageSending(items, msg, successMessage) {
   }
 }
 
-async function sendGif(msg, gifUrl, MessageEmbed) {
-  if (msg.content === "!blueprint") {
-    const msgEmbed = createMessageEmbedBlueprint(gifUrl, MessageEmbed);
-    console.log(msgEmbed);
-    await msg.reply({ embeds: [msgEmbed] });
-  } else {
-    const msgEmbed = createMessageEmbedGif(gifUrl, MessageEmbed);
-    await msg.reply({ embeds: [msgEmbed] });
-  }
-}
-
 async function askUserToPickFromListOfClosedOpenGiveaways(
   clientDB,
   msg,
@@ -138,26 +127,6 @@ async function askUserToPickFromListOfClosedOpenGiveaways(
   const giveawayName = collectGiveawayName.first().content.trim();
   return giveawayName;
 }
-
-const createMessageEmbedCommandList = (MessageEmbed) => {
-  const embed = new MessageEmbed()
-    .setTitle("Smilesss Bot Commands")
-    .addField(
-      "!smilesss <token id>",
-      "You can use this command in a sentence in order to show the smilesss with the specified id (can only be used under SMILESSS MART)"
-    )
-    .addField(
-      "!floor",
-      "Get the current floor price for marketplaces (can only be used under SMILESSS MART)"
-    )
-    .addField("!blueprint", "Get blueprint gif created by Verifryd")
-    .addField("!ayo", "Get ayo! gif")
-    .addField("!mayo", "Get mayo gif")
-    .addField("!bingbong or !BingBong", "Get bing bong gif")
-    .addField("!soon", "Get soon gif");
-
-  return embed;
-};
 
 const createInlineFieldGrid = (openSeaAsset) => {
   const traits = openSeaAsset.traits;
@@ -380,11 +349,6 @@ function createMessageEmbedBlueprint(url, MessageEmbed) {
       true
     )
     .setThumbnail(url);
-  return embed;
-}
-
-function createMessageEmbedGif(gifUrl, MessageEmbed) {
-  const embed = new MessageEmbed().setImage(gifUrl);
   return embed;
 }
 
