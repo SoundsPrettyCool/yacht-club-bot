@@ -1,5 +1,5 @@
 # Yacht-Club-Bot
--test
+
 # Getting Started
 - To get started, get the .env file from someone that already works on project
 - to test locally you should create your own bot application via the discord portal and add the client token given to the CLIENT_TOKEN env variable in your own env file.
