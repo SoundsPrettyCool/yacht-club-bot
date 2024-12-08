@@ -61,11 +61,12 @@ client = commands.Bot(command_prefix="!", intents=intents)
 @tasks.loop(minutes=1)  # Check every minute
 async def start_live_odd_tracking(sport_to_start_live_odds):
     """Checks if it's the start of a new day in East Coast time."""
+    logger.info("another minute has passed")
     sport_id = ODD_TRACKING_CHANNELS[sport_to_start_live_odds]["sport_id"]
     since = ODD_TRACKING_CHANNELS[sport_to_start_live_odds]["since"] 
     channel_id = int(ODD_TRACKING_CHANNELS[sport_to_start_live_odds]["channel_id"])
     channel = client.get_channel(channel_id)
-    
+
     if not since: 
         response = get_sport_odds(sport_id) 
         target_timestamp = response["last"]

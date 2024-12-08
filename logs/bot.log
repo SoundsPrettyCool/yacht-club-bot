@@ -506,3 +506,140 @@ In embeds.0.fields.0.value: Must be 1024 or fewer in length.
 2024-12-08 04:56:39,727 - bot_logger - INFO - general
 2024-12-08 04:56:40,127 - bot_logger - INFO - MMA 2024-12-08 Live Odds
 2024-12-08 04:56:40,128 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733633367, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833859915, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.54, 'draw': None, 'away': 1.223}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.606, 'under': 2.39, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 04:58:06,798 - bot_logger - INFO - length of client token is 72
+2024-12-08 04:58:09,592 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 04:58:10,422 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff9b9acb80>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733633430, 'odds_seen': {}}}
+2024-12-08 04:58:10,423 - bot_logger - INFO - papaya
+2024-12-08 04:58:10,423 - bot_logger - INFO - general
+2024-12-08 04:58:10,734 - bot_logger - INFO - MMA 2024-12-08 Live Odds
+2024-12-08 04:58:10,735 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733633430, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833860231, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.55, 'draw': None, 'away': 1.222}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.606, 'under': 2.39, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 04:59:09,989 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff9b9acb80>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733633430, 'odds_seen': {1600782929: True}}}
+2024-12-08 04:59:09,991 - bot_logger - INFO - papaya
+2024-12-08 04:59:09,992 - bot_logger - INFO - general
+2024-12-08 04:59:10,233 - bot_logger - INFO - MMA 2024-12-08 Live Odds
+2024-12-08 04:59:10,234 - bot_logger - INFO - {'event_id': 1601785365, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733633479, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'live', 'parent_id': 1600782929, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833860537, 'number': 0, 'cutoff': '2024-12-08T07:05:00', 'period_status': 1, 'money_line': {'home': 3.97, 'draw': None, 'away': 1.19}, 'spreads': None, 'totals': None, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 1000.0}}}}
+2024-12-08 04:59:10,425 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733633521, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833860770, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.82, 'draw': None, 'away': 1.204}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.595, 'under': 2.42, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:00:13,902 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:00:16,570 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:00:16,575 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-08 05:00:16,575 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-08 05:00:20,943 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffffbb2b0b80>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733633552, 'odds_seen': {}}}
+2024-12-08 05:00:20,945 - bot_logger - INFO - papaya
+2024-12-08 05:00:20,945 - bot_logger - INFO - general
+2024-12-08 05:00:21,076 - bot_logger - INFO - sent 1 messages
+2024-12-08 05:00:21,076 - bot_logger - INFO - correct number of messages sent
+2024-12-08 05:00:21,164 - bot_logger - INFO - MMA 2024-12-08 Live Odds
+2024-12-08 05:00:21,164 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733633552, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833860952, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.81, 'draw': None, 'away': 1.204}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.602, 'under': 2.4, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:01:16,905 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffffbb2b0b80>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733633552, 'odds_seen': {1600782929: True}}}
+2024-12-08 05:01:16,909 - bot_logger - INFO - papaya
+2024-12-08 05:01:16,909 - bot_logger - INFO - general
+2024-12-08 05:01:17,145 - bot_logger - INFO - MMA 2024-12-08 Live Odds
+2024-12-08 05:01:17,145 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733633613, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833861239, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.81, 'draw': None, 'away': 1.204}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.598, 'under': 2.41, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:03:41,631 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:03:44,379 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:03:44,807 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffffabc3caf0>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733633731, 'odds_seen': {}}}
+2024-12-08 05:03:44,808 - bot_logger - INFO - papaya
+2024-12-08 05:03:44,808 - bot_logger - INFO - general
+2024-12-08 05:03:45,202 - bot_logger - INFO - MMA 2024-12-08 Live Odds
+2024-12-08 05:03:45,202 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733633731, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833861973, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.7, 'draw': None, 'away': 1.211}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.598, 'under': 2.41, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:04:29,269 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:04:32,084 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:04:32,431 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff7eb48af0>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733633731, 'odds_seen': {}}}
+2024-12-08 05:04:32,432 - bot_logger - INFO - papaya
+2024-12-08 05:04:32,432 - bot_logger - INFO - general
+2024-12-08 05:04:32,780 - bot_logger - INFO - MMA 2024-12-08 Live Odds
+2024-12-08 05:04:32,782 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733633731, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833861973, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.7, 'draw': None, 'away': 1.211}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.598, 'under': 2.41, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:05:20,940 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:05:23,825 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:05:24,134 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffffba2e4a60>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733633731, 'odds_seen': {}}}
+2024-12-08 05:05:24,135 - bot_logger - INFO - papaya
+2024-12-08 05:05:24,135 - bot_logger - INFO - general
+2024-12-08 05:05:24,408 - bot_logger - INFO - MMA 2024-12-08 Live Odds
+2024-12-08 05:05:24,409 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733633731, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833861973, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.7, 'draw': None, 'away': 1.211}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.598, 'under': 2.41, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:06:28,136 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:06:30,804 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:06:31,090 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffffa12a89d0>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733633956, 'odds_seen': {}}}
+2024-12-08 05:06:31,091 - bot_logger - INFO - papaya
+2024-12-08 05:06:31,091 - bot_logger - INFO - general
+2024-12-08 05:06:31,365 - bot_logger - INFO - MMA 2024-12-08 Live Odds
+2024-12-08 05:06:31,366 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733633956, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833863007, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.8, 'draw': None, 'away': 1.205}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.574, 'under': 2.46, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:07:44,143 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:07:46,974 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:07:47,662 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffffa3e349d0>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634037, 'odds_seen': {}}}
+2024-12-08 05:07:47,663 - bot_logger - INFO - papaya
+2024-12-08 05:07:47,663 - bot_logger - INFO - general
+2024-12-08 05:07:47,860 - bot_logger - INFO - MMA 2024-12-08 Live Odds
+2024-12-08 05:07:47,860 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733634037, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833863670, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.76, 'draw': None, 'away': 1.207}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.581, 'under': 2.45, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:08:53,133 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:08:55,856 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:08:56,175 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff82544a60>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634093, 'odds_seen': {}}}
+2024-12-08 05:08:56,352 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733634093, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833864353, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.73, 'draw': None, 'away': 1.209}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.54, 'under': 2.55, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:09:58,205 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:10:01,078 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:10:01,522 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff84e6ca60>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634117, 'odds_seen': {}}}
+2024-12-08 05:10:01,523 - bot_logger - INFO - length
+2024-12-08 05:10:01,524 - bot_logger - INFO - 0
+2024-12-08 05:10:01,722 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733634117, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833864571, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.75, 'draw': None, 'away': 1.208}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.54, 'under': 2.55, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:10:58,986 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:11:01,756 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:11:02,102 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffffa85e0a60>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634202, 'odds_seen': {}}}
+2024-12-08 05:11:02,345 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733634202, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833865217, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.35, 'draw': None, 'away': 1.238}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.543, 'under': 2.54, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:11:34,130 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:11:36,935 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:11:37,367 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff85a70a60>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634271, 'odds_seen': {}}}
+2024-12-08 05:11:37,368 - bot_logger - ERROR - Error fetching threads: 'list' object has no attribute 'fetch_archived_public'
+2024-12-08 05:11:37,625 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733634271, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833865877, 'number': 0, 'cutoff': '2024-12-08T05:05:00', 'period_status': 1, 'money_line': {'home': 4.35, 'draw': None, 'away': 1.238}, 'spreads': None, 'totals': {'2.5': {'points': 2.5, 'alt_line_id': None, 'over': 1.558, 'under': 2.5, 'max': 3000.0}}, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:13:39,480 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:13:42,185 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:13:42,800 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff89cb4a60>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634384, 'odds_seen': {}}}
+2024-12-08 05:13:42,800 - bot_logger - ERROR - Error fetching threads: object list can't be used in 'await' expression
+2024-12-08 05:13:43,068 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733634384, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833866949, 'number': 0, 'cutoff': '2024-12-08T05:06:00', 'period_status': 1, 'money_line': None, 'spreads': None, 'totals': None, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:13:57,599 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:14:00,282 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:14:00,583 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffffa0ab4a60>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634384, 'odds_seen': {}}}
+2024-12-08 05:14:00,584 - bot_logger - ERROR - Error fetching threads: 'list' object has no attribute 'archived_threads'
+2024-12-08 05:14:00,851 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:05:00', 'last': 1733634384, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833866949, 'number': 0, 'cutoff': '2024-12-08T05:06:00', 'period_status': 1, 'money_line': None, 'spreads': None, 'totals': None, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:14:14,100 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:14:16,955 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:14:17,248 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffffb1dacaf0>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634384, 'odds_seen': {}}}
+2024-12-08 05:14:17,249 - bot_logger - INFO - length of threads 
+2024-12-08 05:14:17,250 - bot_logger - INFO - 1
+2024-12-08 05:15:35,189 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:15:38,035 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:15:38,405 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff7f1bcaf0>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634490, 'odds_seen': {}}}
+2024-12-08 05:15:38,406 - bot_logger - INFO - length of threads 
+2024-12-08 05:15:38,407 - bot_logger - INFO - 1
+2024-12-08 05:15:38,407 - bot_logger - INFO - banana
+2024-12-08 05:15:38,407 - bot_logger - INFO - MMA 2024-12-08 Live Odds
+2024-12-08 05:17:17,077 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:17:20,063 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:17:20,403 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffffbc438af0>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634490, 'odds_seen': {}}}
+2024-12-08 05:17:20,404 - bot_logger - INFO - length of threads 
+2024-12-08 05:17:20,404 - bot_logger - INFO - 1
+2024-12-08 05:17:34,237 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:17:36,848 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:17:37,138 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff9323caf0>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634490, 'odds_seen': {}}}
+2024-12-08 05:17:37,138 - bot_logger - INFO - length of threads 
+2024-12-08 05:17:37,139 - bot_logger - INFO - 1
+2024-12-08 05:18:00,649 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:18:03,338 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:18:03,619 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff9d380af0>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634490, 'odds_seen': {}}}
+2024-12-08 05:18:03,619 - bot_logger - INFO - length of threads 
+2024-12-08 05:18:03,620 - bot_logger - INFO - 1
+2024-12-08 05:18:03,621 - bot_logger - INFO - banana
+2024-12-08 05:18:03,622 - bot_logger - INFO - MMA 2024-12-08 Live Odds
+2024-12-08 05:18:03,623 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:06:00', 'last': 1733634490, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833867852, 'number': 0, 'cutoff': '2024-12-08T05:06:00', 'period_status': 1, 'money_line': None, 'spreads': None, 'totals': None, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:18:40,522 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:18:43,312 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:18:43,661 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffffb14b4af0>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634490, 'odds_seen': {}}}
+2024-12-08 05:18:43,662 - bot_logger - INFO - length of threads 
+2024-12-08 05:18:43,662 - bot_logger - INFO - 1
+2024-12-08 05:18:43,662 - bot_logger - INFO - banana
+2024-12-08 05:18:43,663 - bot_logger - INFO - MMA 2024-12-08 Live Odds
+2024-12-08 05:18:43,664 - bot_logger - INFO - {'event_id': 1600782929, 'sport_id': 8, 'league_id': 1624, 'league_name': 'UFC', 'starts': '2024-12-08T05:06:00', 'last': 1733634490, 'home': 'Ian Garry', 'away': 'Shavkat Rakhmonov', 'event_type': 'prematch', 'parent_id': None, 'resulting_unit': 'Regular', 'is_have_odds': True, 'periods': {'num_0': {'line_id': 2833867852, 'number': 0, 'cutoff': '2024-12-08T05:06:00', 'period_status': 1, 'money_line': None, 'spreads': None, 'totals': None, 'team_total': None, 'meta': {'number': 0, 'max_money_line': 15000.0, 'max_total': 3000.0}}}}
+2024-12-08 05:20:01,539 - bot_logger - INFO - length of client token is 72
+2024-12-08 05:20:04,183 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-08 05:20:04,187 - bot_logger - INFO - another minute has passed
+2024-12-08 05:20:04,500 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff94d4cb80>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634772, 'odds_seen': {}}}
+2024-12-08 05:21:04,224 - bot_logger - INFO - another minute has passed
+2024-12-08 05:21:04,589 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff94d4cb80>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634772, 'odds_seen': {1600782929: True}}}

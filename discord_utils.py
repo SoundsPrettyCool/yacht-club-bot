@@ -2,7 +2,7 @@ import discord
 import requests
 import os
 import json
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 from logger import logger
@@ -23,10 +23,7 @@ async def create_discord_thread(channel: discord.TextChannel, thread_name: str) 
         discord.Thread: The created thread object.
     """
     try:
-        logger.info("papaya")
-        logger.info(channel)
         thread = await channel.create_thread(name=thread_name, type=discord.ChannelType.public_thread)
-        logger.info(thread)
         return thread
     except Exception as e:
         print(f"Error creating thread: {e}")
@@ -44,40 +41,48 @@ async def get_last_threads(channel: discord.TextChannel, limit: int = 3) -> list
         list[discord.Thread]: A list of the most recently created threads.
     """
     try:
-        threads = await channel.threads.fetch_archived_public()
+        threads =  channel.threads
+
         sorted_threads = sorted(
-            threads.archived_threads,
+            threads,
             key=lambda t: t.created_at,
             reverse=True
         )
         return sorted_threads[:limit]
     except Exception as e:
-        print(f"Error fetching threads: {e}")
+        logger.error(f"Error fetching threads: {e}")
         return []
 
-def is_thread_created_today(thread: discord.Thread) -> bool:
+from datetime import datetime, timedelta
+
+def is_thread_created_today_or_within_12_hours(thread: discord.Thread) -> bool:
     """
-    Checks if a given thread was created on the current date.
+    Checks if a given thread was created on the current date or within the last 12 hours.
 
     Args:
         thread (discord.Thread): The Discord thread object to check.
 
     Returns:
-        bool: True if the thread was created today, False otherwise.
+        bool: True if the thread was created today or within 12 hours, False otherwise.
     """
     if not thread.created_at:
         return False
 
-    current_date = datetime.utcnow().date()
-    thread_date = thread.created_at.date()
+    # Current time in UTC
+    now = datetime.now(timezone.utc)
 
-    return thread_date == current_date
+    # Time difference between now and thread creation
+    time_difference = now - thread.created_at
+
+    # Check if the thread was created today or within the last 12 hours
+    return thread.created_at.date() == now.date() or time_difference <= timedelta(hours=12)
 
 async def fetch_or_create_thread(channel):
     now = datetime.now()
     threads = await get_last_threads(channel, 1)
+
     if len(threads) > 0:
-        thread_created_today = is_thread_created_today(threads[0])
+        thread_created_today = is_thread_created_today_or_within_12_hours(threads[0])
         if thread_created_today:
             thread = threads[0]
             return thread
@@ -112,7 +117,6 @@ async def send_mma_live_odds(channel, events, odds_tracking_channels, sport_to_s
     thread = await fetch_or_create_thread(channel)
     for event in events:
         event_id = event["event_id"]
-        logger.info(event)
         if event_id not in odds_tracking_channels:
             home = event["home"]
             away = event["away"]
