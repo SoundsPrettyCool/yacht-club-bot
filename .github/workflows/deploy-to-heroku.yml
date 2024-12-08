@@ -26,5 +26,7 @@ jobs:
           docker push registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/worker
 
       - name: Release the app
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: |
-          heroku container:release worker --app ${{ secrets.HEROKU_APP_NAME }} --auth ${{ secrets.HEROKU_API_KEY }}
+          heroku container:release worker --app ${{ secrets.HEROKU_APP_NAME }}
