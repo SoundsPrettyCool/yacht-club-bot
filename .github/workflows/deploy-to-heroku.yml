@@ -27,4 +27,4 @@ jobs:
 
       - name: Release the app
         run: |
-          heroku container:release worker --app ${{ secrets.HEROKU_APP_NAME }}
+          heroku container:release worker --app ${{ secrets.HEROKU_APP_NAME }} --auth ${{ secrets.HEROKU_API_KEY }}
