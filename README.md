@@ -36,3 +36,6 @@ NBA_CHAT_CHANNEL_ID=1234
 `heroku logs --tail --app yacht-club-bot`
 - restart app:
 `heroku restart --app your-app-name`
+
+
+-banana
