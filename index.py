@@ -3,9 +3,9 @@ from discord.ext import commands, tasks
 import os
 import logging
 import pytz
-from datetime import datetime
+from datetime import datetime, timezone
 
-from discord_utils import send_command_list, send_gif, send_rko, send_nba_summary_message_embed_in_channel, attempt_to_send_message
+from discord_utils import send_command_list, send_gif, send_rko, send_nba_summary_message_embed_in_channel, attempt_to_send_message, send_mma_live_odds, get_sport_odds
 
 # Regex patterns for RKO commands
 import re
@@ -16,7 +16,8 @@ rko_regex_comp = re.compile(r"!rko <@!")
 rko_regex_phone = re.compile(r"!rko <@")
 
 NBA_CHAT = "nba-chat"
-
+MMA_CHAT = "mma-chat"
+MMA = "mma"
 # Command dictionary
 Commands = {
     "!ayo": "https://media.giphy.com/media/zGlR7xPioTWaRXGZDZ/giphy.gif",
@@ -29,6 +30,17 @@ CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO = {
     os.getenv("NBA_CHAT_CHANNEL_ID") : {
         "callback": send_nba_summary_message_embed_in_channel,
         "name": NBA_CHAT
+    }
+}
+
+ODD_TRACKING_CHANNELS = {
+    MMA: {
+        "channel_id": os.getenv("MMA_CHAT_CHANNEL_ID"),
+        "callback": send_mma_live_odds,
+        "channel": MMA_CHAT, 
+        "sport_id": 8,
+        "since": None,
+        "odds_seen": {}
     }
 }
 
@@ -46,7 +58,38 @@ intents.members = True
 client = commands.Bot(command_prefix="!", intents=intents)
 
 
-# Define East Coast timezone
+@tasks.loop(minutes=1)  # Check every minute
+async def start_live_odd_tracking(sport_to_start_live_odds):
+    """Checks if it's the start of a new day in East Coast time."""
+    sport_id = ODD_TRACKING_CHANNELS[sport_to_start_live_odds]["sport_id"]
+    since = ODD_TRACKING_CHANNELS[sport_to_start_live_odds]["since"] 
+    channel_id = int(ODD_TRACKING_CHANNELS[sport_to_start_live_odds]["channel_id"])
+    channel = client.get_channel(channel_id)
+    
+    if not since: 
+        response = get_sport_odds(sport_id) 
+        target_timestamp = response["last"]
+        last_event = []
+        events = response["events"]
+        # Convert the target timestamp to a datetime object
+        target_datetime = datetime.fromtimestamp(target_timestamp, tz=timezone.utc)
+
+        # Find the event closest to the target timestamp
+        closest_event = min(
+            events,
+            key=lambda x: abs(
+                datetime.fromisoformat(x['starts']).replace(tzinfo=timezone.utc) - target_datetime
+            )
+        )
+        last_event.append(closest_event)
+        ODD_TRACKING_CHANNELS[sport_to_start_live_odds]["since"] = target_timestamp
+        await send_mma_live_odds(channel, last_event, ODD_TRACKING_CHANNELS, sport_to_start_live_odds)
+    else:
+        response = get_sport_odds(sport_id, since) 
+        events = response["events"]
+        await send_mma_live_odds(channel, events, ODD_TRACKING_CHANNELS, sport_to_start_live_odds)
+    
+
 
 @tasks.loop(minutes=1)  # Check every minute
 async def check_new_day():
@@ -90,6 +133,7 @@ async def on_ready():
     """once client is ready, this code will run"""
     logger.info(f"Logged in as {client.user}!")
     check_new_day.start()
+    start_live_odd_tracking.start(MMA)
 
 @client.event
 async def on_message(msg):

@@ -11,6 +11,141 @@ SPORTS_DATA_SUMMARY = {
     "NBA": [],
 }
 
+async def create_discord_thread(channel: discord.TextChannel, thread_name: str) -> discord.Thread:
+    """
+    Creates a thread in a specified Discord channel and returns the thread object.
+
+    Args:
+        channel (discord.TextChannel): The Discord channel object where the thread will be created.
+        thread_name (str): The name of the thread.
+
+    Returns:
+        discord.Thread: The created thread object.
+    """
+    try:
+        logger.info("papaya")
+        logger.info(channel)
+        thread = await channel.create_thread(name=thread_name, type=discord.ChannelType.public_thread)
+        logger.info(thread)
+        return thread
+    except Exception as e:
+        print(f"Error creating thread: {e}")
+        return None
+
+async def get_last_threads(channel: discord.TextChannel, limit: int = 3) -> list[discord.Thread]:
+    """
+    Retrieves the last created threads in a specified Discord channel.
+
+    Args:
+        channel (discord.TextChannel): The Discord channel object to fetch threads from.
+        limit (int): The number of most recent threads to return. Default is 3.
+
+    Returns:
+        list[discord.Thread]: A list of the most recently created threads.
+    """
+    try:
+        threads = await channel.threads.fetch_archived_public()
+        sorted_threads = sorted(
+            threads.archived_threads,
+            key=lambda t: t.created_at,
+            reverse=True
+        )
+        return sorted_threads[:limit]
+    except Exception as e:
+        print(f"Error fetching threads: {e}")
+        return []
+
+def is_thread_created_today(thread: discord.Thread) -> bool:
+    """
+    Checks if a given thread was created on the current date.
+
+    Args:
+        thread (discord.Thread): The Discord thread object to check.
+
+    Returns:
+        bool: True if the thread was created today, False otherwise.
+    """
+    if not thread.created_at:
+        return False
+
+    current_date = datetime.utcnow().date()
+    thread_date = thread.created_at.date()
+
+    return thread_date == current_date
+
+async def fetch_or_create_thread(channel):
+    now = datetime.now()
+    threads = await get_last_threads(channel, 1)
+    if len(threads) > 0:
+        thread_created_today = is_thread_created_today(threads[0])
+        if thread_created_today:
+            thread = threads[0]
+            return thread
+    
+    return await create_discord_thread(channel, f"""MMA {now.strftime("%Y-%m-%d")} Live Odds""")
+
+def get_sport_odds(sport_id, since=0):
+    url = "https://pinnacle-odds.p.rapidapi.com/kit/v1/markets"
+
+    if since > 0:
+        querystring = {"sport_id": sport_id, "is_have_odds":"true", "since": since}
+    else:
+        querystring = {"sport_id": sport_id, "is_have_odds":"true"}
+
+    headers = {
+        "x-rapidapi-key": os.getenv("RAPID_API"),
+        "x-rapidapi-host": "pinnacle-odds.p.rapidapi.com"
+    }
+
+    try:
+        response = requests.get(url, headers=headers, params=querystring)
+        response.raise_for_status()  # Raise an error for HTTP issues
+
+        data = response.json()
+        return data # Return the response content
+    except requests.exceptions.RequestException as e:
+        logger.error(f"An error occurred: {e}")
+        return None
+
+async def send_mma_live_odds(channel, events, odds_tracking_channels, sport_to_start_live_odds):
+    logger.info(odds_tracking_channels)
+    thread = await fetch_or_create_thread(channel)
+    for event in events:
+        event_id = event["event_id"]
+        logger.info(event)
+        if event_id not in odds_tracking_channels:
+            home = event["home"]
+            away = event["away"]
+            money_line = event["periods"]["num_0"]["money_line"]
+            name=f"""Match between {home} and {away} has started"""
+            value=""
+            title="Tale of the Tape" 
+            if money_line:
+                money_line_home = money_line["home"]
+                money_line_away = money_line["away"]
+                money_line_draw = money_line["draw"]
+                money_line_name = f"""home: {home}, away: {away}"""
+                money_line_value = f"""money line, home {money_line_home}, draw {money_line_draw}, away {money_line_away}"""
+                name=money_line_name
+                value=money_line_value
+
+            fields = [
+                {
+                    "name": name, 
+                    "value": value, 
+                    "inline": False
+                }
+            ]
+            now = datetime.now()
+
+            message_embed_configs = {
+                "title": title, 
+                "field_configs": fields
+            }
+
+            await send_message_in_thread(thread, message_embed_configs)
+            odds_tracking_channels[sport_to_start_live_odds]["odds_seen"][event_id] = True
+
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=1, max=10))
 async def attempt_to_send_message(client, channel_id, channel_attributes):
     channel = client.get_channel(channel_id)
@@ -231,9 +366,9 @@ async def reply_to_message_with_embed(msg, message_embed_configs):
     await msg.reply(embed=create_message_embed(message_embed_configs))
 
 async def send_message_in_channel(channel, message_embed_configs):
-    logger.info("banana")
-    logger.info(channel)
-    logger.info(message_embed_configs)
-
     await channel.send(embed=create_message_embed(message_embed_configs))
+
+async def send_message_in_thread(thread, message_embed_configs):
+    await thread.send(embed=create_message_embed(message_embed_configs))
+
 
