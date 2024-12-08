@@ -134,7 +134,6 @@ async def on_ready():
     """once client is ready, this code will run"""
     logger.info(f"Logged in as {client.user}!")
     check_new_day.start()
-    start_live_odd_tracking.start(MMA)
 
 @client.event
 async def on_message(msg):
@@ -147,6 +146,16 @@ async def on_message(msg):
         elif rko_regex_comp.match(msg.content) or rko_regex_phone.match(msg.content):
             person_to_rko = msg.content.split(" ")[1]
             await send_rko(msg, person_to_rko)
+        elif msg.content == "!startmma":
+            if not start_live_odd_tracking.is_running():
+                start_live_odd_tracking.start(MMA)
+            else:
+                logger.info("MMA live odds tracking is already running.")
+        elif msg.content == "!stopmma":
+            if start_live_odd_tracking.is_running():
+                start_live_odd_tracking.stop()
+            else:
+                logger.info("MMA live odds tracking is not running.")
     except Exception as e:
         logger.error(e)
 
