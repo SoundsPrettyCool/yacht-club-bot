@@ -133,22 +133,22 @@ async def send_mma_live_odds(channel, events, odds_tracking_channels, sport_to_s
                 name=money_line_name
                 value=money_line_value
 
-            fields = [
-                {
-                    "name": name, 
-                    "value": value, 
-                    "inline": False
+                fields = [
+                    {
+                        "name": name, 
+                        "value": value, 
+                        "inline": False
+                    }
+                ]
+                now = datetime.now()
+
+                message_embed_configs = {
+                    "title": title, 
+                    "field_configs": fields
                 }
-            ]
-            now = datetime.now()
 
-            message_embed_configs = {
-                "title": title, 
-                "field_configs": fields
-            }
-
-            await send_message_in_thread(thread, message_embed_configs)
-            odds_tracking_channels[sport_to_start_live_odds]["odds_seen"][event_id] = True
+                await send_message_in_thread(thread, message_embed_configs)
+                odds_tracking_channels[sport_to_start_live_odds]["odds_seen"][event_id] = True
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=1, max=10))
 async def attempt_to_send_message(client, channel_id, channel_attributes):
