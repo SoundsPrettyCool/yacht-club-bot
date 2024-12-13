@@ -2,10 +2,13 @@ import discord
 import requests
 import os
 import json
+import pytz
 from datetime import datetime, timedelta, timezone
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 from logger import logger
+
+EASTERN = pytz.timezone("America/New_York")
 
 SPORTS_DATA_SUMMARY = {
     "NBA": [],
@@ -239,10 +242,8 @@ def get_nba_scores():
         "x-rapidapi-key": os.getenv("RAPID_API")
     }
 
-    now = datetime.now()
-
+    now = datetime.now(EASTERN)
     previous_day = now - timedelta(days=1)
-
     params = {
         "league": 12,
         "season": "2024-2025",
@@ -255,6 +256,7 @@ def get_nba_scores():
         response.raise_for_status()  # Raise an error for HTTP issues
 
         data = response.json()
+        logger.info(data)
         return shorten_game_data_with_scores(data["response"])
     except requests.exceptions.RequestException as e:
         logger.error(f"An error occurred: {e}")

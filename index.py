@@ -2,10 +2,9 @@ import discord
 from discord.ext import commands, tasks
 import os
 import logging
-import pytz
 from datetime import datetime, timezone
 
-from discord_utils import send_command_list, send_gif, send_rko, send_nba_summary_message_embed_in_channel, attempt_to_send_message, send_mma_live_odds, get_sport_odds
+from discord_utils import send_command_list, send_gif, send_rko, send_nba_summary_message_embed_in_channel, attempt_to_send_message, send_mma_live_odds, get_sport_odds, EASTERN
 
 # Regex patterns for RKO commands
 import re
@@ -44,7 +43,6 @@ ODD_TRACKING_CHANNELS = {
     }
 }
 
-EASTERN = pytz.timezone("America/New_York")
 
 # Intents
 intents = discord.Intents.default()
@@ -95,8 +93,8 @@ async def start_live_odd_tracking(sport_to_start_live_odds):
 @tasks.loop(minutes=1)  # Check every minute
 async def check_new_day():
     """Checks if it's the start of a new day in East Coast time."""
-    now = datetime.now(EASTERN)
-    if now.hour == 2 and now.minute == 0:  # Midnight in East Coast time
+    now = datetime.now()
+    if now.hour == 7 and now.minute == 0:  # Midnight in East Coast time
         logger.info("It's a new day, lets send the daily messages for each channel")
 
         expected_number_of_channels_to_send_msgs_to = len(CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.keys())
