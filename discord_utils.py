@@ -245,7 +245,7 @@ def get_nba_scores():
     now = datetime.now(EASTERN)
     previous_day = now - timedelta(days=1)
     params = {
-        "league": 12,
+        "league": os.getenv("NBA_LEAGUE"),
         "season": "2024-2025",
         "date": previous_day.strftime("%Y-%m-%d"),
         "timezone": "America/New_York"
