@@ -643,3 +643,127 @@ In embeds.0.fields.0.value: Must be 1024 or fewer in length.
 2024-12-08 05:20:04,500 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff94d4cb80>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634772, 'odds_seen': {}}}
 2024-12-08 05:21:04,224 - bot_logger - INFO - another minute has passed
 2024-12-08 05:21:04,589 - bot_logger - INFO - {'mma': {'channel_id': '1272309387888689175', 'callback': <function send_mma_live_odds at 0xffff94d4cb80>, 'channel': 'mma-chat', 'sport_id': 8, 'since': 1733634772, 'odds_seen': {1600782929: True}}}
+2024-12-13 01:31:57,365 - bot_logger - INFO - length of client token is 72
+2024-12-13 01:32:00,132 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 01:33:27,366 - bot_logger - INFO - length of client token is 72
+2024-12-13 01:33:30,194 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 01:33:30,200 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 01:33:30,200 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 01:33:35,541 - bot_logger - INFO - sent 1 messages
+2024-12-13 01:33:35,543 - bot_logger - INFO - correct number of messages sent
+2024-12-13 01:34:09,177 - bot_logger - INFO - length of client token is 72
+2024-12-13 01:34:12,161 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 01:35:30,580 - bot_logger - INFO - length of client token is 72
+2024-12-13 01:35:33,295 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 01:35:33,299 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 01:35:33,299 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 01:35:36,695 - bot_logger - INFO - sent 1 messages
+2024-12-13 01:35:36,696 - bot_logger - INFO - correct number of messages sent
+2024-12-13 01:35:49,779 - bot_logger - INFO - length of client token is 72
+2024-12-13 01:35:52,520 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 01:35:52,523 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 01:35:52,523 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 01:35:52,525 - bot_logger - INFO - 2024-12-12 01:35:52.525497
+2024-12-13 01:35:55,870 - bot_logger - INFO - sent 1 messages
+2024-12-13 01:35:55,872 - bot_logger - INFO - correct number of messages sent
+2024-12-13 01:50:54,141 - bot_logger - INFO - length of client token is 72
+2024-12-13 01:50:57,032 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 01:50:57,033 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 01:50:57,034 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 01:50:57,036 - bot_logger - INFO - 2024-12-12 01:50:57.036461
+2024-12-13 01:50:59,814 - bot_logger - INFO - sent 1 messages
+2024-12-13 01:50:59,815 - bot_logger - INFO - correct number of messages sent
+2024-12-13 01:51:55,136 - bot_logger - INFO - length of client token is 72
+2024-12-13 01:51:57,955 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 01:51:57,958 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 01:51:57,958 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 01:51:57,960 - bot_logger - INFO - 2024-12-13 01:51:57.960969
+2024-12-13 01:51:57,961 - bot_logger - INFO - 2024-12-12 01:51:57.960969
+2024-12-13 01:52:00,644 - bot_logger - INFO - sent 1 messages
+2024-12-13 01:52:00,645 - bot_logger - INFO - correct number of messages sent
+2024-12-13 01:54:29,520 - bot_logger - INFO - length of client token is 72
+2024-12-13 01:54:32,470 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 01:54:32,473 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 01:54:32,474 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 01:54:32,476 - bot_logger - INFO - 2024-12-12 20:54:32.476689-05:00
+2024-12-13 01:54:32,477 - bot_logger - INFO - 2024-12-11 20:54:32.476689-05:00
+2024-12-13 01:54:35,357 - bot_logger - INFO - sent 1 messages
+2024-12-13 01:54:35,358 - bot_logger - INFO - correct number of messages sent
+2024-12-13 01:56:29,253 - bot_logger - INFO - length of client token is 72
+2024-12-13 01:56:32,058 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 01:56:53,500 - bot_logger - INFO - length of client token is 72
+2024-12-13 01:56:56,340 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 01:56:56,343 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 01:56:56,344 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 01:56:56,346 - bot_logger - INFO - 2024-12-12 20:56:56.346179-05:00
+2024-12-13 01:56:56,346 - bot_logger - INFO - 2024-12-11 20:56:56.346179-05:00
+2024-12-13 01:56:58,899 - bot_logger - INFO - sent 1 messages
+2024-12-13 01:56:58,901 - bot_logger - INFO - correct number of messages sent
+2024-12-13 01:58:56,630 - bot_logger - INFO - length of client token is 72
+2024-12-13 01:58:59,409 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 01:59:08,766 - bot_logger - INFO - length of client token is 72
+2024-12-13 01:59:11,455 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 01:59:11,457 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 01:59:11,457 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 01:59:11,459 - bot_logger - INFO - 2024-12-12 20:59:11.459180-05:00
+2024-12-13 01:59:11,459 - bot_logger - INFO - 2024-12-11 20:59:11.459180-05:00
+2024-12-13 01:59:14,428 - bot_logger - INFO - sent 1 messages
+2024-12-13 01:59:14,430 - bot_logger - INFO - correct number of messages sent
+2024-12-13 02:00:57,771 - bot_logger - INFO - length of client token is 72
+2024-12-13 02:01:00,479 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 02:01:19,466 - bot_logger - INFO - length of client token is 72
+2024-12-13 02:01:22,153 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 02:01:22,154 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 02:01:22,155 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 02:01:22,156 - bot_logger - INFO - 2024-12-12 21:01:22.156795-05:00
+2024-12-13 02:01:22,157 - bot_logger - INFO - 2024-12-11 21:01:22.156795-05:00
+2024-12-13 02:01:25,013 - bot_logger - INFO - sent 1 messages
+2024-12-13 02:01:25,017 - bot_logger - INFO - correct number of messages sent
+2024-12-13 02:06:03,414 - bot_logger - INFO - length of client token is 72
+2024-12-13 02:06:06,201 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 02:06:26,333 - bot_logger - INFO - length of client token is 72
+2024-12-13 02:06:29,101 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 02:06:29,103 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 02:06:29,103 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 02:06:29,105 - bot_logger - INFO - 2024-12-12 21:06:29.105734-05:00
+2024-12-13 02:06:29,106 - bot_logger - INFO - 2024-12-11 21:06:29.105734-05:00
+2024-12-13 02:06:32,148 - bot_logger - INFO - sent 1 messages
+2024-12-13 02:06:32,149 - bot_logger - INFO - correct number of messages sent
+2024-12-13 02:08:08,580 - bot_logger - INFO - length of client token is 72
+2024-12-13 02:08:11,385 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 02:08:11,387 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 02:08:11,388 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 02:08:11,390 - bot_logger - INFO - 2024-12-12 21:08:11.389918-05:00
+2024-12-13 02:08:11,390 - bot_logger - INFO - 2024-12-11 21:08:11.389918-05:00
+2024-12-13 02:08:11,768 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-11', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-13 02:08:14,346 - bot_logger - INFO - sent 1 messages
+2024-12-13 02:08:14,350 - bot_logger - INFO - correct number of messages sent
+2024-12-13 02:09:05,634 - bot_logger - INFO - length of client token is 72
+2024-12-13 02:09:08,541 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 02:09:08,544 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 02:09:08,544 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 02:09:08,546 - bot_logger - INFO - 2024-12-12 21:09:08.546818-05:00
+2024-12-13 02:09:08,547 - bot_logger - INFO - 2024-12-10 21:09:08.546818-05:00
+2024-12-13 02:09:09,051 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-10', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-13 02:09:14,388 - bot_logger - INFO - sent 1 messages
+2024-12-13 02:09:14,390 - bot_logger - INFO - correct number of messages sent
+2024-12-13 02:11:02,577 - bot_logger - INFO - length of client token is 72
+2024-12-13 02:11:05,393 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 02:11:05,395 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 02:11:05,396 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 02:11:05,398 - bot_logger - INFO - 2024-12-12 21:11:05.398771-05:00
+2024-12-13 02:11:05,399 - bot_logger - INFO - 2024-12-10
+2024-12-13 02:11:05,768 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-10', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-13 02:11:08,806 - bot_logger - INFO - sent 1 messages
+2024-12-13 02:11:08,807 - bot_logger - INFO - correct number of messages sent
+2024-12-13 02:15:28,496 - bot_logger - INFO - length of client token is 72
+2024-12-13 02:15:31,300 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 02:15:44,503 - bot_logger - INFO - length of client token is 72
+2024-12-13 02:15:47,194 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-13 02:15:47,197 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-13 02:15:47,198 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-13 02:15:47,200 - bot_logger - INFO - 2024-12-12 21:15:47.200332-05:00
+2024-12-13 02:15:47,201 - bot_logger - INFO - 2024-12-10
+2024-12-13 02:15:47,520 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2019-11-26', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-13 02:15:49,945 - bot_logger - INFO - sent 1 messages
+2024-12-13 02:15:49,946 - bot_logger - INFO - correct number of messages sent
