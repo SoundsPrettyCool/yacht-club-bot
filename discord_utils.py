@@ -1,4 +1,5 @@
 import discord
+import time
 import requests
 import os
 import json
@@ -155,6 +156,7 @@ async def send_mma_live_odds(channel, events, odds_tracking_channels, sport_to_s
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=1, max=10))
 async def attempt_to_send_message(client, channel_id, channel_attributes):
+    logger.info("Attempting to send a message")
     channel = client.get_channel(channel_id)
     if channel:
         await channel_attributes["callback"](channel)
@@ -168,8 +170,8 @@ def shorten_game_data_with_scores(data):
         str: A stringified JSON representation of the shortened data.
     """
     shortened_data = []
-    
-    for game in data:
+
+    for game in data["response"]:
         game_summary = {
             "home_team": game["teams"]["home"]["name"],
             "away_team": game["teams"]["away"]["name"],
@@ -244,27 +246,38 @@ def get_nba_scores():
 
     now = datetime.now(EASTERN)
     previous_day = now - timedelta(days=1)
-    params = {
-        "league": 12,
-        "season": "2024-2025",
-        "date": previous_day.strftime("%Y-%m-%d"),
-        "timezone": "America/New_York"
-    }
 
-    try:
-        response = requests.get(url, headers=headers, params=params)
-        response.raise_for_status()  # Raise an error for HTTP issues
+    leagues = [12, 422]
+    final_result = {}
 
-        data = response.json()
-        logger.info(data)
-        return shorten_game_data_with_scores(data["response"])
-    except requests.exceptions.RequestException as e:
-        logger.error(f"An error occurred: {e}")
-        return None
+    for league in leagues:
+        params = {
+            "league": league,
+            "season": "2024-2025",
+            "date": previous_day.strftime("%Y-%m-%d"),
+            "timezone": "America/New_York"
+        }
+
+        try:
+            response = requests.get(url, headers=headers, params=params)
+            response.raise_for_status()  # Raise an error for HTTP issues
+
+            data = response.json()
+            logger.info(data)
+            final_result.update(data)
+        except requests.exceptions.RequestException as e:
+            logger.error(f"An error occurred: {e}")
+
+        logger.info("waiting 5 seconds")
+        time.sleep(5)
+    logger.info("returning data fetched for nba scores api")
+    return shorten_game_data_with_scores(final_result)
 
 async def send_nba_summary_message_embed_in_channel(channel):
+    logger.info(""f"Inside send_nba_summary_message_embed_in_channel {channel.name}""")
     data = get_nba_scores()
     SPORTS_DATA_SUMMARY["NBA"] = data
+    logger.info(f"""asking chat gpt give me a quick summary of the scores for the following nba game data that is less than 1024 in length: {SPORTS_DATA_SUMMARY["NBA"]}""")
     question_to_ask = f"""give me a quick summary of the scores for the following nba game data that is less than 1024 in length: {SPORTS_DATA_SUMMARY["NBA"]}"""
     gpt_response = ask_chat_gpt(question_to_ask)
     fields = [
@@ -275,7 +288,6 @@ async def send_nba_summary_message_embed_in_channel(channel):
         }
     ]
     now = datetime.now()
-
     previous_day = now - timedelta(days=1)
 
     message_embed_configs = {
