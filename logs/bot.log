@@ -767,3 +767,257 @@ In embeds.0.fields.0.value: Must be 1024 or fewer in length.
 2024-12-13 02:15:47,520 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2019-11-26', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
 2024-12-13 02:15:49,945 - bot_logger - INFO - sent 1 messages
 2024-12-13 02:15:49,946 - bot_logger - INFO - correct number of messages sent
+2024-12-15 21:28:13,830 - bot_logger - INFO - length of client token is 72
+2024-12-15 21:28:16,720 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 21:29:15,871 - bot_logger - INFO - length of client token is 72
+2024-12-15 21:29:18,710 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 21:30:35,676 - bot_logger - INFO - length of client token is 72
+2024-12-15 21:30:38,382 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 21:33:03,188 - bot_logger - INFO - length of client token is 72
+2024-12-15 21:33:05,937 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 21:33:05,938 - bot_logger - INFO - banana
+2024-12-15 21:33:05,939 - bot_logger - INFO - banana
+2024-12-15 21:33:05,940 - bot_logger - INFO - time 16 30
+2024-12-15 21:33:36,268 - bot_logger - INFO - length of client token is 72
+2024-12-15 21:33:40,643 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 21:33:40,646 - bot_logger - INFO - banana
+2024-12-15 21:33:40,646 - bot_logger - INFO - banana
+2024-12-15 21:33:40,647 - bot_logger - INFO - time 21 33
+2024-12-15 21:33:40,647 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-15 21:33:40,647 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-15 21:33:41,398 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:33:41,399 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:33:46,690 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:33:46,690 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:33:52,979 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:33:52,980 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:33:58,603 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:33:58,606 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:34:05,971 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:34:05,973 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:34:11,267 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:34:11,270 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:34:16,284 - bot_logger - INFO - 
+                            There was an error retrieving the nba-chat channel or 
+                            sending a message to the nba-chat channel.
+                            error: RetryError[<Future at 0xffffb79d7940 state=finished raised TypeError>]
+                            
+2024-12-15 21:34:16,285 - bot_logger - INFO - sent 0 messages
+2024-12-15 21:34:16,285 - bot_logger - ERROR - there was less/more messages sent than expected
+2024-12-15 21:36:51,738 - bot_logger - INFO - length of client token is 72
+2024-12-15 21:36:54,468 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 21:36:54,469 - bot_logger - INFO - banana
+2024-12-15 21:36:54,470 - bot_logger - INFO - banana
+2024-12-15 21:36:54,471 - bot_logger - INFO - time 21 36
+2024-12-15 21:36:54,471 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-15 21:36:54,472 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-15 21:36:54,787 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:36:54,788 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:37:00,082 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:37:00,083 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:37:06,441 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:37:06,442 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:37:11,764 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:37:11,765 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:37:19,068 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:37:19,069 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:37:24,388 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:37:24,390 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:37:29,402 - bot_logger - INFO - 
+                            There was an error retrieving the nba-chat channel or 
+                            sending a message to the nba-chat channel.
+                            error: RetryError[<Future at 0xffffbce67940 state=finished raised TypeError>]
+                            
+2024-12-15 21:37:29,404 - bot_logger - INFO - sent 0 messages
+2024-12-15 21:37:29,404 - bot_logger - ERROR - there was less/more messages sent than expected
+2024-12-15 21:37:54,497 - bot_logger - INFO - banana
+2024-12-15 21:37:54,500 - bot_logger - INFO - banana
+2024-12-15 21:37:54,500 - bot_logger - INFO - time 21 36
+2024-12-15 21:38:54,521 - bot_logger - INFO - banana
+2024-12-15 21:38:54,527 - bot_logger - INFO - banana
+2024-12-15 21:38:54,528 - bot_logger - INFO - time 21 36
+2024-12-15 21:39:54,490 - bot_logger - INFO - banana
+2024-12-15 21:39:54,495 - bot_logger - INFO - banana
+2024-12-15 21:39:54,495 - bot_logger - INFO - time 21 36
+2024-12-15 21:40:54,509 - bot_logger - INFO - banana
+2024-12-15 21:40:54,512 - bot_logger - INFO - banana
+2024-12-15 21:40:54,513 - bot_logger - INFO - time 21 36
+2024-12-15 21:42:53,947 - bot_logger - INFO - length of client token is 72
+2024-12-15 21:42:56,691 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 21:42:56,693 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-15 21:42:56,694 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-15 21:42:56,696 - bot_logger - INFO - Attempting to send a message
+2024-12-15 21:42:56,696 - bot_logger - INFO - Inside send_nba_summar_message_embed_in_channel general
+2024-12-15 21:42:57,215 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:42:57,215 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:43:02,498 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:43:02,499 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:43:08,513 - bot_logger - INFO - Attempting to send a message
+2024-12-15 21:43:08,515 - bot_logger - INFO - Inside send_nba_summar_message_embed_in_channel general
+2024-12-15 21:43:08,811 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:43:08,813 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:43:32,186 - bot_logger - INFO - length of client token is 72
+2024-12-15 21:43:34,765 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 21:43:34,768 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-15 21:43:34,768 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-15 21:43:34,770 - bot_logger - INFO - Attempting to send a message
+2024-12-15 21:43:34,771 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 21:43:35,084 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:43:35,085 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:43:40,390 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:43:40,392 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:43:46,414 - bot_logger - INFO - Attempting to send a message
+2024-12-15 21:43:46,416 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 21:43:46,688 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:43:46,689 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:43:51,971 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:43:51,973 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:43:58,991 - bot_logger - INFO - Attempting to send a message
+2024-12-15 21:43:58,995 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 21:43:59,282 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:43:59,283 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:44:04,624 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:44:04,624 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:44:09,633 - bot_logger - INFO - 
+                            There was an error retrieving the nba-chat channel or 
+                            sending a message to the nba-chat channel.
+                            error: RetryError[<Future at 0xffffad7b76d0 state=finished raised TypeError>]
+                            
+2024-12-15 21:44:09,634 - bot_logger - INFO - sent 0 messages
+2024-12-15 21:44:09,635 - bot_logger - ERROR - there was less/more messages sent than expected
+2024-12-15 21:52:23,906 - bot_logger - INFO - length of client token is 72
+2024-12-15 21:52:26,584 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 21:52:26,586 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-15 21:52:26,586 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-15 21:52:26,588 - bot_logger - INFO - Attempting to send a message
+2024-12-15 21:52:26,589 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 21:52:26,923 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:52:26,924 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:52:32,269 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:52:32,272 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:52:37,280 - bot_logger - INFO - returning data fetched for nba scores api
+2024-12-15 21:52:38,291 - bot_logger - INFO - Attempting to send a message
+2024-12-15 21:52:38,292 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 21:52:38,588 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:52:38,589 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:52:43,863 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:52:43,864 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:52:48,877 - bot_logger - INFO - returning data fetched for nba scores api
+2024-12-15 21:52:50,892 - bot_logger - INFO - Attempting to send a message
+2024-12-15 21:52:50,893 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 21:52:51,189 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:52:51,190 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:52:56,508 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:52:56,509 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:53:01,521 - bot_logger - INFO - returning data fetched for nba scores api
+2024-12-15 21:53:01,527 - bot_logger - INFO - 
+                            There was an error retrieving the nba-chat channel or 
+                            sending a message to the nba-chat channel.
+                            error: RetryError[<Future at 0xffff88c1f700 state=finished raised TypeError>]
+                            
+2024-12-15 21:53:01,527 - bot_logger - INFO - sent 0 messages
+2024-12-15 21:53:01,528 - bot_logger - ERROR - there was less/more messages sent than expected
+2024-12-15 21:56:59,291 - bot_logger - INFO - length of client token is 72
+2024-12-15 21:57:02,308 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 21:57:22,814 - bot_logger - INFO - length of client token is 72
+2024-12-15 21:57:25,413 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 21:57:25,415 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-15 21:57:25,415 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-15 21:57:25,417 - bot_logger - INFO - Attempting to send a message
+2024-12-15 21:57:25,419 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 21:57:25,802 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:57:25,802 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:57:31,085 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:57:31,087 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:57:36,099 - bot_logger - INFO - returning data fetched for nba scores api
+2024-12-15 21:57:37,123 - bot_logger - INFO - Attempting to send a message
+2024-12-15 21:57:37,124 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 21:57:37,420 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:57:37,420 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:57:42,711 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:57:42,712 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:57:47,723 - bot_logger - INFO - returning data fetched for nba scores api
+2024-12-15 21:57:49,735 - bot_logger - INFO - Attempting to send a message
+2024-12-15 21:57:49,736 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 21:57:50,033 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:57:50,034 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:57:55,351 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 21:57:55,352 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 21:58:00,367 - bot_logger - INFO - returning data fetched for nba scores api
+2024-12-15 21:58:00,375 - bot_logger - INFO - 
+                            There was an error retrieving the nba-chat channel or 
+                            sending a message to the nba-chat channel.
+                            error: RetryError[<Future at 0xffff8c1db640 state=finished raised TypeError>]
+                            
+2024-12-15 21:58:00,376 - bot_logger - INFO - sent 0 messages
+2024-12-15 21:58:00,377 - bot_logger - ERROR - there was less/more messages sent than expected
+2024-12-15 22:00:06,923 - bot_logger - INFO - length of client token is 72
+2024-12-15 22:00:09,600 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 22:00:09,606 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-15 22:00:09,606 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-15 22:00:09,608 - bot_logger - INFO - Attempting to send a message
+2024-12-15 22:00:09,609 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 22:00:10,116 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:00:10,117 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 22:00:15,445 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:00:15,446 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 22:00:20,455 - bot_logger - INFO - returning data fetched for nba scores api
+2024-12-15 22:00:20,457 - bot_logger - INFO - banan
+2024-12-15 22:00:20,458 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:00:21,466 - bot_logger - INFO - Attempting to send a message
+2024-12-15 22:00:21,468 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 22:00:21,751 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:00:21,751 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 22:00:27,042 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:00:27,042 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 22:00:32,062 - bot_logger - INFO - returning data fetched for nba scores api
+2024-12-15 22:00:32,066 - bot_logger - INFO - banan
+2024-12-15 22:00:32,066 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:00:34,083 - bot_logger - INFO - Attempting to send a message
+2024-12-15 22:00:34,086 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 22:00:34,436 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:00:34,437 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 22:00:39,760 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:00:39,762 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 22:00:44,771 - bot_logger - INFO - returning data fetched for nba scores api
+2024-12-15 22:00:44,772 - bot_logger - INFO - banan
+2024-12-15 22:00:44,772 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:00:44,774 - bot_logger - INFO - 
+                            There was an error retrieving the nba-chat channel or 
+                            sending a message to the nba-chat channel.
+                            error: RetryError[<Future at 0xffffa6bdf700 state=finished raised TypeError>]
+                            
+2024-12-15 22:00:44,775 - bot_logger - INFO - sent 0 messages
+2024-12-15 22:00:44,775 - bot_logger - ERROR - there was less/more messages sent than expected
+2024-12-15 22:04:12,587 - bot_logger - INFO - length of client token is 72
+2024-12-15 22:04:15,254 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 22:04:15,257 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-15 22:04:15,257 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-15 22:04:15,258 - bot_logger - INFO - Attempting to send a message
+2024-12-15 22:04:15,259 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 22:04:15,562 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:04:15,563 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 22:04:20,861 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:04:20,862 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 22:04:25,873 - bot_logger - INFO - returning data fetched for nba scores api
+2024-12-15 22:04:25,874 - bot_logger - INFO - banan
+2024-12-15 22:04:25,875 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:04:25,877 - bot_logger - INFO - asking chat gpt give me a quick summary of the scores for the following nba game data that is less than 1024 in length: []
+2024-12-15 22:04:28,943 - bot_logger - INFO - banana
+2024-12-15 22:04:29,189 - bot_logger - INFO - sent 1 messages
+2024-12-15 22:04:29,190 - bot_logger - INFO - correct number of messages sent
+2024-12-15 22:10:36,638 - bot_logger - INFO - length of client token is 72
+2024-12-15 22:10:40,538 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2024-12-15 22:10:40,540 - bot_logger - INFO - It's a new day, lets send the daily messages for each channel
+2024-12-15 22:10:40,540 - bot_logger - INFO - Expecting to send messages to 1 channels
+2024-12-15 22:10:40,541 - bot_logger - INFO - Attempting to send a message
+2024-12-15 22:10:40,541 - bot_logger - INFO - Inside send_nba_summary_message_embed_in_channel general
+2024-12-15 22:10:40,859 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '12', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:10:40,860 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 22:10:46,153 - bot_logger - INFO - {'get': 'games', 'parameters': {'league': '422', 'date': '2024-12-14', 'timezone': 'America/New_York', 'season': '2024-2025'}, 'errors': [], 'results': 0, 'response': []}
+2024-12-15 22:10:46,154 - bot_logger - INFO - waiting 5 seconds
+2024-12-15 22:10:51,165 - bot_logger - INFO - returning data fetched for nba scores api
+2024-12-15 22:10:51,167 - bot_logger - INFO - asking chat gpt give me a quick summary of the scores for the following nba game data that is less than 1024 in length: []
+2024-12-15 22:11:39,650 - bot_logger - INFO - banana
+2024-12-15 22:11:39,935 - bot_logger - INFO - sent 1 messages
+2024-12-15 22:11:39,937 - bot_logger - INFO - correct number of messages sent
