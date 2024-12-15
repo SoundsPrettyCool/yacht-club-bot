@@ -1,4 +1,5 @@
 import discord
+import time
 import requests
 import os
 import json
@@ -244,23 +245,31 @@ def get_nba_scores():
 
     now = datetime.now(EASTERN)
     previous_day = now - timedelta(days=1)
-    params = {
-        "league": int(os.getenv("NBA_LEAGUE")),
-        "season": "2024-2025",
-        "date": previous_day.strftime("%Y-%m-%d"),
-        "timezone": "America/New_York"
-    }
 
-    try:
-        response = requests.get(url, headers=headers, params=params)
-        response.raise_for_status()  # Raise an error for HTTP issues
+    leagues = [12, 422]
+    final_result = {}
 
-        data = response.json()
-        logger.info(data)
-        return shorten_game_data_with_scores(data["response"])
-    except requests.exceptions.RequestException as e:
-        logger.error(f"An error occurred: {e}")
-        return None
+    for league in leagues:
+        params = {
+            "league": league,
+            "season": "2024-2025",
+            "date": previous_day.strftime("%Y-%m-%d"),
+            "timezone": "America/New_York"
+        }
+
+        try:
+            response = requests.get(url, headers=headers, params=params)
+            response.raise_for_status()  # Raise an error for HTTP issues
+
+            data = response.json()
+            logger.info(data)
+            final_result.update(data)
+        except requests.exceptions.RequestException as e:
+            logger.error(f"An error occurred: {e}")
+
+        logger.info("waiting 5 seconds")
+        time.sleep(5)
+    return shorten_game_data_with_scores(final_result)
 
 async def send_nba_summary_message_embed_in_channel(channel):
     data = get_nba_scores()
