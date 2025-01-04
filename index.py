@@ -95,7 +95,7 @@ async def check_new_day():
     
     def is_time_to_get_nba_data():
         now = datetime.now()
-
+        logger.info("current date %s", now)
         if os.getenv("TEST_NBA_SCORES") == "TRUE":
             return True
 
