@@ -170,8 +170,7 @@ def shorten_game_data_with_scores(data):
         str: A stringified JSON representation of the shortened data.
     """
     shortened_data = []
-
-    for game in data["response"]:
+    for game in data:
         game_summary = {
             "home_team": game["teams"]["home"]["name"],
             "away_team": game["teams"]["away"]["name"],
@@ -186,10 +185,8 @@ def shorten_game_data_with_scores(data):
             "overtime": bool(game["scores"]["home"].get("over_time") or game["scores"]["away"].get("over_time"))
         }
         shortened_data.append(game_summary)
-    
-    # Convert to JSON string and truncate if necessary
-    shortened_json = json.dumps(shortened_data)
-    return shortened_json[:1024]  # Ensure the string length is less than 1024 characters
+
+    return shortened_data  # Ensure the string length is less than 1024 characters
 
 def ask_chat_gpt(question_to_ask):
     """
@@ -248,23 +245,24 @@ def get_nba_scores():
     previous_day = now - timedelta(days=1)
 
     leagues = [12, 422]
-    final_result = {}
+    final_result = []
 
     for league in leagues:
+        nba_timezone = "America/New_York"
         params = {
             "league": league,
             "season": "2024-2025",
             "date": previous_day.strftime("%Y-%m-%d"),
-            "timezone": "America/New_York"
+            "timezone": nba_timezone
         }
 
+        logger.info("fetching games for date %s, and timezone %s", previous_day.strftime("%Y-%m-%d"), nba_timezone)
         try:
             response = requests.get(url, headers=headers, params=params)
             response.raise_for_status()  # Raise an error for HTTP issues
 
             data = response.json()
-            logger.info(data)
-            final_result.update(data)
+            final_result += data["response"]
         except requests.exceptions.RequestException as e:
             logger.error(f"An error occurred: {e}")
 
@@ -273,17 +271,44 @@ def get_nba_scores():
     logger.info("returning data fetched for nba scores api")
     return shorten_game_data_with_scores(final_result)
 
+def generate_game_summaries(games):
+    """
+    Generates a summary of each game in Markdown format.
+
+    :param games: List of dictionaries, each representing a game's data.
+    :return: A string containing the summaries of all games in Markdown format.
+    """
+    logger.info("inside generate_game_summaries with arg")
+    summaries = []
+    for game in games:
+        # Extract game details
+        logger.info(game)
+        home_team = game["home_team"]
+        away_team = game["away_team"]
+        home_score = game["scores"]["home"]["total"]
+        away_score = game["scores"]["away"]["total"]
+        overtime = game["overtime"]
+        # Format the summary
+        summary = f"__{away_team} vs. {home_team}__\n"
+        if home_score is not None and away_score is not None:
+            summary += f"Final Score: **{away_team} {away_score} - {home_team} {home_score}**\n"
+            if overtime:
+                summary += "_This game went into overtime._\n"
+        else:
+            summary += "_The game score is not available yet._\n"
+        summaries.append(summary)
+
+    # Join all summaries into a single Markdown string
+    return "\n\n".join(summaries)
+
 async def send_nba_summary_message_embed_in_channel(channel):
     logger.info(""f"Inside send_nba_summary_message_embed_in_channel {channel.name}""")
     data = get_nba_scores()
-    SPORTS_DATA_SUMMARY["NBA"] = data
-    logger.info(f"""asking chat gpt give me a quick summary of the scores for the following nba game data that is less than 1024 in length: {SPORTS_DATA_SUMMARY["NBA"]}""")
-    question_to_ask = f"""give me a quick summary of the scores for the following nba game data that is less than 1024 in length: {SPORTS_DATA_SUMMARY["NBA"]}"""
-    gpt_response = ask_chat_gpt(question_to_ask)
+    summary = generate_game_summaries(data)
     fields = [
         {
             "name": "Summary", 
-            "value": gpt_response, 
+            "value": summary, 
             "inline": False
         }
     ]

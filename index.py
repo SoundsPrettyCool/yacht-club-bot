@@ -92,10 +92,16 @@ async def start_live_odd_tracking(sport_to_start_live_odds):
 
 @tasks.loop(minutes=1)  # Check every minute
 async def check_new_day():
-    """Checks if it's the start of a new day in East Coast time."""
-    now = datetime.now()
+    
+    def is_time_to_get_nba_data():
+        now = datetime.now()
 
-    if now.hour == int(os.getenv("NBA_LEAGUE_SCORE_SUMMARY_TIME_HOUR")) and now.minute == int(os.getenv("NBA_LEAGUE_SCORE_SUMMARY_TIME_MINUTE")):  # Midnight in East Coast time
+        if os.getenv("TEST_NBA_SCORES") == "TRUE":
+            return True
+
+        return now.hour == int(os.getenv("NBA_LEAGUE_SCORE_SUMMARY_TIME_HOUR")) and now.minute == int(os.getenv("NBA_LEAGUE_SCORE_SUMMARY_TIME_MINUTE")) # Midnight in East Coast time
+
+    if is_time_to_get_nba_data():
         logger.info("It's a new day, lets send the daily messages for each channel")
 
         expected_number_of_channels_to_send_msgs_to = len(CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.keys())
