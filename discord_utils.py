@@ -299,6 +299,9 @@ def generate_game_summaries(games):
         summaries.append(summary)
 
     # Join all summaries into a single Markdown string
+    if len(summaries) == 0:
+        return "There were not NBA games played today"
+
     return "\n\n".join(summaries)
 
 async def send_nba_summary_message_embed_in_channel(channel):
