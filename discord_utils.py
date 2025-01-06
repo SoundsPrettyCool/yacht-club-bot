@@ -6,9 +6,11 @@ import json
 import pytz
 from datetime import datetime, timedelta, timezone
 from tenacity import retry, stop_after_attempt, wait_exponential
-
+from reddit_utils import fetch_hot_posts
 from logger import logger
+from reddit_utils import reddit_authenticate, REDDIT_HOT_POSTS_CLIENT_ID, REDDIT_HOT_POSTS_SECRET, REDDIT_USERNAME, REDDIT_PASSWORD, REDDIT_HOT_POSTS_USER_AGENT
 
+REDDIT_ACCESS_TOKEN = ""
 EASTERN = pytz.timezone("America/New_York")
 
 SPORTS_DATA_SUMMARY = {
@@ -160,6 +162,15 @@ async def attempt_to_send_message(client, channel_id, channel_attributes):
     channel = client.get_channel(channel_id)
     if channel:
         await channel_attributes["callback"](channel)
+
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=1, max=10))
+async def attempt_to_send_reddit_hot_posts_message(client, channel_id, channel_attributes):
+    logger.info("Attempting to send a hot posts message")
+  
+    channel = client.get_channel(channel_id)
+    if channel:
+        await channel_attributes["callback"](channel, channel_attributes)
+
 
 def shorten_game_data_with_scores(data):
     """
@@ -323,6 +334,71 @@ async def send_nba_summary_message_embed_in_channel(channel):
         "field_configs": fields
     }
     await send_message_in_channel(channel, message_embed_configs)
+
+async def fetch_bot_messages_today(channel, bot_id):
+    """
+    Fetch all messages sent by a bot in a specific channel for the current day.
+
+    Args:
+        channel (discord.TextChannel): The Discord channel to search in.
+        bot_id (int): The ID of the bot whose messages you want to fetch.
+
+    Returns:
+        list: A list of discord.Message objects sent by the bot today.
+    """
+    logger.info("inside fetch_bot_messages_today")
+    # Get the start of the current day in UTC
+    now = datetime.now(timezone.utc)
+    today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+
+    bot_messages = []
+
+    # Fetch messages from the channel after the start of the day
+    async for message in channel.history(limit=None, after=today_start):
+        if message.author.id == int(bot_id):  # Check if the message is from the bot
+            bot_messages.append(message)
+
+    return bot_messages
+
+
+async def send_nba_hot_posts(channel, channel_attributes):
+    logger.info(""f"Inside send_nba_hot_posts {channel.name}""")
+    data = []
+
+    for subreddit in channel_attributes["subreddits"]:
+        data += await fetch_hot_posts(subreddit["subreddit_name"])
+    
+    bot_messages_for_today = await fetch_bot_messages_today(channel, os.getenv("BOT_ID"))
+    logger.info("bot has sent %s messages today", len(bot_messages_for_today))
+    messages_sent = 0
+
+    for post in data:
+        already_posted = False
+        
+        for bot_message in bot_messages_for_today:
+            if bot_message.embeds and bot_message.embeds[0].title.lower() in post["title"].lower():
+                already_posted = True
+
+        if not already_posted:
+            fields = [
+                {
+                    "name": "HOT POSTS",
+                    "value": post["url"],
+                    "inline": False
+                }
+            ]
+            messaege_embed_configs = {
+                "title": post["title"][0:256],
+                "field_configs": fields
+            }
+            try:
+                await send_message_in_channel(channel, messaege_embed_configs)
+                messages_sent += 1
+                time.sleep(1)
+            except Exception as e:
+                logger.info("There was an error sending a message in channel %s", e)
+
+    logger.info("sent %s messages", messages_sent)
 
 def get_player_stats_by_date(date):
     """

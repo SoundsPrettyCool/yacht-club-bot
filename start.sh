@@ -4,7 +4,9 @@
 if [ "$BOT_ENVIRONMENT" = "dev" ]; then
     # Load .env file if it exists
     if [ -f .env ]; then
-        export $(grep -v '^#' .env | xargs)
+        set -a                 # Automatically export variables
+        source .env            # Load the .env file
+        set +a                 # Disable automatic export
     fi
 else
     echo "Skipping .env file loading: BOT_ENVIRONMENT is not 'dev'."

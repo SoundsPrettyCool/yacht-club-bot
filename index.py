@@ -4,12 +4,16 @@ import os
 import logging
 from datetime import datetime, timezone
 
-from discord_utils import send_command_list, send_gif, send_rko, send_nba_summary_message_embed_in_channel, attempt_to_send_message, send_mma_live_odds, get_sport_odds, EASTERN
-
+from discord_utils import send_command_list, send_gif, send_rko, send_nba_summary_message_embed_in_channel, attempt_to_send_message, send_mma_live_odds, get_sport_odds, EASTERN, send_nba_hot_posts, attempt_to_send_reddit_hot_posts_message
 # Regex patterns for RKO commands
 import re
 
 from logger import logger 
+import signal
+import asyncio
+
+# Define a shutdown flag
+should_stop = asyncio.Event()
 
 rko_regex_comp = re.compile(r"!rko <@!")
 rko_regex_phone = re.compile(r"!rko <@")
@@ -17,6 +21,8 @@ rko_regex_phone = re.compile(r"!rko <@")
 NBA_CHAT = "nba-chat"
 MMA_CHAT = "mma-chat"
 MMA = "mma"
+NBA="NBA"
+
 # Command dictionary
 Commands = {
     "!ayo": "https://media.giphy.com/media/zGlR7xPioTWaRXGZDZ/giphy.gif",
@@ -43,6 +49,13 @@ ODD_TRACKING_CHANNELS = {
     }
 }
 
+CHANNELS_TO_TRACK_HOT_POSTS_SUBREDDITS = {
+    os.getenv("NBA_CHAT_CHANNEL_ID"): {
+        "subreddits": [{"subreddit_name":"nba"}],
+        "callback": send_nba_hot_posts,
+        "name": NBA
+    }
+}
 
 # Intents
 intents = discord.Intents.default()
@@ -54,7 +67,6 @@ intents.members = True
 
 # Create bot client
 client = commands.Bot(command_prefix="!", intents=intents)
-
 
 @tasks.loop(minutes=1)  # Check every minute
 async def start_live_odd_tracking(sport_to_start_live_odds):
@@ -87,8 +99,36 @@ async def start_live_odd_tracking(sport_to_start_live_odds):
         response = get_sport_odds(sport_id, since) 
         events = response["events"]
         await send_mma_live_odds(channel, events, ODD_TRACKING_CHANNELS, sport_to_start_live_odds)
-    
 
+@tasks.loop(minutes=1)  # Check every minute
+async def get_hot_posts_from_subreddit():
+    logger.info("inside get_hot_posts_from_subreddit")
+    def fetch_hot_posts():
+        if os.getenv("TEST_NBA_SUBREDDIT_HOT_POSTS") == "TRUE":
+            return True
+
+    if fetch_hot_posts():
+        logger.info("fetching hot posts")
+        for channel_id, channel_attributes in CHANNELS_TO_TRACK_HOT_POSTS_SUBREDDITS.items():
+            channel_id = int(channel_id)
+            try:
+                await attempt_to_send_reddit_hot_posts_message(client, channel_id, channel_attributes)
+            except Exception as e:
+                logger.info(f"""
+                            There was an error sending the hot posts to {channel_attributes["name"]} channels: {e}
+                            """)
+
+
+@client.event
+async def on_disconnect():
+    """Ensure tasks are stopped when the bot disconnects."""
+    if check_new_day.is_running():
+        check_new_day.stop()
+    if start_live_odd_tracking.is_running():
+        start_live_odd_tracking.stop()
+    if get_hot_posts_from_subreddit.is_running():
+        get_hot_posts_from_subreddit.stop()
+    logger.info("Bot disconnected, tasks stopped.")
 
 @tasks.loop(minutes=1)  # Check every minute
 async def check_new_day():
@@ -109,7 +149,6 @@ async def check_new_day():
 
         amount_of_messages_sent = 0
         for channel_id, channel_attributes in CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.items():
-            logger.info
             channel_id = int(channel_id)
             try:
                 await attempt_to_send_message(client, channel_id, channel_attributes)
@@ -139,6 +178,7 @@ async def on_ready():
     """once client is ready, this code will run"""
     logger.info(f"Logged in as {client.user}!")
     check_new_day.start()
+    get_hot_posts_from_subreddit.start()
 
 @client.event
 async def on_message(msg):
@@ -166,5 +206,38 @@ async def on_message(msg):
 
 print(f"""length of client token is {len(os.getenv("CLIENT_TOKEN"))}""")
 logger.info(f"""length of client token is {len(os.getenv("CLIENT_TOKEN"))}""")
+
+# Modify the client.run call to gracefully handle shutdown
+async def main():
+    try:
+        await client.start(os.getenv("CLIENT_TOKEN"))
+    except asyncio.CancelledError:
+        logger.info("Client stopped.")
+    finally:
+        await client.close()
+
+async def graceful_shutdown():
+    """Clean up tasks and ensure graceful exit."""
+    logger.info("Stopping bot tasks...")
+    if check_new_day.is_running():
+        check_new_day.stop()
+    if start_live_odd_tracking.is_running():
+        start_live_odd_tracking.stop()
+    logger.info("All tasks stopped.")
+
 # Start the bot
-client.run(os.getenv("CLIENT_TOKEN"))
+# Run the bot with signal handling
+if __name__ == "__main__":
+    loop = asyncio.get_event_loop()
+    # Register signal handlers
+    loop.add_signal_handler(signal.SIGINT, lambda: should_stop.set())
+    loop.add_signal_handler(signal.SIGTERM, lambda: should_stop.set())
+
+    try:
+        loop.run_until_complete(main())
+    except KeyboardInterrupt:
+        logger.info("KeyboardInterrupt received.")
+    finally:
+        logger.info("received other interruption")
+        loop.run_until_complete(graceful_shutdown())
+        loop.close()
