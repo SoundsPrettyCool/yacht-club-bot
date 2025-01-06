@@ -335,7 +335,7 @@ async def send_nba_summary_message_embed_in_channel(channel):
     }
     await send_message_in_channel(channel, message_embed_configs)
 
-async def fetch_bot_messages_today(channel, bot_id):
+async def fetch_bot_messages_from_days_ago(channel, bot_id, days_ago=3):
     """
     Fetch all messages sent by a bot in a specific channel for the current day.
 
@@ -346,15 +346,15 @@ async def fetch_bot_messages_today(channel, bot_id):
     Returns:
         list: A list of discord.Message objects sent by the bot today.
     """
-    logger.info("inside fetch_bot_messages_today")
+    logger.info("inside fetch_bot_messages_from_days_ago")
     # Get the start of the current day in UTC
     now = datetime.now(timezone.utc)
-    today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    start_time = now - timedelta(days=days_ago)
 
     bot_messages = []
 
     # Fetch messages from the channel after the start of the day
-    async for message in channel.history(limit=None, after=today_start):
+    async for message in channel.history(limit=None, after=start_time):
         if message.author.id == int(bot_id):  # Check if the message is from the bot
             bot_messages.append(message)
 
@@ -368,8 +368,8 @@ async def send_nba_hot_posts(channel, channel_attributes):
     for subreddit in channel_attributes["subreddits"]:
         data += await fetch_hot_posts(subreddit["subreddit_name"])
     
-    bot_messages_for_today = await fetch_bot_messages_today(channel, os.getenv("BOT_ID"))
-    logger.info("bot has sent %s messages today", len(bot_messages_for_today))
+    bot_messages_for_today = await fetch_bot_messages_from_days_ago(channel, os.getenv("BOT_ID"))
+    logger.info("bot has sent %s messages over the last 3 days", len(bot_messages_for_today))
     messages_sent = 0
 
     for post in data:
