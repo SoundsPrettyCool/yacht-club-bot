@@ -361,34 +361,25 @@ async def fetch_bot_messages_from_days_ago(channel, bot_id, days_ago=3):
     return bot_messages
 
 
-async def send_nba_hot_posts(channel, channel_attributes):
-    logger.info(""f"Inside send_nba_hot_posts {channel.name}""")
-    data = []
-
-    for subreddit in channel_attributes["subreddits"]:
-        data += await fetch_hot_posts(subreddit["subreddit_name"])
-    
-    bot_messages_for_today = await fetch_bot_messages_from_days_ago(channel, os.getenv("BOT_ID"))
-    logger.info("bot has sent %s messages over the last 3 days", len(bot_messages_for_today))
+async def send_hot_posts(channel, posts, bot_messages):
     messages_sent = 0
-
-    for post in data:
+    for post in posts:
         already_posted = False
         
-        for bot_message in bot_messages_for_today:
+        for bot_message in bot_messages:
             if bot_message.embeds and bot_message.embeds[0].title.lower() in post["title"].lower():
                 already_posted = True
 
         if not already_posted:
             fields = [
                 {
-                    "name": "HOT POSTS",
+                    "name": "HOT POST",
                     "value": post["url"],
                     "inline": False
                 }
             ]
             messaege_embed_configs = {
-                "title": post["title"][0:256],
+                "title": f"""{post["title"][0:250]}...""",
                 "field_configs": fields
             }
             try:
@@ -397,8 +388,20 @@ async def send_nba_hot_posts(channel, channel_attributes):
                 time.sleep(1)
             except Exception as e:
                 logger.info("There was an error sending a message in channel %s", e)
-
+    
     logger.info("sent %s messages", messages_sent)
+ 
+async def send_hot_posts_manager(channel, channel_attributes):
+    logger.info(""f"Inside send_nba_hot_posts {channel.name}""")
+    data = []
+
+    for subreddit in channel_attributes["subreddits"]:
+        data += await fetch_hot_posts(subreddit["subreddit_name"])
+    
+    bot_messages = await fetch_bot_messages_from_days_ago(channel, os.getenv("BOT_ID"))
+    logger.info("bot has sent %s messages over the last 3 days", len(bot_messages))
+
+    await send_hot_posts(channel, data, bot_messages)
 
 def get_player_stats_by_date(date):
     """

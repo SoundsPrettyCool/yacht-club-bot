@@ -4,7 +4,7 @@ import os
 import logging
 from datetime import datetime, timezone
 
-from discord_utils import send_command_list, send_gif, send_rko, send_nba_summary_message_embed_in_channel, attempt_to_send_message, send_mma_live_odds, get_sport_odds, EASTERN, send_nba_hot_posts, attempt_to_send_reddit_hot_posts_message
+from discord_utils import send_command_list, send_gif, send_rko, send_nba_summary_message_embed_in_channel, attempt_to_send_message, send_mma_live_odds, get_sport_odds, EASTERN, send_hot_posts_manager, attempt_to_send_reddit_hot_posts_message
 # Regex patterns for RKO commands
 import re
 
@@ -22,7 +22,7 @@ NBA_CHAT = "nba-chat"
 MMA_CHAT = "mma-chat"
 MMA = "mma"
 NBA="NBA"
-
+FUTBOL="FUTBOL"
 # Command dictionary
 Commands = {
     "!ayo": "https://media.giphy.com/media/zGlR7xPioTWaRXGZDZ/giphy.gif",
@@ -52,8 +52,13 @@ ODD_TRACKING_CHANNELS = {
 CHANNELS_TO_TRACK_HOT_POSTS_SUBREDDITS = {
     os.getenv("NBA_CHAT_CHANNEL_ID"): {
         "subreddits": [{"subreddit_name":"nba"}],
-        "callback": send_nba_hot_posts,
+        "callback": send_hot_posts_manager,
         "name": NBA
+    },
+    os.getenv("FUTBOL_CHAT_CHANNEL_ID"): {
+        "subreddits": [{"subreddit_name":"soccer"}],
+        "callback": send_hot_posts_manager,
+        "name": FUTBOL
     }
 }
 
