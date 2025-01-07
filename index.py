@@ -262,7 +262,8 @@ async def main():
 
 async def graceful_shutdown():
     """Clean up tasks and ensure graceful exit."""
-    logger.info("Stopping bot tasks...")
+    start_time = datetime.now()
+    logger.info("Starting graceful shutdown...")
 
     # Stop scheduled tasks
     if check_new_day.is_running():
@@ -281,7 +282,15 @@ async def graceful_shutdown():
         except asyncio.CancelledError:
             logger.info(f"Task {task.get_name()} cancelled successfully.")
 
-    logger.info("All tasks stopped.")
+    try:
+        await asyncio.wait_for(asyncio.gather(*tasks, return_exceptions=True), timeout=25)
+    except asyncio.TimeoutError:
+        logger.warning("Graceful shutdown exceeded timeout.")
+    except Exception as e:
+        logger.error(f"Error during shutdown: {e}")
+    finally:
+        end_time = datetime.now()
+        logger.info(f"Graceful shutdown completed in {end_time - start_time}.")
 
 
 # Start the bot
