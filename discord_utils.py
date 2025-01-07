@@ -367,7 +367,7 @@ async def send_hot_posts(channel, posts, bot_messages):
         already_posted = False
         
         for bot_message in bot_messages:
-            if bot_message.embeds and bot_message.embeds[0].title.lower() in post["title"].lower():
+            if bot_message.embeds and bot_message.embeds[0].title.lower()[:-4] in post["title"].lower():
                 already_posted = True
 
         if not already_posted:
