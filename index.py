@@ -223,6 +223,8 @@ async def graceful_shutdown():
         check_new_day.stop()
     if start_live_odd_tracking.is_running():
         start_live_odd_tracking.stop()
+    if get_hot_posts_from_subreddit.is_running():
+        get_hot_posts_from_subreddit.stop()
     logger.info("All tasks stopped.")
 
 # Start the bot
