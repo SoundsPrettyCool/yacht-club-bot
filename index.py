@@ -116,28 +116,30 @@ async def start_live_odd_tracking(sport_to_start_live_odds):
 
 @tasks.loop(minutes=1)  # Check every minute
 async def get_hot_posts_from_subreddit():
-    logger.info("inside get_hot_posts_from_subreddit")
-    def fetch_hot_posts():
-        if os.getenv("TEST_NBA_SUBREDDIT_HOT_POSTS") == "TRUE":
-            return True
+    try:
+        logger.info("inside get_hot_posts_from_subreddit")
+        def fetch_hot_posts():
+            if os.getenv("TEST_NBA_SUBREDDIT_HOT_POSTS") == "TRUE":
+                return True
 
-    if fetch_hot_posts():
-        logger.info("fetching hot posts")
-        for channel_id, channel_attributes in CHANNELS_TO_TRACK_HOT_POSTS_SUBREDDITS.items():
-            channel_id = int(channel_id)
-            try:
+        if fetch_hot_posts():
+            logger.info("fetching hot posts")
+            for channel_id, channel_attributes in CHANNELS_TO_TRACK_HOT_POSTS_SUBREDDITS.items():
+                channel_id = int(channel_id)
                 await attempt_to_send_reddit_hot_posts_message(client, channel_id, channel_attributes)
-            except Exception as e:
-                logger.info(f"""
-                            There was an error sending the hot posts to {channel_attributes["name"]} channels: {e}
-                            """)
+    except asyncio.CancelledError:
+        logger.info("Task get_hot_posts_from_subreddit was cancelled.")
+        raise  # Re-raise for proper task shutdown.                
+    except Exception as e:
+        logger.info(f"""
+                    There was an error sending the hot posts to {channel_attributes["name"]} channels: {e}
+                    """)
 
 
 @client.event
 async def on_disconnect():
     """Log disconnection details and stop tasks gracefully."""
     try:
-        # Log current time and state
         logger.info("Bot disconnected at %s", datetime.now().isoformat())
         
         # Log bot status
@@ -155,17 +157,11 @@ async def on_disconnect():
             logger.info("Stopping get_hot_posts_from_subreddit task.")
             get_hot_posts_from_subreddit.stop()
 
-        # Log possible reasons for disconnection
-        logger.info("Checking potential causes of disconnection.")
-        if client.ws and client.ws.close_code:
-            logger.info("WebSocket close code: %s", client.ws.close_code)
-        else:
-            logger.info("No WebSocket close code available.")
-        
     except Exception as e:
-        logger.error("Error during on_disconnect: %s", str(e))
+        logger.error(f"Error during on_disconnect: {e}")
     finally:
         logger.info("Tasks stopped and disconnection handled.")
+
 
 
 @client.event
@@ -175,45 +171,51 @@ async def on_error(event, *args, **kwargs):
 @tasks.loop(minutes=1)  # Check every minute
 async def check_new_day():
     
-    def is_time_to_get_nba_data():
-        now = datetime.now()
-        logger.info("current date %s", now)
-        if os.getenv("TEST_NBA_SCORES") == "TRUE":
-            return True
+    try:
+        def is_time_to_get_nba_data():
+            now = datetime.now()
+            logger.info("current date %s", now)
+            if os.getenv("TEST_NBA_SCORES") == "TRUE":
+                return True
 
-        return now.hour == int(os.getenv("NBA_LEAGUE_SCORE_SUMMARY_TIME_HOUR")) and now.minute == int(os.getenv("NBA_LEAGUE_SCORE_SUMMARY_TIME_MINUTE")) # Midnight in East Coast time
+            return now.hour == int(os.getenv("NBA_LEAGUE_SCORE_SUMMARY_TIME_HOUR")) and now.minute == int(os.getenv("NBA_LEAGUE_SCORE_SUMMARY_TIME_MINUTE")) # Midnight in East Coast time
 
-    if is_time_to_get_nba_data():
-        logger.info("It's a new day, lets send the daily messages for each channel")
+        if is_time_to_get_nba_data():
+            logger.info("It's a new day, lets send the daily messages for each channel")
 
-        expected_number_of_channels_to_send_msgs_to = len(CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.keys())
-        logger.info(f"""Expecting to send messages to {len(CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.keys())} channels""")
+            expected_number_of_channels_to_send_msgs_to = len(CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.keys())
+            logger.info(f"""Expecting to send messages to {len(CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.keys())} channels""")
 
-        amount_of_messages_sent = 0
-        for channel_id, channel_attributes in CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.items():
-            channel_id = int(channel_id)
-            try:
+            amount_of_messages_sent = 0
+            for channel_id, channel_attributes in CHANNELS_TO_BEG_OF_DAY_SEND_MESSAGES_TO.items():
+                channel_id = int(channel_id)
                 await attempt_to_send_message(client, channel_id, channel_attributes)
                 amount_of_messages_sent += 1
-            except Exception as e:
-                logger.info(f"""
-                            There was an error retrieving the {channel_attributes["name"]} channel or 
-                            sending a message to the {channel_attributes["name"]} channel.
-                            error: {e}
-                            """
-                )
 
-        logger.info(f"""sent {amount_of_messages_sent} messages""")
-        if amount_of_messages_sent == expected_number_of_channels_to_send_msgs_to:
-            logger.info("correct number of messages sent")
-        else:
-            logger.error("there was less/more messages sent than expected")
+            logger.info(f"""sent {amount_of_messages_sent} messages""")
+            if amount_of_messages_sent == expected_number_of_channels_to_send_msgs_to:
+                logger.info("correct number of messages sent")
+            else:
+                logger.error("there was less/more messages sent than expected")
+    except asyncio.CancelledError:
+        logger.info("Task get_hot_posts_from_subreddit was cancelled.")
+        raise  # Re-raise for proper task shutdown.   
+    except Exception as e:
+        logger.info(f"""
+                    There was an error retrieving the {channel_attributes["name"]} channel or 
+                    sending a message to the {channel_attributes["name"]} channel.
+                    error: {e}
+                    """
+        )
 
 
 @check_new_day.before_loop
 async def before_check_new_day():
     """Wait until the bot is ready before starting the task."""
-    await client.wait_until_ready()
+    try:
+        await client.wait_until_ready()
+    except Exception as e:
+        logger.error(f"Error before starting check_new_day: {e}")
 
 @client.event
 async def on_ready():
