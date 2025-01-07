@@ -41,7 +41,7 @@ async def reddit_authenticate(client_id, client_secret, user_agent):
         raise Exception(f"Authentication failed: {response.status_code} - {response.text}")
 
 @check_reddit_access_token
-async def fetch_hot_posts(subreddit, limit=25):
+async def fetch_hot_posts(subreddit, flairs, limit=25):
     """
     Fetch the top hot posts from a subreddit.
     """
@@ -55,14 +55,29 @@ async def fetch_hot_posts(subreddit, limit=25):
 
     response = requests.get(url, headers=headers, params=params)
     if response.status_code == 200:
-        posts = response.json()["data"]["children"]
-        return [
-            {
-                "title": post["data"]["title"],
-                "upvotes": post["data"]["ups"],
-                "url": post["data"]["url"]
-            }
-            for post in posts
-        ]
+        response_data = response.json()
+        if "data" in response_data and "children" in response_data["data"]:
+            posts = response_data["data"]["children"]
+            final_posts = []
+            for post in posts:
+                if len(flairs) > 0:
+                    if "link_flair_text" in post["data"] and post["data"]["link_flair_text"] in flairs:
+                        post_to_append = {
+                            "title": post["data"]["title"],
+                            "upvotes": post["data"]["ups"],
+                            "url": post["data"]["url"]
+                        }
+                        final_posts.append(post_to_append)
+                else:
+                    post_to_append = {
+                        "title": post["data"]["title"],
+                        "upvotes": post["data"]["ups"],
+                        "url": post["data"]["url"]
+                    }
+                    final_posts.append(post_to_append)
+
+            return final_posts
+        else:
+            raise Exception("Unexpected API response structure: missing 'data' or 'children'.")
     else:
         raise Exception(f"Failed to fetch hot posts: {response.status_code} - {response.text}")

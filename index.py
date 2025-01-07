@@ -23,6 +23,7 @@ MMA_CHAT = "mma-chat"
 MMA = "mma"
 NBA="NBA"
 FUTBOL="FUTBOL"
+TV_MOVIES="MOVIES"
 # Command dictionary
 Commands = {
     "!ayo": "https://media.giphy.com/media/zGlR7xPioTWaRXGZDZ/giphy.gif",
@@ -53,13 +54,21 @@ CHANNELS_TO_TRACK_HOT_POSTS_SUBREDDITS = {
     os.getenv("NBA_CHAT_CHANNEL_ID"): {
         "subreddits": [{"subreddit_name":"nba"}],
         "callback": send_hot_posts_manager,
-        "name": NBA
+        "name": NBA,
+        "flairs": {}
     },
     os.getenv("FUTBOL_CHAT_CHANNEL_ID"): {
         "subreddits": [{"subreddit_name":"soccer"}],
         "callback": send_hot_posts_manager,
-        "name": FUTBOL
-    }
+        "name": FUTBOL,
+        "flairs": {}
+    },
+    os.getenv("TV_MOVIES_CHAT_CHANNEL_ID"): {
+        "subreddits": [{"subreddit_name":"movies"}],
+        "callback": send_hot_posts_manager,
+        "name": TV_MOVIES,
+        "flairs": {"News"}
+    },
 }
 
 # Intents

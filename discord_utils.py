@@ -165,12 +165,15 @@ async def attempt_to_send_message(client, channel_id, channel_attributes):
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=1, max=10))
 async def attempt_to_send_reddit_hot_posts_message(client, channel_id, channel_attributes):
-    logger.info("Attempting to send a hot posts message")
-  
-    channel = client.get_channel(channel_id)
-    if channel:
-        await channel_attributes["callback"](channel, channel_attributes)
-
+    try:
+        logger.info("Attempting to send a hot posts message")
+    
+        channel = client.get_channel(channel_id)
+        if channel:
+            await channel_attributes["callback"](channel, channel_attributes)
+    except Exception as e:
+        logger.error("there was an error sending a hot post message %s", e)
+        raise Exception("ERROR")
 
 def shorten_game_data_with_scores(data):
     """
@@ -393,11 +396,12 @@ async def send_hot_posts(channel, posts, bot_messages):
     logger.info("sent %s messages", messages_sent)
  
 async def send_hot_posts_manager(channel, channel_attributes):
-    logger.info(""f"Inside send_nba_hot_posts {channel.name}""")
+    name_of_subreddit = channel_attributes["name"]
+    logger.info(""f"Inside send_nba_hot_posts {channel.name} to send hot posts from {name_of_subreddit} subreddits""")
     data = []
 
     for subreddit in channel_attributes["subreddits"]:
-        data += await fetch_hot_posts(subreddit["subreddit_name"])
+        data += await fetch_hot_posts(subreddit["subreddit_name"], channel_attributes["flairs"])
     
     bot_messages = await fetch_bot_messages_from_days_ago(channel, os.getenv("BOT_ID"))
     logger.info("bot has sent %s messages over the last 3 days", len(bot_messages))
