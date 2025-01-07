@@ -126,14 +126,42 @@ async def get_hot_posts_from_subreddit():
 
 @client.event
 async def on_disconnect():
-    """Ensure tasks are stopped when the bot disconnects."""
-    if check_new_day.is_running():
-        check_new_day.stop()
-    if start_live_odd_tracking.is_running():
-        start_live_odd_tracking.stop()
-    if get_hot_posts_from_subreddit.is_running():
-        get_hot_posts_from_subreddit.stop()
-    logger.info("Bot disconnected, tasks stopped.")
+    """Log disconnection details and stop tasks gracefully."""
+    try:
+        # Log current time and state
+        logger.info("Bot disconnected at %s", datetime.now().isoformat())
+        
+        # Log bot status
+        logger.info("Bot user: %s", client.user)
+        logger.info("Bot is_ready: %s", client.is_ready())
+        
+        # Check the running status of tasks and stop them
+        if check_new_day.is_running():
+            logger.info("Stopping check_new_day task.")
+            check_new_day.stop()
+        if start_live_odd_tracking.is_running():
+            logger.info("Stopping start_live_odd_tracking task.")
+            start_live_odd_tracking.stop()
+        if get_hot_posts_from_subreddit.is_running():
+            logger.info("Stopping get_hot_posts_from_subreddit task.")
+            get_hot_posts_from_subreddit.stop()
+
+        # Log possible reasons for disconnection
+        logger.info("Checking potential causes of disconnection.")
+        if client.ws and client.ws.close_code:
+            logger.info("WebSocket close code: %s", client.ws.close_code)
+        else:
+            logger.info("No WebSocket close code available.")
+        
+    except Exception as e:
+        logger.error("Error during on_disconnect: %s", str(e))
+    finally:
+        logger.info("Tasks stopped and disconnection handled.")
+
+
+@client.event
+async def on_error(event, *args, **kwargs):
+    logger.error("Error in event %s: %s", event, args)
 
 @tasks.loop(minutes=1)  # Check every minute
 async def check_new_day():
