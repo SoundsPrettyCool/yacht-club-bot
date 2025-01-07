@@ -378,8 +378,9 @@ async def send_hot_posts(channel, posts, bot_messages):
                     "inline": False
                 }
             ]
+            title = f"""{post["title"][0:250]}...""" if len(post["title"]) >= 250 else post["title"]
             messaege_embed_configs = {
-                "title": f"""{post["title"][0:250]}...""",
+                "title": title,
                 "field_configs": fields
             }
             try:
