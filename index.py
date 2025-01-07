@@ -261,13 +261,26 @@ async def main():
 async def graceful_shutdown():
     """Clean up tasks and ensure graceful exit."""
     logger.info("Stopping bot tasks...")
+
+    # Stop scheduled tasks
     if check_new_day.is_running():
         check_new_day.stop()
     if start_live_odd_tracking.is_running():
         start_live_odd_tracking.stop()
     if get_hot_posts_from_subreddit.is_running():
         get_hot_posts_from_subreddit.stop()
+
+    # Cancel all remaining tasks
+    tasks = [t for t in asyncio.all_tasks() if t is not asyncio.current_task()]
+    for task in tasks:
+        task.cancel()
+        try:
+            await task
+        except asyncio.CancelledError:
+            logger.info(f"Task {task.get_name()} cancelled successfully.")
+
     logger.info("All tasks stopped.")
+
 
 # Start the bot
 # Run the bot with signal handling
@@ -282,6 +295,15 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         logger.info("KeyboardInterrupt received.")
     finally:
-        logger.info("received other interruption")
-        loop.run_until_complete(graceful_shutdown())
-        loop.close()
+        logger.info("Starting graceful shutdown...")
+        try:
+            # Call graceful_shutdown with a timeout
+            loop.run_until_complete(asyncio.wait_for(graceful_shutdown(), timeout=25))  # 25-second timeout
+        except asyncio.TimeoutError:
+            logger.warning("Shutdown took too long, forcing termination.")
+        except Exception as e:
+            logger.error(f"Unexpected error during shutdown: {e}")
+        finally:
+            loop.close()
+            logger.info("Event loop closed.")
+
