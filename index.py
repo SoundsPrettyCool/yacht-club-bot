@@ -117,6 +117,7 @@ async def start_live_odd_tracking(sport_to_start_live_odds):
 @tasks.loop(minutes=1)  # Check every minute
 async def get_hot_posts_from_subreddit():
     try:
+        logger.info("checking if we're sending a new message in get_hot_posts_from_subreddit")
         logger.info("inside get_hot_posts_from_subreddit")
         def fetch_hot_posts():
             if os.getenv("TEST_NBA_SUBREDDIT_HOT_POSTS") == "TRUE":
@@ -170,8 +171,8 @@ async def on_error(event, *args, **kwargs):
 
 @tasks.loop(minutes=1)  # Check every minute
 async def check_new_day():
-    
     try:
+        logger.info("checking if we are going to send a message in check new day")
         def is_time_to_get_nba_data():
             now = datetime.now()
             logger.info("current date %s", now)
