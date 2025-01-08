@@ -133,7 +133,7 @@ async def get_hot_posts_from_subreddit():
         raise  # Re-raise for proper task shutdown.                
     except Exception as e:
         logger.info(f"""
-                    There was an error sending the hot posts to {channel_attributes["name"]} channels: {e}
+                    There was an error sending the hot posts from reddit: {e}
                     """)
 
 
