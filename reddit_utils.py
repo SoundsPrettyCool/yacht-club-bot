@@ -14,6 +14,7 @@ def check_reddit_access_token(func):
         global REDDIT_ACCESS_TOKEN
         # Code to run before the function
         if len(REDDIT_ACCESS_TOKEN) == 0:
+            logger.info("fetching access token")
             REDDIT_ACCESS_TOKEN = await reddit_authenticate(
                 REDDIT_HOT_POSTS_CLIENT_ID, 
                 REDDIT_HOT_POSTS_SECRET,
