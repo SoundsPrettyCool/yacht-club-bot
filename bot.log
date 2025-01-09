@@ -7572,3 +7572,221 @@
 2025-01-09 02:36:12,771 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
 2025-01-09 02:36:13,593 - bot_logger - INFO - bot has sent 317 messages over the last 3 days
 2025-01-09 02:36:13,595 - bot_logger - INFO - sent 0 messages to general
+2025-01-09 02:37:09,400 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-09 02:37:09,400 - bot_logger - INFO - current date 2025-01-09 02:37:09.400903
+2025-01-09 02:37:09,401 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-09 02:37:09,401 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-09 02:37:09,401 - bot_logger - INFO - fetching hot posts
+2025-01-09 02:37:09,401 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:37:09,401 - bot_logger - INFO - Inside send_nba_hot_posts banana to send hot posts from NBA subreddits
+2025-01-09 02:37:09,401 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:37:09,835 - bot_logger - INFO - Rate limit used: 25
+2025-01-09 02:37:09,835 - bot_logger - INFO - Rate limit remaining: 975.0
+2025-01-09 02:37:09,835 - bot_logger - INFO - Rate limit reset: 170 seconds
+2025-01-09 02:37:09,836 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:37:10,100 - bot_logger - INFO - bot has sent 91 messages over the last 3 days
+2025-01-09 02:37:10,101 - bot_logger - INFO - sent 0 messages to banana
+2025-01-09 02:37:10,101 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:37:10,101 - bot_logger - INFO - Inside send_nba_hot_posts clips-and-highlights to send hot posts from FUTBOL subreddits
+2025-01-09 02:37:10,101 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:37:10,539 - bot_logger - INFO - Rate limit used: 26
+2025-01-09 02:37:10,539 - bot_logger - INFO - Rate limit remaining: 974.0
+2025-01-09 02:37:10,539 - bot_logger - INFO - Rate limit reset: 169 seconds
+2025-01-09 02:37:10,540 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:37:10,763 - bot_logger - INFO - bot has sent 90 messages over the last 3 days
+2025-01-09 02:37:10,764 - bot_logger - INFO - sent 0 messages to clips-and-highlights
+2025-01-09 02:37:10,765 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:37:10,765 - bot_logger - INFO - Inside send_nba_hot_posts general to send hot posts from MOVIES subreddits
+2025-01-09 02:37:10,765 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:37:11,150 - bot_logger - INFO - Rate limit used: 27
+2025-01-09 02:37:11,150 - bot_logger - INFO - Rate limit remaining: 973.0
+2025-01-09 02:37:11,150 - bot_logger - INFO - Rate limit reset: 169 seconds
+2025-01-09 02:37:11,150 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:37:12,068 - bot_logger - INFO - bot has sent 317 messages over the last 3 days
+2025-01-09 02:37:12,070 - bot_logger - INFO - sent 0 messages to general
+2025-01-09 02:38:09,408 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-09 02:38:09,408 - bot_logger - INFO - current date 2025-01-09 02:38:09.408321
+2025-01-09 02:38:09,408 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-09 02:38:09,408 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-09 02:38:09,408 - bot_logger - INFO - fetching hot posts
+2025-01-09 02:38:09,408 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:38:09,408 - bot_logger - INFO - Inside send_nba_hot_posts banana to send hot posts from NBA subreddits
+2025-01-09 02:38:09,408 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:38:09,899 - bot_logger - INFO - Rate limit used: 34
+2025-01-09 02:38:09,899 - bot_logger - INFO - Rate limit remaining: 966.0
+2025-01-09 02:38:09,899 - bot_logger - INFO - Rate limit reset: 110 seconds
+2025-01-09 02:38:09,900 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:38:10,136 - bot_logger - INFO - bot has sent 91 messages over the last 3 days
+2025-01-09 02:38:10,136 - bot_logger - INFO - sent 0 messages to banana
+2025-01-09 02:38:10,137 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:38:10,137 - bot_logger - INFO - Inside send_nba_hot_posts clips-and-highlights to send hot posts from FUTBOL subreddits
+2025-01-09 02:38:10,137 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:38:10,538 - bot_logger - INFO - Rate limit used: 35
+2025-01-09 02:38:10,538 - bot_logger - INFO - Rate limit remaining: 965.0
+2025-01-09 02:38:10,538 - bot_logger - INFO - Rate limit reset: 109 seconds
+2025-01-09 02:38:10,539 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:38:10,761 - bot_logger - INFO - bot has sent 90 messages over the last 3 days
+2025-01-09 02:38:10,762 - bot_logger - INFO - sent 0 messages to clips-and-highlights
+2025-01-09 02:38:10,762 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:38:10,762 - bot_logger - INFO - Inside send_nba_hot_posts general to send hot posts from MOVIES subreddits
+2025-01-09 02:38:10,762 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:38:11,193 - bot_logger - INFO - Rate limit used: 36
+2025-01-09 02:38:11,193 - bot_logger - INFO - Rate limit remaining: 964.0
+2025-01-09 02:38:11,193 - bot_logger - INFO - Rate limit reset: 109 seconds
+2025-01-09 02:38:11,194 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:38:12,000 - bot_logger - INFO - bot has sent 317 messages over the last 3 days
+2025-01-09 02:38:12,002 - bot_logger - INFO - sent 0 messages to general
+2025-01-09 02:39:09,396 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-09 02:39:09,397 - bot_logger - INFO - current date 2025-01-09 02:39:09.397011
+2025-01-09 02:39:09,397 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-09 02:39:09,397 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-09 02:39:09,397 - bot_logger - INFO - fetching hot posts
+2025-01-09 02:39:09,397 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:39:09,397 - bot_logger - INFO - Inside send_nba_hot_posts banana to send hot posts from NBA subreddits
+2025-01-09 02:39:09,397 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:39:09,784 - bot_logger - INFO - Rate limit used: 43
+2025-01-09 02:39:09,784 - bot_logger - INFO - Rate limit remaining: 957.0
+2025-01-09 02:39:09,784 - bot_logger - INFO - Rate limit reset: 50 seconds
+2025-01-09 02:39:09,785 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:39:10,045 - bot_logger - INFO - bot has sent 91 messages over the last 3 days
+2025-01-09 02:39:10,046 - bot_logger - INFO - sent 0 messages to banana
+2025-01-09 02:39:10,046 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:39:10,046 - bot_logger - INFO - Inside send_nba_hot_posts clips-and-highlights to send hot posts from FUTBOL subreddits
+2025-01-09 02:39:10,046 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:39:10,433 - bot_logger - INFO - Rate limit used: 44
+2025-01-09 02:39:10,433 - bot_logger - INFO - Rate limit remaining: 956.0
+2025-01-09 02:39:10,433 - bot_logger - INFO - Rate limit reset: 49 seconds
+2025-01-09 02:39:10,434 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:39:10,640 - bot_logger - INFO - bot has sent 90 messages over the last 3 days
+2025-01-09 02:39:10,642 - bot_logger - INFO - sent 0 messages to clips-and-highlights
+2025-01-09 02:39:10,643 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:39:10,643 - bot_logger - INFO - Inside send_nba_hot_posts general to send hot posts from MOVIES subreddits
+2025-01-09 02:39:10,643 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:39:11,066 - bot_logger - INFO - Rate limit used: 45
+2025-01-09 02:39:11,067 - bot_logger - INFO - Rate limit remaining: 955.0
+2025-01-09 02:39:11,067 - bot_logger - INFO - Rate limit reset: 49 seconds
+2025-01-09 02:39:11,068 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:39:12,058 - bot_logger - INFO - bot has sent 317 messages over the last 3 days
+2025-01-09 02:39:12,060 - bot_logger - INFO - sent 0 messages to general
+2025-01-09 02:40:09,407 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-09 02:40:09,408 - bot_logger - INFO - current date 2025-01-09 02:40:09.408122
+2025-01-09 02:40:09,408 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-09 02:40:09,408 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-09 02:40:09,408 - bot_logger - INFO - fetching hot posts
+2025-01-09 02:40:09,408 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:40:09,408 - bot_logger - INFO - Inside send_nba_hot_posts banana to send hot posts from NBA subreddits
+2025-01-09 02:40:09,408 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:40:09,978 - bot_logger - INFO - Rate limit used: 4
+2025-01-09 02:40:09,979 - bot_logger - INFO - Rate limit remaining: 996.0
+2025-01-09 02:40:09,979 - bot_logger - INFO - Rate limit reset: 590 seconds
+2025-01-09 02:40:09,980 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:40:10,404 - bot_logger - INFO - bot has sent 91 messages over the last 3 days
+2025-01-09 02:40:10,404 - bot_logger - INFO - sent 0 messages to banana
+2025-01-09 02:40:10,404 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:40:10,404 - bot_logger - INFO - Inside send_nba_hot_posts clips-and-highlights to send hot posts from FUTBOL subreddits
+2025-01-09 02:40:10,404 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:40:10,860 - bot_logger - INFO - Rate limit used: 5
+2025-01-09 02:40:10,860 - bot_logger - INFO - Rate limit remaining: 995.0
+2025-01-09 02:40:10,860 - bot_logger - INFO - Rate limit reset: 589 seconds
+2025-01-09 02:40:10,861 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:40:11,145 - bot_logger - INFO - bot has sent 90 messages over the last 3 days
+2025-01-09 02:40:11,147 - bot_logger - INFO - sent 0 messages to clips-and-highlights
+2025-01-09 02:40:11,147 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:40:11,147 - bot_logger - INFO - Inside send_nba_hot_posts general to send hot posts from MOVIES subreddits
+2025-01-09 02:40:11,147 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:40:11,627 - bot_logger - INFO - Rate limit used: 6
+2025-01-09 02:40:11,628 - bot_logger - INFO - Rate limit remaining: 994.0
+2025-01-09 02:40:11,628 - bot_logger - INFO - Rate limit reset: 588 seconds
+2025-01-09 02:40:11,628 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:40:12,448 - bot_logger - INFO - bot has sent 317 messages over the last 3 days
+2025-01-09 02:40:12,450 - bot_logger - INFO - sent 0 messages to general
+2025-01-09 02:41:05,763 - bot_logger - INFO - length of client token is 72
+2025-01-09 02:41:08,432 - bot_logger - INFO - Logged in as yacht-club-bot-dev#3973!
+2025-01-09 02:41:08,432 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-09 02:41:08,432 - bot_logger - INFO - current date 2025-01-09 02:41:08.432891
+2025-01-09 02:41:08,433 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-09 02:41:08,433 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-09 02:41:08,433 - bot_logger - INFO - fetching hot posts
+2025-01-09 02:41:08,433 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:41:08,433 - bot_logger - INFO - Inside send_nba_hot_posts banana to send hot posts from NBA subreddits
+2025-01-09 02:41:08,433 - bot_logger - INFO - fetching access token
+2025-01-09 02:41:08,433 - bot_logger - INFO - inside reddit_authenticate
+2025-01-09 02:41:08,653 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:41:09,090 - bot_logger - INFO - Rate limit used: 10
+2025-01-09 02:41:09,090 - bot_logger - INFO - Rate limit remaining: 990.0
+2025-01-09 02:41:09,090 - bot_logger - INFO - Rate limit reset: 531 seconds
+2025-01-09 02:41:09,091 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,091 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,091 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,091 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,091 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,092 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,093 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,093 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,093 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,093 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,093 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,093 - bot_logger - INFO - {'News', 'Highlight'}
+2025-01-09 02:41:09,093 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:41:09,328 - bot_logger - INFO - bot has sent 91 messages over the last 3 days
+2025-01-09 02:41:09,329 - bot_logger - INFO - sent 0 messages to banana
+2025-01-09 02:41:09,329 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:41:09,329 - bot_logger - INFO - Inside send_nba_hot_posts clips-and-highlights to send hot posts from FUTBOL subreddits
+2025-01-09 02:41:09,329 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:41:09,721 - bot_logger - INFO - Rate limit used: 11
+2025-01-09 02:41:09,721 - bot_logger - INFO - Rate limit remaining: 989.0
+2025-01-09 02:41:09,721 - bot_logger - INFO - Rate limit reset: 530 seconds
+2025-01-09 02:41:09,722 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:41:09,947 - bot_logger - INFO - bot has sent 90 messages over the last 3 days
+2025-01-09 02:41:09,949 - bot_logger - INFO - sent 0 messages to clips-and-highlights
+2025-01-09 02:41:09,949 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-09 02:41:09,949 - bot_logger - INFO - Inside send_nba_hot_posts general to send hot posts from MOVIES subreddits
+2025-01-09 02:41:09,949 - bot_logger - INFO - inside fetch hot posts
+2025-01-09 02:41:10,330 - bot_logger - INFO - Rate limit used: 12
+2025-01-09 02:41:10,330 - bot_logger - INFO - Rate limit remaining: 988.0
+2025-01-09 02:41:10,330 - bot_logger - INFO - Rate limit reset: 529 seconds
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,331 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - {'News'}
+2025-01-09 02:41:10,332 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-09 02:41:11,160 - bot_logger - INFO - bot has sent 317 messages over the last 3 days
+2025-01-09 02:41:11,162 - bot_logger - INFO - sent 0 messages to general
