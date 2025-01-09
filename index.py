@@ -55,7 +55,7 @@ CHANNELS_TO_TRACK_HOT_POSTS_SUBREDDITS = {
         "subreddits": [{"subreddit_name":"nba"}],
         "callback": send_hot_posts_manager,
         "name": NBA,
-        "flairs": {}
+        "flairs": {"News", "Highlight"}
     },
     os.getenv("FUTBOL_CHAT_CHANNEL_ID"): {
         "subreddits": [{"subreddit_name":"soccer"}],
