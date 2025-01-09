@@ -10,7 +10,7 @@ console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.INFO)  # Console will log INFO, ERROR, CRITICAL
 
 # Create file handler for a log file
-log_file = os.getenv("LOG_FILE_PATH", "bot.log")  # Default to local bot.log
+log_file = os.getenv("LOG_FILE_PATH", "./bot.log")  # Default to local bot.log
 try:
     os.makedirs(os.path.dirname(log_file), exist_ok=True)  # Ensure the log directory exists
     file_handler = logging.FileHandler(log_file)

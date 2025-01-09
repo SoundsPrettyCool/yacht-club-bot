@@ -129,45 +129,13 @@ async def get_hot_posts_from_subreddit():
                 channel_id = int(channel_id)
                 await attempt_to_send_reddit_hot_posts_message(client, channel_id, channel_attributes)
     except asyncio.CancelledError:
-        logger.info("Task get_hot_posts_from_subreddit was cancelled.")
+        logger.error("Task get_hot_posts_from_subreddit was cancelled.")
         raise  # Re-raise for proper task shutdown.                
     except Exception as e:
-        logger.info(f"""
+        logger.error(f"""
                     There was an error sending the hot posts from reddit: {e}
                     """)
 
-
-@client.event
-async def on_disconnect():
-    """Log disconnection details and stop tasks gracefully."""
-    try:
-        logger.info("Bot disconnected at %s", datetime.now().isoformat())
-        
-        # Log bot status
-        logger.info("Bot user: %s", client.user)
-        logger.info("Bot is_ready: %s", client.is_ready())
-        
-        # Check the running status of tasks and stop them
-        if check_new_day.is_running():
-            logger.info("Stopping check_new_day task.")
-            check_new_day.stop()
-        if start_live_odd_tracking.is_running():
-            logger.info("Stopping start_live_odd_tracking task.")
-            start_live_odd_tracking.stop()
-        if get_hot_posts_from_subreddit.is_running():
-            logger.info("Stopping get_hot_posts_from_subreddit task.")
-            get_hot_posts_from_subreddit.stop()
-
-    except Exception as e:
-        logger.error(f"Error during on_disconnect: {e}")
-    finally:
-        logger.info("Tasks stopped and disconnection handled.")
-
-
-
-@client.event
-async def on_error(event, *args, **kwargs):
-    logger.error("Error in event %s: %s", event, args)
 
 @tasks.loop(minutes=1)  # Check every minute
 async def check_new_day():
@@ -199,16 +167,25 @@ async def check_new_day():
             else:
                 logger.error("there was less/more messages sent than expected")
     except asyncio.CancelledError:
-        logger.info("Task get_hot_posts_from_subreddit was cancelled.")
+        logger.error("Task get_hot_posts_from_subreddit was cancelled.")
         raise  # Re-raise for proper task shutdown.   
     except Exception as e:
-        logger.info(f"""
+        logger.error(f"""
                     There was an error retrieving the {channel_attributes["name"]} channel or 
                     sending a message to the {channel_attributes["name"]} channel.
                     error: {e}
                     """
         )
 
+@tasks.loop(minutes=1)
+async def monitor_tasks():
+    if not get_hot_posts_from_subreddit.is_running():
+        logger.error("get_hot_posts_from_subreddit is not running! will restart")
+        get_hot_posts_from_subreddit.start()
+    
+    if not check_new_day.is_running():
+        logger.error("check_new_day is not running! will restart")
+        check_new_day.start()
 
 @check_new_day.before_loop
 async def before_check_new_day():
@@ -219,11 +196,42 @@ async def before_check_new_day():
         logger.error(f"Error before starting check_new_day: {e}")
 
 @client.event
+async def on_disconnect():
+    """Log disconnection details and stop tasks gracefully."""
+    try:
+        logger.info("Bot disconnected at %s", datetime.now().isoformat())
+        
+        # Log bot status
+        logger.info("Bot user: %s", client.user)
+        logger.info("Bot is_ready: %s", client.is_ready())
+        
+        # Check the running status of tasks and stop them
+        if check_new_day.is_running():
+            logger.info("Stopping check_new_day task.")
+            check_new_day.stop()
+        if start_live_odd_tracking.is_running():
+            logger.info("Stopping start_live_odd_tracking task.")
+            start_live_odd_tracking.stop()
+        if get_hot_posts_from_subreddit.is_running():
+            logger.info("Stopping get_hot_posts_from_subreddit task.")
+            get_hot_posts_from_subreddit.stop()
+
+    except Exception as e:
+        logger.error(f"Error during on_disconnect: {e}")
+    finally:
+        logger.info("Tasks stopped and disconnection handled.")
+
+@client.event
+async def on_error(event, *args, **kwargs):
+    logger.error("Error in event %s: %s", event, args)
+
+@client.event
 async def on_ready():
     """once client is ready, this code will run"""
     logger.info(f"Logged in as {client.user}!")
     check_new_day.start()
     get_hot_posts_from_subreddit.start()
+    monitor_tasks.start()
 
 @client.event
 async def on_message(msg):

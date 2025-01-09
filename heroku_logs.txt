@@ -2810,3 +2810,804 @@
 2025-01-08T01:04:51.223799+00:00 app[worker.1]: 2025-01-08 01:04:51,223 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
 2025-01-08T01:04:51.857010+00:00 app[worker.1]: 2025-01-08 01:04:51,856 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
 2025-01-08T01:04:51.857413+00:00 app[worker.1]: 2025-01-08 01:04:51,857 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:05:49.127975+00:00 app[worker.1]: 2025-01-08 01:05:49,127 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:05:49.128025+00:00 app[worker.1]: 2025-01-08 01:05:49,127 - bot_logger - INFO - current date 2025-01-08 01:05:49.127958
+2025-01-08T01:05:49.128139+00:00 app[worker.1]: 2025-01-08 01:05:49,128 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:05:49.128163+00:00 app[worker.1]: 2025-01-08 01:05:49,128 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:05:49.128201+00:00 app[worker.1]: 2025-01-08 01:05:49,128 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:05:49.128328+00:00 app[worker.1]: 2025-01-08 01:05:49,128 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:05:49.128391+00:00 app[worker.1]: 2025-01-08 01:05:49,128 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:05:49.128420+00:00 app[worker.1]: 2025-01-08 01:05:49,128 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:05:49.530451+00:00 app[worker.1]: 2025-01-08 01:05:49,530 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:05:50.282412+00:00 app[worker.1]: 2025-01-08 01:05:50,282 - bot_logger - INFO - bot has sent 84 messages over the last 3 days
+2025-01-08T01:05:50.286392+00:00 app[worker.1]: 2025-01-08 01:05:50,286 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:05:50.286663+00:00 app[worker.1]: 2025-01-08 01:05:50,286 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:05:50.286726+00:00 app[worker.1]: 2025-01-08 01:05:50,286 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:05:50.286755+00:00 app[worker.1]: 2025-01-08 01:05:50,286 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:05:50.543250+00:00 app[worker.1]: 2025-01-08 01:05:50,543 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:05:50.759023+00:00 app[worker.1]: 2025-01-08 01:05:50,758 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:05:50.765781+00:00 app[worker.1]: 2025-01-08 01:05:50,765 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:05:50.766207+00:00 app[worker.1]: 2025-01-08 01:05:50,766 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:05:50.766308+00:00 app[worker.1]: 2025-01-08 01:05:50,766 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:05:50.766349+00:00 app[worker.1]: 2025-01-08 01:05:50,766 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:05:51.168163+00:00 app[worker.1]: 2025-01-08 01:05:51,168 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:05:51.734963+00:00 app[worker.1]: 2025-01-08 01:05:51,734 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:05:51.735199+00:00 app[worker.1]: 2025-01-08 01:05:51,735 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:06:15.402351+00:00 heroku[worker.1]: Restarting
+2025-01-08T01:06:15.451869+00:00 heroku[worker.1]: State changed from up to starting
+2025-01-08T01:06:15.147685+00:00 app[api]: Release v71 created by user anonchickenlegs@gmail.com
+2025-01-08T01:06:15.147685+00:00 app[api]: Deployed worker (2e813be36858) by user anonchickenlegs@gmail.com
+2025-01-08T01:06:16.055883+00:00 heroku[worker.1]: Stopping all processes with SIGTERM
+2025-01-08T01:06:25.915736+00:00 heroku[worker.1]: Starting process with command `/app/start.sh`
+2025-01-08T01:06:26.509884+00:00 heroku[worker.1]: State changed from starting to up
+2025-01-08T01:06:26.464613+00:00 app[worker.1]: Skipping .env file loading: BOT_ENVIRONMENT is not 'dev'.
+2025-01-08T01:06:26.844070+00:00 app[worker.1]: 2025-01-08 01:06:26,843 - bot_logger - INFO - length of client token is 72
+2025-01-08T01:06:29.211054+00:00 app[worker.1]: 2025-01-08 01:06:29,210 - bot_logger - INFO - Logged in as yacht-club-bot#6339!
+2025-01-08T01:06:29.211424+00:00 app[worker.1]: 2025-01-08 01:06:29,211 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:06:29.211558+00:00 app[worker.1]: 2025-01-08 01:06:29,211 - bot_logger - INFO - current date 2025-01-08 01:06:29.211412
+2025-01-08T01:06:29.211689+00:00 app[worker.1]: 2025-01-08 01:06:29,211 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:06:29.211730+00:00 app[worker.1]: 2025-01-08 01:06:29,211 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:06:29.211764+00:00 app[worker.1]: 2025-01-08 01:06:29,211 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:06:29.212054+00:00 app[worker.1]: 2025-01-08 01:06:29,212 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:06:29.212127+00:00 app[worker.1]: 2025-01-08 01:06:29,212 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:06:29.212155+00:00 app[worker.1]: 2025-01-08 01:06:29,212 - bot_logger - INFO - fetching access token
+2025-01-08T01:06:29.212180+00:00 app[worker.1]: 2025-01-08 01:06:29,212 - bot_logger - INFO - inside reddit_authenticate
+2025-01-08T01:06:29.273428+00:00 app[worker.1]: 2025-01-08 01:06:29,273 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:06:29.561788+00:00 app[worker.1]: 2025-01-08 01:06:29,561 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:06:30.218921+00:00 app[worker.1]: 2025-01-08 01:06:30,218 - bot_logger - INFO - bot has sent 84 messages over the last 3 days
+2025-01-08T01:06:30.221829+00:00 app[worker.1]: 2025-01-08 01:06:30,221 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:06:30.222154+00:00 app[worker.1]: 2025-01-08 01:06:30,222 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:06:30.222241+00:00 app[worker.1]: 2025-01-08 01:06:30,222 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:06:30.222295+00:00 app[worker.1]: 2025-01-08 01:06:30,222 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:06:30.456674+00:00 app[worker.1]: 2025-01-08 01:06:30,456 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:06:30.621015+00:00 app[worker.1]: 2025-01-08 01:06:30,620 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:06:30.627012+00:00 app[worker.1]: 2025-01-08 01:06:30,626 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:06:30.627393+00:00 app[worker.1]: 2025-01-08 01:06:30,627 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:06:30.627710+00:00 app[worker.1]: 2025-01-08 01:06:30,627 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:06:30.627751+00:00 app[worker.1]: 2025-01-08 01:06:30,627 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:06:30.929604+00:00 app[worker.1]: 2025-01-08 01:06:30,929 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:06:31.383587+00:00 app[worker.1]: 2025-01-08 01:06:31,383 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:06:31.383803+00:00 app[worker.1]: 2025-01-08 01:06:31,383 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:06:46.194585+00:00 heroku[worker.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 30 seconds of SIGTERM
+2025-01-08T01:06:46.196188+00:00 heroku[worker.1]: Stopping remaining processes with SIGKILL
+2025-01-08T01:06:46.260051+00:00 heroku[worker.1]: Process exited with status 137
+2025-01-08T01:07:29.232235+00:00 app[worker.1]: 2025-01-08 01:07:29,232 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:07:29.232270+00:00 app[worker.1]: 2025-01-08 01:07:29,232 - bot_logger - INFO - current date 2025-01-08 01:07:29.232222
+2025-01-08T01:07:29.232369+00:00 app[worker.1]: 2025-01-08 01:07:29,232 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:07:29.232394+00:00 app[worker.1]: 2025-01-08 01:07:29,232 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:07:29.232419+00:00 app[worker.1]: 2025-01-08 01:07:29,232 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:07:29.232536+00:00 app[worker.1]: 2025-01-08 01:07:29,232 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:07:29.232592+00:00 app[worker.1]: 2025-01-08 01:07:29,232 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:07:29.232621+00:00 app[worker.1]: 2025-01-08 01:07:29,232 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:07:29.628072+00:00 app[worker.1]: 2025-01-08 01:07:29,627 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:07:30.336996+00:00 app[worker.1]: 2025-01-08 01:07:30,336 - bot_logger - INFO - bot has sent 84 messages over the last 3 days
+2025-01-08T01:07:30.342191+00:00 app[worker.1]: 2025-01-08 01:07:30,342 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:07:30.342549+00:00 app[worker.1]: 2025-01-08 01:07:30,342 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:07:30.342627+00:00 app[worker.1]: 2025-01-08 01:07:30,342 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:07:30.342668+00:00 app[worker.1]: 2025-01-08 01:07:30,342 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:07:30.654974+00:00 app[worker.1]: 2025-01-08 01:07:30,654 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:07:30.824717+00:00 app[worker.1]: 2025-01-08 01:07:30,824 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:07:30.828147+00:00 app[worker.1]: 2025-01-08 01:07:30,828 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:07:30.828401+00:00 app[worker.1]: 2025-01-08 01:07:30,828 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:07:30.828455+00:00 app[worker.1]: 2025-01-08 01:07:30,828 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:07:30.828484+00:00 app[worker.1]: 2025-01-08 01:07:30,828 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:07:31.132623+00:00 app[worker.1]: 2025-01-08 01:07:31,132 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:07:31.632255+00:00 app[worker.1]: 2025-01-08 01:07:31,632 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:07:31.632909+00:00 app[worker.1]: 2025-01-08 01:07:31,632 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:08:29.235687+00:00 app[worker.1]: 2025-01-08 01:08:29,235 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:08:29.235724+00:00 app[worker.1]: 2025-01-08 01:08:29,235 - bot_logger - INFO - current date 2025-01-08 01:08:29.235675
+2025-01-08T01:08:29.236165+00:00 app[worker.1]: 2025-01-08 01:08:29,235 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:08:29.236172+00:00 app[worker.1]: 2025-01-08 01:08:29,235 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:08:29.236281+00:00 app[worker.1]: 2025-01-08 01:08:29,235 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:08:29.236282+00:00 app[worker.1]: 2025-01-08 01:08:29,236 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:08:29.236286+00:00 app[worker.1]: 2025-01-08 01:08:29,236 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:08:29.236287+00:00 app[worker.1]: 2025-01-08 01:08:29,236 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:08:29.571854+00:00 app[worker.1]: 2025-01-08 01:08:29,571 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:08:30.315332+00:00 app[worker.1]: 2025-01-08 01:08:30,315 - bot_logger - INFO - bot has sent 84 messages over the last 3 days
+2025-01-08T01:08:30.318346+00:00 app[worker.1]: 2025-01-08 01:08:30,318 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:08:30.318605+00:00 app[worker.1]: 2025-01-08 01:08:30,318 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:08:30.318657+00:00 app[worker.1]: 2025-01-08 01:08:30,318 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:08:30.318689+00:00 app[worker.1]: 2025-01-08 01:08:30,318 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:08:30.592309+00:00 app[worker.1]: 2025-01-08 01:08:30,592 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:08:30.764138+00:00 app[worker.1]: 2025-01-08 01:08:30,764 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:08:30.767238+00:00 app[worker.1]: 2025-01-08 01:08:30,767 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:08:30.767507+00:00 app[worker.1]: 2025-01-08 01:08:30,767 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:08:30.767565+00:00 app[worker.1]: 2025-01-08 01:08:30,767 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:08:30.767593+00:00 app[worker.1]: 2025-01-08 01:08:30,767 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:08:31.142982+00:00 app[worker.1]: 2025-01-08 01:08:31,142 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:08:31.715468+00:00 app[worker.1]: 2025-01-08 01:08:31,715 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:08:31.715683+00:00 app[worker.1]: 2025-01-08 01:08:31,715 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:09:29.227636+00:00 app[worker.1]: 2025-01-08 01:09:29,227 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:09:29.227672+00:00 app[worker.1]: 2025-01-08 01:09:29,227 - bot_logger - INFO - current date 2025-01-08 01:09:29.227624
+2025-01-08T01:09:29.227764+00:00 app[worker.1]: 2025-01-08 01:09:29,227 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:09:29.227789+00:00 app[worker.1]: 2025-01-08 01:09:29,227 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:09:29.227814+00:00 app[worker.1]: 2025-01-08 01:09:29,227 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:09:29.227930+00:00 app[worker.1]: 2025-01-08 01:09:29,227 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:09:29.227986+00:00 app[worker.1]: 2025-01-08 01:09:29,227 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:09:29.228015+00:00 app[worker.1]: 2025-01-08 01:09:29,227 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:09:29.526360+00:00 app[worker.1]: 2025-01-08 01:09:29,526 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:09:30.298333+00:00 app[worker.1]: 2025-01-08 01:09:30,298 - bot_logger - INFO - bot has sent 84 messages over the last 3 days
+2025-01-08T01:09:30.301127+00:00 app[worker.1]: 2025-01-08 01:09:30,301 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:09:30.301370+00:00 app[worker.1]: 2025-01-08 01:09:30,301 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:09:30.301425+00:00 app[worker.1]: 2025-01-08 01:09:30,301 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:09:30.301451+00:00 app[worker.1]: 2025-01-08 01:09:30,301 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:09:30.604687+00:00 app[worker.1]: 2025-01-08 01:09:30,604 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:09:30.809062+00:00 app[worker.1]: 2025-01-08 01:09:30,808 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:09:30.814635+00:00 app[worker.1]: 2025-01-08 01:09:30,814 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:09:30.814945+00:00 app[worker.1]: 2025-01-08 01:09:30,814 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:09:30.815014+00:00 app[worker.1]: 2025-01-08 01:09:30,814 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:09:30.815053+00:00 app[worker.1]: 2025-01-08 01:09:30,815 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:09:31.140455+00:00 app[worker.1]: 2025-01-08 01:09:31,140 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:09:31.632534+00:00 app[worker.1]: 2025-01-08 01:09:31,632 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:09:31.632921+00:00 app[worker.1]: 2025-01-08 01:09:31,632 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:10:29.240113+00:00 app[worker.1]: 2025-01-08 01:10:29,239 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:10:29.240334+00:00 app[worker.1]: 2025-01-08 01:10:29,240 - bot_logger - INFO - current date 2025-01-08 01:10:29.240095
+2025-01-08T01:10:29.240340+00:00 app[worker.1]: 2025-01-08 01:10:29,240 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:10:29.240340+00:00 app[worker.1]: 2025-01-08 01:10:29,240 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:10:29.240341+00:00 app[worker.1]: 2025-01-08 01:10:29,240 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:10:29.240483+00:00 app[worker.1]: 2025-01-08 01:10:29,240 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:10:29.240613+00:00 app[worker.1]: 2025-01-08 01:10:29,240 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:10:29.240615+00:00 app[worker.1]: 2025-01-08 01:10:29,240 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:10:29.578340+00:00 app[worker.1]: 2025-01-08 01:10:29,578 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:10:30.234769+00:00 app[worker.1]: 2025-01-08 01:10:30,234 - bot_logger - INFO - bot has sent 84 messages over the last 3 days
+2025-01-08T01:10:30.237740+00:00 app[worker.1]: 2025-01-08 01:10:30,237 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:10:30.238005+00:00 app[worker.1]: 2025-01-08 01:10:30,237 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:10:30.238065+00:00 app[worker.1]: 2025-01-08 01:10:30,238 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:10:30.238096+00:00 app[worker.1]: 2025-01-08 01:10:30,238 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:10:30.517227+00:00 app[worker.1]: 2025-01-08 01:10:30,517 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:10:30.799472+00:00 app[worker.1]: 2025-01-08 01:10:30,799 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:10:30.805198+00:00 app[worker.1]: 2025-01-08 01:10:30,805 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:10:30.805528+00:00 app[worker.1]: 2025-01-08 01:10:30,805 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:10:30.805602+00:00 app[worker.1]: 2025-01-08 01:10:30,805 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:10:30.805638+00:00 app[worker.1]: 2025-01-08 01:10:30,805 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:10:31.226052+00:00 app[worker.1]: 2025-01-08 01:10:31,225 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:10:31.819845+00:00 app[worker.1]: 2025-01-08 01:10:31,819 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:10:31.820060+00:00 app[worker.1]: 2025-01-08 01:10:31,820 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:11:29.213997+00:00 app[worker.1]: 2025-01-08 01:11:29,213 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:11:29.214043+00:00 app[worker.1]: 2025-01-08 01:11:29,213 - bot_logger - INFO - current date 2025-01-08 01:11:29.213987
+2025-01-08T01:11:29.214146+00:00 app[worker.1]: 2025-01-08 01:11:29,214 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:11:29.214171+00:00 app[worker.1]: 2025-01-08 01:11:29,214 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:11:29.214197+00:00 app[worker.1]: 2025-01-08 01:11:29,214 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:11:29.214310+00:00 app[worker.1]: 2025-01-08 01:11:29,214 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:11:29.214365+00:00 app[worker.1]: 2025-01-08 01:11:29,214 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:11:29.214393+00:00 app[worker.1]: 2025-01-08 01:11:29,214 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:11:29.517495+00:00 app[worker.1]: 2025-01-08 01:11:29,517 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:11:30.122185+00:00 app[worker.1]: 2025-01-08 01:11:30,122 - bot_logger - INFO - bot has sent 84 messages over the last 3 days
+2025-01-08T01:11:30.127416+00:00 app[worker.1]: 2025-01-08 01:11:30,127 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:11:30.127764+00:00 app[worker.1]: 2025-01-08 01:11:30,127 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:11:30.127843+00:00 app[worker.1]: 2025-01-08 01:11:30,127 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:11:30.127883+00:00 app[worker.1]: 2025-01-08 01:11:30,127 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:11:30.409933+00:00 app[worker.1]: 2025-01-08 01:11:30,409 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:11:30.672291+00:00 app[worker.1]: 2025-01-08 01:11:30,672 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:11:30.678275+00:00 app[worker.1]: 2025-01-08 01:11:30,678 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:11:30.678607+00:00 app[worker.1]: 2025-01-08 01:11:30,678 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:11:30.678683+00:00 app[worker.1]: 2025-01-08 01:11:30,678 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:11:30.678725+00:00 app[worker.1]: 2025-01-08 01:11:30,678 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:11:31.061421+00:00 app[worker.1]: 2025-01-08 01:11:31,061 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:11:31.541343+00:00 app[worker.1]: 2025-01-08 01:11:31,541 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:11:31.541542+00:00 app[worker.1]: 2025-01-08 01:11:31,541 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:12:29.227680+00:00 app[worker.1]: 2025-01-08 01:12:29,227 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:12:29.227700+00:00 app[worker.1]: 2025-01-08 01:12:29,227 - bot_logger - INFO - current date 2025-01-08 01:12:29.227652
+2025-01-08T01:12:29.227796+00:00 app[worker.1]: 2025-01-08 01:12:29,227 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:12:29.227819+00:00 app[worker.1]: 2025-01-08 01:12:29,227 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:12:29.227844+00:00 app[worker.1]: 2025-01-08 01:12:29,227 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:12:29.227961+00:00 app[worker.1]: 2025-01-08 01:12:29,227 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:12:29.228014+00:00 app[worker.1]: 2025-01-08 01:12:29,227 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:12:29.228043+00:00 app[worker.1]: 2025-01-08 01:12:29,228 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:12:29.601390+00:00 app[worker.1]: 2025-01-08 01:12:29,601 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:12:30.552673+00:00 app[worker.1]: 2025-01-08 01:12:30,552 - bot_logger - INFO - bot has sent 84 messages over the last 3 days
+2025-01-08T01:12:30.557863+00:00 app[worker.1]: 2025-01-08 01:12:30,557 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:12:30.558223+00:00 app[worker.1]: 2025-01-08 01:12:30,558 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:12:30.558300+00:00 app[worker.1]: 2025-01-08 01:12:30,558 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:12:30.558341+00:00 app[worker.1]: 2025-01-08 01:12:30,558 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:12:30.819832+00:00 app[worker.1]: 2025-01-08 01:12:30,819 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:12:31.077171+00:00 app[worker.1]: 2025-01-08 01:12:31,077 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:12:31.080305+00:00 app[worker.1]: 2025-01-08 01:12:31,080 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:12:31.080561+00:00 app[worker.1]: 2025-01-08 01:12:31,080 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:12:31.080617+00:00 app[worker.1]: 2025-01-08 01:12:31,080 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:12:31.080649+00:00 app[worker.1]: 2025-01-08 01:12:31,080 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:12:31.394865+00:00 app[worker.1]: 2025-01-08 01:12:31,394 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:12:31.927781+00:00 app[worker.1]: 2025-01-08 01:12:31,927 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:12:31.928010+00:00 app[worker.1]: 2025-01-08 01:12:31,927 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:13:29.219658+00:00 app[worker.1]: 2025-01-08 01:13:29,219 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:13:29.219694+00:00 app[worker.1]: 2025-01-08 01:13:29,219 - bot_logger - INFO - current date 2025-01-08 01:13:29.219647
+2025-01-08T01:13:29.219787+00:00 app[worker.1]: 2025-01-08 01:13:29,219 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:13:29.219810+00:00 app[worker.1]: 2025-01-08 01:13:29,219 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:13:29.219838+00:00 app[worker.1]: 2025-01-08 01:13:29,219 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:13:29.219954+00:00 app[worker.1]: 2025-01-08 01:13:29,219 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:13:29.220008+00:00 app[worker.1]: 2025-01-08 01:13:29,219 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:13:29.220038+00:00 app[worker.1]: 2025-01-08 01:13:29,220 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:13:29.564592+00:00 app[worker.1]: 2025-01-08 01:13:29,564 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:13:30.215852+00:00 app[worker.1]: 2025-01-08 01:13:30,215 - bot_logger - INFO - bot has sent 84 messages over the last 3 days
+2025-01-08T01:13:30.221042+00:00 app[worker.1]: 2025-01-08 01:13:30,220 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:13:30.221377+00:00 app[worker.1]: 2025-01-08 01:13:30,221 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:13:30.221452+00:00 app[worker.1]: 2025-01-08 01:13:30,221 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:13:30.221495+00:00 app[worker.1]: 2025-01-08 01:13:30,221 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:13:30.488708+00:00 app[worker.1]: 2025-01-08 01:13:30,488 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:13:30.668362+00:00 app[worker.1]: 2025-01-08 01:13:30,668 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:13:30.674286+00:00 app[worker.1]: 2025-01-08 01:13:30,674 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:13:30.674625+00:00 app[worker.1]: 2025-01-08 01:13:30,674 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:13:30.674699+00:00 app[worker.1]: 2025-01-08 01:13:30,674 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:13:30.674742+00:00 app[worker.1]: 2025-01-08 01:13:30,674 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:13:31.030890+00:00 app[worker.1]: 2025-01-08 01:13:31,030 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:13:31.661975+00:00 app[worker.1]: 2025-01-08 01:13:31,661 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:13:31.662191+00:00 app[worker.1]: 2025-01-08 01:13:31,662 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:14:29.224856+00:00 app[worker.1]: 2025-01-08 01:14:29,224 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:14:29.224906+00:00 app[worker.1]: 2025-01-08 01:14:29,224 - bot_logger - INFO - current date 2025-01-08 01:14:29.224839
+2025-01-08T01:14:29.225014+00:00 app[worker.1]: 2025-01-08 01:14:29,224 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:14:29.225038+00:00 app[worker.1]: 2025-01-08 01:14:29,225 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:14:29.225070+00:00 app[worker.1]: 2025-01-08 01:14:29,225 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:14:29.225192+00:00 app[worker.1]: 2025-01-08 01:14:29,225 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:14:29.225252+00:00 app[worker.1]: 2025-01-08 01:14:29,225 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:14:29.225286+00:00 app[worker.1]: 2025-01-08 01:14:29,225 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:14:29.495043+00:00 app[worker.1]: 2025-01-08 01:14:29,494 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:14:30.092302+00:00 app[worker.1]: 2025-01-08 01:14:30,092 - bot_logger - INFO - bot has sent 84 messages over the last 3 days
+2025-01-08T01:14:30.097049+00:00 app[worker.1]: 2025-01-08 01:14:30,096 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:14:30.097407+00:00 app[worker.1]: 2025-01-08 01:14:30,097 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:14:30.097487+00:00 app[worker.1]: 2025-01-08 01:14:30,097 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:14:30.097525+00:00 app[worker.1]: 2025-01-08 01:14:30,097 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:14:30.419932+00:00 app[worker.1]: 2025-01-08 01:14:30,419 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:14:30.647340+00:00 app[worker.1]: 2025-01-08 01:14:30,647 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:14:30.650671+00:00 app[worker.1]: 2025-01-08 01:14:30,650 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:14:30.650916+00:00 app[worker.1]: 2025-01-08 01:14:30,650 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:14:30.650968+00:00 app[worker.1]: 2025-01-08 01:14:30,650 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:14:30.650996+00:00 app[worker.1]: 2025-01-08 01:14:30,650 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:14:31.038085+00:00 app[worker.1]: 2025-01-08 01:14:31,037 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:14:31.479922+00:00 app[worker.1]: 2025-01-08 01:14:31,479 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:14:31.480150+00:00 app[worker.1]: 2025-01-08 01:14:31,480 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:15:29.215665+00:00 app[worker.1]: 2025-01-08 01:15:29,215 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:15:29.215698+00:00 app[worker.1]: 2025-01-08 01:15:29,215 - bot_logger - INFO - current date 2025-01-08 01:15:29.215645
+2025-01-08T01:15:29.215804+00:00 app[worker.1]: 2025-01-08 01:15:29,215 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:15:29.215828+00:00 app[worker.1]: 2025-01-08 01:15:29,215 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:15:29.215859+00:00 app[worker.1]: 2025-01-08 01:15:29,215 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:15:29.215983+00:00 app[worker.1]: 2025-01-08 01:15:29,215 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:15:29.216043+00:00 app[worker.1]: 2025-01-08 01:15:29,216 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:15:29.216072+00:00 app[worker.1]: 2025-01-08 01:15:29,216 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:15:29.607939+00:00 app[worker.1]: 2025-01-08 01:15:29,607 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:15:30.215883+00:00 app[worker.1]: 2025-01-08 01:15:30,215 - bot_logger - INFO - bot has sent 84 messages over the last 3 days
+2025-01-08T01:15:31.376158+00:00 app[worker.1]: 2025-01-08 01:15:31,376 - bot_logger - INFO - sent 1 messages
+2025-01-08T01:15:31.376492+00:00 app[worker.1]: 2025-01-08 01:15:31,376 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:15:31.376548+00:00 app[worker.1]: 2025-01-08 01:15:31,376 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:15:31.376576+00:00 app[worker.1]: 2025-01-08 01:15:31,376 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:15:31.591912+00:00 app[worker.1]: 2025-01-08 01:15:31,591 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:15:31.738092+00:00 app[worker.1]: 2025-01-08 01:15:31,737 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:15:31.741239+00:00 app[worker.1]: 2025-01-08 01:15:31,741 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:15:31.741480+00:00 app[worker.1]: 2025-01-08 01:15:31,741 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:15:31.741530+00:00 app[worker.1]: 2025-01-08 01:15:31,741 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:15:31.741558+00:00 app[worker.1]: 2025-01-08 01:15:31,741 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:15:32.115887+00:00 app[worker.1]: 2025-01-08 01:15:32,115 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:15:32.641923+00:00 app[worker.1]: 2025-01-08 01:15:32,641 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:15:32.642263+00:00 app[worker.1]: 2025-01-08 01:15:32,642 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:16:29.235880+00:00 app[worker.1]: 2025-01-08 01:16:29,235 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:16:29.235910+00:00 app[worker.1]: 2025-01-08 01:16:29,235 - bot_logger - INFO - current date 2025-01-08 01:16:29.235852
+2025-01-08T01:16:29.236000+00:00 app[worker.1]: 2025-01-08 01:16:29,235 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:16:29.236020+00:00 app[worker.1]: 2025-01-08 01:16:29,235 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:16:29.236046+00:00 app[worker.1]: 2025-01-08 01:16:29,236 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:16:29.236166+00:00 app[worker.1]: 2025-01-08 01:16:29,236 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:16:29.236223+00:00 app[worker.1]: 2025-01-08 01:16:29,236 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:16:29.236253+00:00 app[worker.1]: 2025-01-08 01:16:29,236 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:16:29.547642+00:00 app[worker.1]: 2025-01-08 01:16:29,547 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:16:30.177101+00:00 app[worker.1]: 2025-01-08 01:16:30,176 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:16:30.183496+00:00 app[worker.1]: 2025-01-08 01:16:30,183 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:16:30.183844+00:00 app[worker.1]: 2025-01-08 01:16:30,183 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:16:30.183925+00:00 app[worker.1]: 2025-01-08 01:16:30,183 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:16:30.183965+00:00 app[worker.1]: 2025-01-08 01:16:30,183 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:16:30.450546+00:00 app[worker.1]: 2025-01-08 01:16:30,450 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:16:30.633960+00:00 app[worker.1]: 2025-01-08 01:16:30,633 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:16:30.637097+00:00 app[worker.1]: 2025-01-08 01:16:30,637 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:16:30.637337+00:00 app[worker.1]: 2025-01-08 01:16:30,637 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:16:30.637386+00:00 app[worker.1]: 2025-01-08 01:16:30,637 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:16:30.637414+00:00 app[worker.1]: 2025-01-08 01:16:30,637 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:16:30.954646+00:00 app[worker.1]: 2025-01-08 01:16:30,954 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:16:31.438631+00:00 app[worker.1]: 2025-01-08 01:16:31,438 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:16:31.438848+00:00 app[worker.1]: 2025-01-08 01:16:31,438 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:17:29.214747+00:00 app[worker.1]: 2025-01-08 01:17:29,214 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:17:29.214779+00:00 app[worker.1]: 2025-01-08 01:17:29,214 - bot_logger - INFO - current date 2025-01-08 01:17:29.214732
+2025-01-08T01:17:29.214883+00:00 app[worker.1]: 2025-01-08 01:17:29,214 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:17:29.214907+00:00 app[worker.1]: 2025-01-08 01:17:29,214 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:17:29.214934+00:00 app[worker.1]: 2025-01-08 01:17:29,214 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:17:29.215051+00:00 app[worker.1]: 2025-01-08 01:17:29,215 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:17:29.215108+00:00 app[worker.1]: 2025-01-08 01:17:29,215 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:17:29.215140+00:00 app[worker.1]: 2025-01-08 01:17:29,215 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:17:29.655655+00:00 app[worker.1]: 2025-01-08 01:17:29,655 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:17:30.307309+00:00 app[worker.1]: 2025-01-08 01:17:30,307 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:17:30.310175+00:00 app[worker.1]: 2025-01-08 01:17:30,310 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:17:30.310435+00:00 app[worker.1]: 2025-01-08 01:17:30,310 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:17:30.310491+00:00 app[worker.1]: 2025-01-08 01:17:30,310 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:17:30.310519+00:00 app[worker.1]: 2025-01-08 01:17:30,310 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:17:30.549116+00:00 app[worker.1]: 2025-01-08 01:17:30,548 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:17:30.695913+00:00 app[worker.1]: 2025-01-08 01:17:30,695 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:17:30.699015+00:00 app[worker.1]: 2025-01-08 01:17:30,698 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:17:30.699238+00:00 app[worker.1]: 2025-01-08 01:17:30,699 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:17:30.699287+00:00 app[worker.1]: 2025-01-08 01:17:30,699 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:17:30.699316+00:00 app[worker.1]: 2025-01-08 01:17:30,699 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:17:30.986127+00:00 app[worker.1]: 2025-01-08 01:17:30,986 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:17:31.504395+00:00 app[worker.1]: 2025-01-08 01:17:31,504 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:17:31.504612+00:00 app[worker.1]: 2025-01-08 01:17:31,504 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:18:29.215659+00:00 app[worker.1]: 2025-01-08 01:18:29,215 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:18:29.215694+00:00 app[worker.1]: 2025-01-08 01:18:29,215 - bot_logger - INFO - current date 2025-01-08 01:18:29.215644
+2025-01-08T01:18:29.215790+00:00 app[worker.1]: 2025-01-08 01:18:29,215 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:18:29.215814+00:00 app[worker.1]: 2025-01-08 01:18:29,215 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:18:29.215840+00:00 app[worker.1]: 2025-01-08 01:18:29,215 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:18:29.215958+00:00 app[worker.1]: 2025-01-08 01:18:29,215 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:18:29.216013+00:00 app[worker.1]: 2025-01-08 01:18:29,215 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:18:29.216043+00:00 app[worker.1]: 2025-01-08 01:18:29,216 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:18:29.564587+00:00 app[worker.1]: 2025-01-08 01:18:29,564 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:18:30.251722+00:00 app[worker.1]: 2025-01-08 01:18:30,251 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:18:30.254545+00:00 app[worker.1]: 2025-01-08 01:18:30,254 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:18:30.254802+00:00 app[worker.1]: 2025-01-08 01:18:30,254 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:18:30.254861+00:00 app[worker.1]: 2025-01-08 01:18:30,254 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:18:30.254893+00:00 app[worker.1]: 2025-01-08 01:18:30,254 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:18:30.506083+00:00 app[worker.1]: 2025-01-08 01:18:30,505 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:18:30.711325+00:00 app[worker.1]: 2025-01-08 01:18:30,711 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:18:30.714771+00:00 app[worker.1]: 2025-01-08 01:18:30,714 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:18:30.715028+00:00 app[worker.1]: 2025-01-08 01:18:30,714 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:18:30.715081+00:00 app[worker.1]: 2025-01-08 01:18:30,715 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:18:30.715109+00:00 app[worker.1]: 2025-01-08 01:18:30,715 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:18:31.063216+00:00 app[worker.1]: 2025-01-08 01:18:31,063 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:18:31.605623+00:00 app[worker.1]: 2025-01-08 01:18:31,605 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:18:31.605824+00:00 app[worker.1]: 2025-01-08 01:18:31,605 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:19:29.211668+00:00 app[worker.1]: 2025-01-08 01:19:29,211 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:19:29.211698+00:00 app[worker.1]: 2025-01-08 01:19:29,211 - bot_logger - INFO - current date 2025-01-08 01:19:29.211641
+2025-01-08T01:19:29.211781+00:00 app[worker.1]: 2025-01-08 01:19:29,211 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:19:29.211803+00:00 app[worker.1]: 2025-01-08 01:19:29,211 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:19:29.211828+00:00 app[worker.1]: 2025-01-08 01:19:29,211 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:19:29.211942+00:00 app[worker.1]: 2025-01-08 01:19:29,211 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:19:29.211994+00:00 app[worker.1]: 2025-01-08 01:19:29,211 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:19:29.212022+00:00 app[worker.1]: 2025-01-08 01:19:29,212 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:19:29.547411+00:00 app[worker.1]: 2025-01-08 01:19:29,547 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:19:30.139907+00:00 app[worker.1]: 2025-01-08 01:19:30,139 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:19:30.142846+00:00 app[worker.1]: 2025-01-08 01:19:30,142 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:19:30.143107+00:00 app[worker.1]: 2025-01-08 01:19:30,143 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:19:30.143161+00:00 app[worker.1]: 2025-01-08 01:19:30,143 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:19:30.143190+00:00 app[worker.1]: 2025-01-08 01:19:30,143 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:19:30.362224+00:00 app[worker.1]: 2025-01-08 01:19:30,362 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:19:30.482092+00:00 app[worker.1]: 2025-01-08 01:19:30,481 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:19:30.485284+00:00 app[worker.1]: 2025-01-08 01:19:30,485 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:19:30.485532+00:00 app[worker.1]: 2025-01-08 01:19:30,485 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:19:30.485579+00:00 app[worker.1]: 2025-01-08 01:19:30,485 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:19:30.485608+00:00 app[worker.1]: 2025-01-08 01:19:30,485 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:19:30.806309+00:00 app[worker.1]: 2025-01-08 01:19:30,806 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:19:31.693927+00:00 app[worker.1]: 2025-01-08 01:19:31,693 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:19:31.694302+00:00 app[worker.1]: 2025-01-08 01:19:31,694 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:20:29.215671+00:00 app[worker.1]: 2025-01-08 01:20:29,215 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:20:29.215707+00:00 app[worker.1]: 2025-01-08 01:20:29,215 - bot_logger - INFO - current date 2025-01-08 01:20:29.215657
+2025-01-08T01:20:29.215806+00:00 app[worker.1]: 2025-01-08 01:20:29,215 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:20:29.215831+00:00 app[worker.1]: 2025-01-08 01:20:29,215 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:20:29.215858+00:00 app[worker.1]: 2025-01-08 01:20:29,215 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:20:29.215974+00:00 app[worker.1]: 2025-01-08 01:20:29,215 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:20:29.216030+00:00 app[worker.1]: 2025-01-08 01:20:29,216 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:20:29.216059+00:00 app[worker.1]: 2025-01-08 01:20:29,216 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:20:29.589646+00:00 app[worker.1]: 2025-01-08 01:20:29,589 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:20:30.253823+00:00 app[worker.1]: 2025-01-08 01:20:30,253 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:20:30.257227+00:00 app[worker.1]: 2025-01-08 01:20:30,257 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:20:30.257487+00:00 app[worker.1]: 2025-01-08 01:20:30,257 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:20:30.257546+00:00 app[worker.1]: 2025-01-08 01:20:30,257 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:20:30.257578+00:00 app[worker.1]: 2025-01-08 01:20:30,257 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:20:30.535800+00:00 app[worker.1]: 2025-01-08 01:20:30,535 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:20:30.733229+00:00 app[worker.1]: 2025-01-08 01:20:30,733 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:20:30.736383+00:00 app[worker.1]: 2025-01-08 01:20:30,736 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:20:30.736639+00:00 app[worker.1]: 2025-01-08 01:20:30,736 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:20:30.736693+00:00 app[worker.1]: 2025-01-08 01:20:30,736 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:20:30.736720+00:00 app[worker.1]: 2025-01-08 01:20:30,736 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:20:31.101258+00:00 app[worker.1]: 2025-01-08 01:20:31,101 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:20:31.700033+00:00 app[worker.1]: 2025-01-08 01:20:31,699 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:20:31.700339+00:00 app[worker.1]: 2025-01-08 01:20:31,700 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:21:29.235687+00:00 app[worker.1]: 2025-01-08 01:21:29,235 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:21:29.235736+00:00 app[worker.1]: 2025-01-08 01:21:29,235 - bot_logger - INFO - current date 2025-01-08 01:21:29.235673
+2025-01-08T01:21:29.235844+00:00 app[worker.1]: 2025-01-08 01:21:29,235 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:21:29.235875+00:00 app[worker.1]: 2025-01-08 01:21:29,235 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:21:29.235902+00:00 app[worker.1]: 2025-01-08 01:21:29,235 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:21:29.236034+00:00 app[worker.1]: 2025-01-08 01:21:29,236 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:21:29.236095+00:00 app[worker.1]: 2025-01-08 01:21:29,236 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:21:29.236127+00:00 app[worker.1]: 2025-01-08 01:21:29,236 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:21:29.621752+00:00 app[worker.1]: 2025-01-08 01:21:29,621 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:21:30.303057+00:00 app[worker.1]: 2025-01-08 01:21:30,302 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:21:30.306152+00:00 app[worker.1]: 2025-01-08 01:21:30,306 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:21:30.306439+00:00 app[worker.1]: 2025-01-08 01:21:30,306 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:21:30.306490+00:00 app[worker.1]: 2025-01-08 01:21:30,306 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:21:30.306522+00:00 app[worker.1]: 2025-01-08 01:21:30,306 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:21:30.538174+00:00 app[worker.1]: 2025-01-08 01:21:30,538 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:21:31.758859+00:00 app[worker.1]: 2025-01-08 01:21:31,758 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:21:31.762142+00:00 app[worker.1]: 2025-01-08 01:21:31,762 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:21:31.762399+00:00 app[worker.1]: 2025-01-08 01:21:31,762 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:21:31.762452+00:00 app[worker.1]: 2025-01-08 01:21:31,762 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:21:31.762485+00:00 app[worker.1]: 2025-01-08 01:21:31,762 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:21:32.026178+00:00 app[worker.1]: 2025-01-08 01:21:32,026 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:21:32.962722+00:00 app[worker.1]: 2025-01-08 01:21:32,962 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:21:32.962951+00:00 app[worker.1]: 2025-01-08 01:21:32,962 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:22:29.213532+00:00 app[worker.1]: 2025-01-08 01:22:29,213 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:22:29.213590+00:00 app[worker.1]: 2025-01-08 01:22:29,213 - bot_logger - INFO - current date 2025-01-08 01:22:29.213526
+2025-01-08T01:22:29.213714+00:00 app[worker.1]: 2025-01-08 01:22:29,213 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:22:29.213749+00:00 app[worker.1]: 2025-01-08 01:22:29,213 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:22:29.213787+00:00 app[worker.1]: 2025-01-08 01:22:29,213 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:22:29.213939+00:00 app[worker.1]: 2025-01-08 01:22:29,213 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:22:29.214014+00:00 app[worker.1]: 2025-01-08 01:22:29,213 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:22:29.214056+00:00 app[worker.1]: 2025-01-08 01:22:29,214 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:22:29.546283+00:00 app[worker.1]: 2025-01-08 01:22:29,546 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:22:30.387573+00:00 app[worker.1]: 2025-01-08 01:22:30,387 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:22:30.393141+00:00 app[worker.1]: 2025-01-08 01:22:30,393 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:22:30.393470+00:00 app[worker.1]: 2025-01-08 01:22:30,393 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:22:30.393541+00:00 app[worker.1]: 2025-01-08 01:22:30,393 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:22:30.393579+00:00 app[worker.1]: 2025-01-08 01:22:30,393 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:22:30.704054+00:00 app[worker.1]: 2025-01-08 01:22:30,703 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:22:30.941379+00:00 app[worker.1]: 2025-01-08 01:22:30,941 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:22:30.947713+00:00 app[worker.1]: 2025-01-08 01:22:30,947 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:22:30.948070+00:00 app[worker.1]: 2025-01-08 01:22:30,948 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:22:30.948144+00:00 app[worker.1]: 2025-01-08 01:22:30,948 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:22:30.948188+00:00 app[worker.1]: 2025-01-08 01:22:30,948 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:22:31.227850+00:00 app[worker.1]: 2025-01-08 01:22:31,227 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:22:31.794602+00:00 app[worker.1]: 2025-01-08 01:22:31,794 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:22:31.794822+00:00 app[worker.1]: 2025-01-08 01:22:31,794 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:23:29.223702+00:00 app[worker.1]: 2025-01-08 01:23:29,223 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:23:29.223736+00:00 app[worker.1]: 2025-01-08 01:23:29,223 - bot_logger - INFO - current date 2025-01-08 01:23:29.223675
+2025-01-08T01:23:29.223826+00:00 app[worker.1]: 2025-01-08 01:23:29,223 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:23:29.223850+00:00 app[worker.1]: 2025-01-08 01:23:29,223 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:23:29.223876+00:00 app[worker.1]: 2025-01-08 01:23:29,223 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:23:29.223992+00:00 app[worker.1]: 2025-01-08 01:23:29,223 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:23:29.224046+00:00 app[worker.1]: 2025-01-08 01:23:29,224 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:23:29.224074+00:00 app[worker.1]: 2025-01-08 01:23:29,224 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:23:29.639951+00:00 app[worker.1]: 2025-01-08 01:23:29,639 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:23:30.451227+00:00 app[worker.1]: 2025-01-08 01:23:30,451 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:23:30.454050+00:00 app[worker.1]: 2025-01-08 01:23:30,454 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:23:30.454287+00:00 app[worker.1]: 2025-01-08 01:23:30,454 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:23:30.454341+00:00 app[worker.1]: 2025-01-08 01:23:30,454 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:23:30.454368+00:00 app[worker.1]: 2025-01-08 01:23:30,454 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:23:30.792791+00:00 app[worker.1]: 2025-01-08 01:23:30,792 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:23:30.979523+00:00 app[worker.1]: 2025-01-08 01:23:30,979 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:23:30.982713+00:00 app[worker.1]: 2025-01-08 01:23:30,982 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:23:30.982976+00:00 app[worker.1]: 2025-01-08 01:23:30,982 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:23:30.983035+00:00 app[worker.1]: 2025-01-08 01:23:30,983 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:23:30.983068+00:00 app[worker.1]: 2025-01-08 01:23:30,983 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:23:31.290506+00:00 app[worker.1]: 2025-01-08 01:23:31,290 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:23:31.883327+00:00 app[worker.1]: 2025-01-08 01:23:31,883 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:23:31.883582+00:00 app[worker.1]: 2025-01-08 01:23:31,883 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:24:29.220785+00:00 app[worker.1]: 2025-01-08 01:24:29,220 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:24:29.220823+00:00 app[worker.1]: 2025-01-08 01:24:29,220 - bot_logger - INFO - current date 2025-01-08 01:24:29.220775
+2025-01-08T01:24:29.220917+00:00 app[worker.1]: 2025-01-08 01:24:29,220 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:24:29.220940+00:00 app[worker.1]: 2025-01-08 01:24:29,220 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:24:29.220966+00:00 app[worker.1]: 2025-01-08 01:24:29,220 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:24:29.221083+00:00 app[worker.1]: 2025-01-08 01:24:29,221 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:24:29.221137+00:00 app[worker.1]: 2025-01-08 01:24:29,221 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:24:29.221167+00:00 app[worker.1]: 2025-01-08 01:24:29,221 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:24:29.603739+00:00 app[worker.1]: 2025-01-08 01:24:29,603 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:24:30.323885+00:00 app[worker.1]: 2025-01-08 01:24:30,323 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:24:30.326922+00:00 app[worker.1]: 2025-01-08 01:24:30,326 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:24:30.327184+00:00 app[worker.1]: 2025-01-08 01:24:30,327 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:24:30.327242+00:00 app[worker.1]: 2025-01-08 01:24:30,327 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:24:30.327278+00:00 app[worker.1]: 2025-01-08 01:24:30,327 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:24:30.597191+00:00 app[worker.1]: 2025-01-08 01:24:30,597 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:24:30.805109+00:00 app[worker.1]: 2025-01-08 01:24:30,804 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:24:30.808220+00:00 app[worker.1]: 2025-01-08 01:24:30,808 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:24:30.808460+00:00 app[worker.1]: 2025-01-08 01:24:30,808 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:24:30.808512+00:00 app[worker.1]: 2025-01-08 01:24:30,808 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:24:30.808537+00:00 app[worker.1]: 2025-01-08 01:24:30,808 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:24:31.156284+00:00 app[worker.1]: 2025-01-08 01:24:31,156 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:24:31.685123+00:00 app[worker.1]: 2025-01-08 01:24:31,685 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:24:31.685340+00:00 app[worker.1]: 2025-01-08 01:24:31,685 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:25:29.214708+00:00 app[worker.1]: 2025-01-08 01:25:29,214 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:25:29.214762+00:00 app[worker.1]: 2025-01-08 01:25:29,214 - bot_logger - INFO - current date 2025-01-08 01:25:29.214691
+2025-01-08T01:25:29.214894+00:00 app[worker.1]: 2025-01-08 01:25:29,214 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:25:29.214928+00:00 app[worker.1]: 2025-01-08 01:25:29,214 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:25:29.214965+00:00 app[worker.1]: 2025-01-08 01:25:29,214 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:25:29.215125+00:00 app[worker.1]: 2025-01-08 01:25:29,215 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:25:29.215198+00:00 app[worker.1]: 2025-01-08 01:25:29,215 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:25:29.215233+00:00 app[worker.1]: 2025-01-08 01:25:29,215 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:25:30.198932+00:00 app[worker.1]: 2025-01-08 01:25:30,198 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:25:30.202097+00:00 app[worker.1]: 2025-01-08 01:25:30,202 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:25:30.202379+00:00 app[worker.1]: 2025-01-08 01:25:30,202 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:25:30.202464+00:00 app[worker.1]: 2025-01-08 01:25:30,202 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:25:30.202495+00:00 app[worker.1]: 2025-01-08 01:25:30,202 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:25:30.488833+00:00 app[worker.1]: 2025-01-08 01:25:30,488 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:25:30.632037+00:00 app[worker.1]: 2025-01-08 01:25:30,631 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:25:30.637418+00:00 app[worker.1]: 2025-01-08 01:25:30,637 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:25:30.637774+00:00 app[worker.1]: 2025-01-08 01:25:30,637 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:25:30.637869+00:00 app[worker.1]: 2025-01-08 01:25:30,637 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:25:30.637931+00:00 app[worker.1]: 2025-01-08 01:25:30,637 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:25:29.532633+00:00 app[worker.1]: 2025-01-08 01:25:29,532 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:25:30.968973+00:00 app[worker.1]: 2025-01-08 01:25:30,968 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:25:31.474516+00:00 app[worker.1]: 2025-01-08 01:25:31,474 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:25:31.474770+00:00 app[worker.1]: 2025-01-08 01:25:31,474 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:26:29.215709+00:00 app[worker.1]: 2025-01-08 01:26:29,215 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:26:29.215780+00:00 app[worker.1]: 2025-01-08 01:26:29,215 - bot_logger - INFO - current date 2025-01-08 01:26:29.215703
+2025-01-08T01:26:29.215932+00:00 app[worker.1]: 2025-01-08 01:26:29,215 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:26:29.215966+00:00 app[worker.1]: 2025-01-08 01:26:29,215 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:26:29.216002+00:00 app[worker.1]: 2025-01-08 01:26:29,215 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:26:29.216151+00:00 app[worker.1]: 2025-01-08 01:26:29,216 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:26:29.216224+00:00 app[worker.1]: 2025-01-08 01:26:29,216 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:26:29.216262+00:00 app[worker.1]: 2025-01-08 01:26:29,216 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:26:29.611486+00:00 app[worker.1]: 2025-01-08 01:26:29,611 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:26:30.330727+00:00 app[worker.1]: 2025-01-08 01:26:30,330 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:26:30.333824+00:00 app[worker.1]: 2025-01-08 01:26:30,333 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:26:30.334081+00:00 app[worker.1]: 2025-01-08 01:26:30,334 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:26:30.334133+00:00 app[worker.1]: 2025-01-08 01:26:30,334 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:26:30.334166+00:00 app[worker.1]: 2025-01-08 01:26:30,334 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:26:30.564173+00:00 app[worker.1]: 2025-01-08 01:26:30,564 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:26:30.735127+00:00 app[worker.1]: 2025-01-08 01:26:30,735 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:26:30.739131+00:00 app[worker.1]: 2025-01-08 01:26:30,739 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:26:30.739424+00:00 app[worker.1]: 2025-01-08 01:26:30,739 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:26:30.739478+00:00 app[worker.1]: 2025-01-08 01:26:30,739 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:26:30.739507+00:00 app[worker.1]: 2025-01-08 01:26:30,739 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:26:31.160723+00:00 app[worker.1]: 2025-01-08 01:26:31,160 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:26:31.712947+00:00 app[worker.1]: 2025-01-08 01:26:31,712 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:26:31.713314+00:00 app[worker.1]: 2025-01-08 01:26:31,713 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:27:29.219678+00:00 app[worker.1]: 2025-01-08 01:27:29,219 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:27:29.219711+00:00 app[worker.1]: 2025-01-08 01:27:29,219 - bot_logger - INFO - current date 2025-01-08 01:27:29.219655
+2025-01-08T01:27:29.219812+00:00 app[worker.1]: 2025-01-08 01:27:29,219 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:27:29.219830+00:00 app[worker.1]: 2025-01-08 01:27:29,219 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:27:29.219855+00:00 app[worker.1]: 2025-01-08 01:27:29,219 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:27:29.219969+00:00 app[worker.1]: 2025-01-08 01:27:29,219 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:27:29.220025+00:00 app[worker.1]: 2025-01-08 01:27:29,219 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:27:29.220053+00:00 app[worker.1]: 2025-01-08 01:27:29,220 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:27:29.577227+00:00 app[worker.1]: 2025-01-08 01:27:29,577 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:27:30.213299+00:00 app[worker.1]: 2025-01-08 01:27:30,213 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:27:30.216099+00:00 app[worker.1]: 2025-01-08 01:27:30,216 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:27:30.216350+00:00 app[worker.1]: 2025-01-08 01:27:30,216 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:27:30.216402+00:00 app[worker.1]: 2025-01-08 01:27:30,216 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:27:30.216431+00:00 app[worker.1]: 2025-01-08 01:27:30,216 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:27:30.535291+00:00 app[worker.1]: 2025-01-08 01:27:30,535 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:27:30.807880+00:00 app[worker.1]: 2025-01-08 01:27:30,807 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:27:30.810962+00:00 app[worker.1]: 2025-01-08 01:27:30,810 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:27:30.811205+00:00 app[worker.1]: 2025-01-08 01:27:30,811 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:27:30.811263+00:00 app[worker.1]: 2025-01-08 01:27:30,811 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:27:30.811296+00:00 app[worker.1]: 2025-01-08 01:27:30,811 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:27:31.153615+00:00 app[worker.1]: 2025-01-08 01:27:31,153 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:27:31.832123+00:00 app[worker.1]: 2025-01-08 01:27:31,832 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:27:31.832349+00:00 app[worker.1]: 2025-01-08 01:27:31,832 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:28:29.213857+00:00 app[worker.1]: 2025-01-08 01:28:29,213 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:28:29.213892+00:00 app[worker.1]: 2025-01-08 01:28:29,213 - bot_logger - INFO - current date 2025-01-08 01:28:29.213840
+2025-01-08T01:28:29.214000+00:00 app[worker.1]: 2025-01-08 01:28:29,213 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:28:29.214025+00:00 app[worker.1]: 2025-01-08 01:28:29,214 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:28:29.214051+00:00 app[worker.1]: 2025-01-08 01:28:29,214 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:28:29.214169+00:00 app[worker.1]: 2025-01-08 01:28:29,214 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:28:29.214227+00:00 app[worker.1]: 2025-01-08 01:28:29,214 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:28:29.214256+00:00 app[worker.1]: 2025-01-08 01:28:29,214 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:28:29.591678+00:00 app[worker.1]: 2025-01-08 01:28:29,591 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:28:30.300596+00:00 app[worker.1]: 2025-01-08 01:28:30,300 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:28:30.303577+00:00 app[worker.1]: 2025-01-08 01:28:30,303 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:28:30.303852+00:00 app[worker.1]: 2025-01-08 01:28:30,303 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:28:30.303904+00:00 app[worker.1]: 2025-01-08 01:28:30,303 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:28:30.303931+00:00 app[worker.1]: 2025-01-08 01:28:30,303 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:28:30.609059+00:00 app[worker.1]: 2025-01-08 01:28:30,608 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:28:30.803053+00:00 app[worker.1]: 2025-01-08 01:28:30,802 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:28:30.806565+00:00 app[worker.1]: 2025-01-08 01:28:30,806 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:28:30.806825+00:00 app[worker.1]: 2025-01-08 01:28:30,806 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:28:30.806877+00:00 app[worker.1]: 2025-01-08 01:28:30,806 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:28:30.806905+00:00 app[worker.1]: 2025-01-08 01:28:30,806 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:28:31.065716+00:00 app[worker.1]: 2025-01-08 01:28:31,065 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:28:31.541523+00:00 app[worker.1]: 2025-01-08 01:28:31,541 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:28:31.541768+00:00 app[worker.1]: 2025-01-08 01:28:31,541 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:29:29.228472+00:00 app[worker.1]: 2025-01-08 01:29:29,228 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:29:29.228503+00:00 app[worker.1]: 2025-01-08 01:29:29,228 - bot_logger - INFO - current date 2025-01-08 01:29:29.228451
+2025-01-08T01:29:29.228619+00:00 app[worker.1]: 2025-01-08 01:29:29,228 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:29:29.228642+00:00 app[worker.1]: 2025-01-08 01:29:29,228 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:29:29.228673+00:00 app[worker.1]: 2025-01-08 01:29:29,228 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:29:29.228791+00:00 app[worker.1]: 2025-01-08 01:29:29,228 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:29:29.228848+00:00 app[worker.1]: 2025-01-08 01:29:29,228 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:29:29.228881+00:00 app[worker.1]: 2025-01-08 01:29:29,228 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:29:29.563243+00:00 app[worker.1]: 2025-01-08 01:29:29,563 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:29:30.318085+00:00 app[worker.1]: 2025-01-08 01:29:30,317 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:29:30.320911+00:00 app[worker.1]: 2025-01-08 01:29:30,320 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:29:30.321171+00:00 app[worker.1]: 2025-01-08 01:29:30,321 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:29:30.321225+00:00 app[worker.1]: 2025-01-08 01:29:30,321 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:29:30.321253+00:00 app[worker.1]: 2025-01-08 01:29:30,321 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:29:30.553628+00:00 app[worker.1]: 2025-01-08 01:29:30,553 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:29:30.723983+00:00 app[worker.1]: 2025-01-08 01:29:30,723 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:29:30.727206+00:00 app[worker.1]: 2025-01-08 01:29:30,727 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:29:30.727502+00:00 app[worker.1]: 2025-01-08 01:29:30,727 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:29:30.727559+00:00 app[worker.1]: 2025-01-08 01:29:30,727 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:29:30.727588+00:00 app[worker.1]: 2025-01-08 01:29:30,727 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:29:31.214327+00:00 app[worker.1]: 2025-01-08 01:29:31,214 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:29:31.748901+00:00 app[worker.1]: 2025-01-08 01:29:31,748 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:29:31.749116+00:00 app[worker.1]: 2025-01-08 01:29:31,749 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:30:29.235704+00:00 app[worker.1]: 2025-01-08 01:30:29,235 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:30:29.235738+00:00 app[worker.1]: 2025-01-08 01:30:29,235 - bot_logger - INFO - current date 2025-01-08 01:30:29.235690
+2025-01-08T01:30:29.235848+00:00 app[worker.1]: 2025-01-08 01:30:29,235 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:30:29.235873+00:00 app[worker.1]: 2025-01-08 01:30:29,235 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:30:29.235899+00:00 app[worker.1]: 2025-01-08 01:30:29,235 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:30:29.236015+00:00 app[worker.1]: 2025-01-08 01:30:29,235 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:30:29.236068+00:00 app[worker.1]: 2025-01-08 01:30:29,236 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:30:29.236096+00:00 app[worker.1]: 2025-01-08 01:30:29,236 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:30:29.608918+00:00 app[worker.1]: 2025-01-08 01:30:29,608 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:30:30.322365+00:00 app[worker.1]: 2025-01-08 01:30:30,322 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:30:30.325419+00:00 app[worker.1]: 2025-01-08 01:30:30,325 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:30:30.325685+00:00 app[worker.1]: 2025-01-08 01:30:30,325 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:30:30.325744+00:00 app[worker.1]: 2025-01-08 01:30:30,325 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:30:30.325773+00:00 app[worker.1]: 2025-01-08 01:30:30,325 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:30:30.535102+00:00 app[worker.1]: 2025-01-08 01:30:30,535 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:30:30.665606+00:00 app[worker.1]: 2025-01-08 01:30:30,665 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:30:30.668734+00:00 app[worker.1]: 2025-01-08 01:30:30,668 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:30:30.668985+00:00 app[worker.1]: 2025-01-08 01:30:30,668 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:30:30.669036+00:00 app[worker.1]: 2025-01-08 01:30:30,669 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:30:30.669061+00:00 app[worker.1]: 2025-01-08 01:30:30,669 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:30:31.010569+00:00 app[worker.1]: 2025-01-08 01:30:31,010 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:30:31.535459+00:00 app[worker.1]: 2025-01-08 01:30:31,535 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:30:31.535699+00:00 app[worker.1]: 2025-01-08 01:30:31,535 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:31:29.227674+00:00 app[worker.1]: 2025-01-08 01:31:29,227 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:31:29.227725+00:00 app[worker.1]: 2025-01-08 01:31:29,227 - bot_logger - INFO - current date 2025-01-08 01:31:29.227665
+2025-01-08T01:31:29.227832+00:00 app[worker.1]: 2025-01-08 01:31:29,227 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:31:29.227860+00:00 app[worker.1]: 2025-01-08 01:31:29,227 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:31:29.227890+00:00 app[worker.1]: 2025-01-08 01:31:29,227 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:31:29.228011+00:00 app[worker.1]: 2025-01-08 01:31:29,227 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:31:29.228072+00:00 app[worker.1]: 2025-01-08 01:31:29,228 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:31:29.228104+00:00 app[worker.1]: 2025-01-08 01:31:29,228 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:31:29.591031+00:00 app[worker.1]: 2025-01-08 01:31:29,590 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:31:30.170304+00:00 app[worker.1]: 2025-01-08 01:31:30,170 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:31:30.173374+00:00 app[worker.1]: 2025-01-08 01:31:30,173 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:31:30.173614+00:00 app[worker.1]: 2025-01-08 01:31:30,173 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:31:30.173668+00:00 app[worker.1]: 2025-01-08 01:31:30,173 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:31:30.173694+00:00 app[worker.1]: 2025-01-08 01:31:30,173 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:31:30.494332+00:00 app[worker.1]: 2025-01-08 01:31:30,494 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:31:30.726331+00:00 app[worker.1]: 2025-01-08 01:31:30,726 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:31:30.732234+00:00 app[worker.1]: 2025-01-08 01:31:30,732 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:31:30.732576+00:00 app[worker.1]: 2025-01-08 01:31:30,732 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:31:30.732649+00:00 app[worker.1]: 2025-01-08 01:31:30,732 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:31:30.732686+00:00 app[worker.1]: 2025-01-08 01:31:30,732 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:31:31.112174+00:00 app[worker.1]: 2025-01-08 01:31:31,112 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:31:31.661338+00:00 app[worker.1]: 2025-01-08 01:31:31,661 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:31:31.661705+00:00 app[worker.1]: 2025-01-08 01:31:31,661 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:32:29.239687+00:00 app[worker.1]: 2025-01-08 01:32:29,239 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:32:29.239731+00:00 app[worker.1]: 2025-01-08 01:32:29,239 - bot_logger - INFO - current date 2025-01-08 01:32:29.239671
+2025-01-08T01:32:29.239840+00:00 app[worker.1]: 2025-01-08 01:32:29,239 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:32:29.239867+00:00 app[worker.1]: 2025-01-08 01:32:29,239 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:32:29.239897+00:00 app[worker.1]: 2025-01-08 01:32:29,239 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:32:29.240016+00:00 app[worker.1]: 2025-01-08 01:32:29,239 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:32:29.240074+00:00 app[worker.1]: 2025-01-08 01:32:29,240 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:32:29.240106+00:00 app[worker.1]: 2025-01-08 01:32:29,240 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:32:30.255794+00:00 app[worker.1]: 2025-01-08 01:32:30,255 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:32:30.258723+00:00 app[worker.1]: 2025-01-08 01:32:30,258 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:32:30.259002+00:00 app[worker.1]: 2025-01-08 01:32:30,258 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:32:30.259059+00:00 app[worker.1]: 2025-01-08 01:32:30,259 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:32:30.259092+00:00 app[worker.1]: 2025-01-08 01:32:30,259 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:32:30.551226+00:00 app[worker.1]: 2025-01-08 01:32:30,551 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:32:30.707575+00:00 app[worker.1]: 2025-01-08 01:32:30,707 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:32:30.710665+00:00 app[worker.1]: 2025-01-08 01:32:30,710 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:32:30.710916+00:00 app[worker.1]: 2025-01-08 01:32:30,710 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:32:30.710970+00:00 app[worker.1]: 2025-01-08 01:32:30,710 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:32:30.711001+00:00 app[worker.1]: 2025-01-08 01:32:30,710 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:32:29.581148+00:00 app[worker.1]: 2025-01-08 01:32:29,581 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:32:31.051165+00:00 app[worker.1]: 2025-01-08 01:32:31,051 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:32:31.650689+00:00 app[worker.1]: 2025-01-08 01:32:31,650 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:32:31.650913+00:00 app[worker.1]: 2025-01-08 01:32:31,650 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:33:29.223707+00:00 app[worker.1]: 2025-01-08 01:33:29,223 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:33:29.223768+00:00 app[worker.1]: 2025-01-08 01:33:29,223 - bot_logger - INFO - current date 2025-01-08 01:33:29.223700
+2025-01-08T01:33:29.223902+00:00 app[worker.1]: 2025-01-08 01:33:29,223 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:33:29.223938+00:00 app[worker.1]: 2025-01-08 01:33:29,223 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:33:29.223977+00:00 app[worker.1]: 2025-01-08 01:33:29,223 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:33:29.224126+00:00 app[worker.1]: 2025-01-08 01:33:29,224 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:33:29.224201+00:00 app[worker.1]: 2025-01-08 01:33:29,224 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:33:29.224243+00:00 app[worker.1]: 2025-01-08 01:33:29,224 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:33:29.652576+00:00 app[worker.1]: 2025-01-08 01:33:29,652 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:33:30.295311+00:00 app[worker.1]: 2025-01-08 01:33:30,295 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:33:30.300635+00:00 app[worker.1]: 2025-01-08 01:33:30,300 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:33:30.300972+00:00 app[worker.1]: 2025-01-08 01:33:30,300 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:33:30.301050+00:00 app[worker.1]: 2025-01-08 01:33:30,301 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:33:30.301091+00:00 app[worker.1]: 2025-01-08 01:33:30,301 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:33:30.575619+00:00 app[worker.1]: 2025-01-08 01:33:30,575 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:33:30.784351+00:00 app[worker.1]: 2025-01-08 01:33:30,784 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:33:30.787488+00:00 app[worker.1]: 2025-01-08 01:33:30,787 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:33:30.787731+00:00 app[worker.1]: 2025-01-08 01:33:30,787 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:33:30.787781+00:00 app[worker.1]: 2025-01-08 01:33:30,787 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:33:30.787810+00:00 app[worker.1]: 2025-01-08 01:33:30,787 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:33:31.130345+00:00 app[worker.1]: 2025-01-08 01:33:31,130 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:33:31.641642+00:00 app[worker.1]: 2025-01-08 01:33:31,641 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:33:31.641835+00:00 app[worker.1]: 2025-01-08 01:33:31,641 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:34:29.239712+00:00 app[worker.1]: 2025-01-08 01:34:29,239 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:34:29.239775+00:00 app[worker.1]: 2025-01-08 01:34:29,239 - bot_logger - INFO - current date 2025-01-08 01:34:29.239701
+2025-01-08T01:34:29.240014+00:00 app[worker.1]: 2025-01-08 01:34:29,239 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:34:29.240015+00:00 app[worker.1]: 2025-01-08 01:34:29,239 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:34:29.240015+00:00 app[worker.1]: 2025-01-08 01:34:29,239 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:34:29.240138+00:00 app[worker.1]: 2025-01-08 01:34:29,240 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:34:29.240218+00:00 app[worker.1]: 2025-01-08 01:34:29,240 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:34:29.240256+00:00 app[worker.1]: 2025-01-08 01:34:29,240 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:34:29.635656+00:00 app[worker.1]: 2025-01-08 01:34:29,635 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:34:30.423517+00:00 app[worker.1]: 2025-01-08 01:34:30,423 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:34:30.428680+00:00 app[worker.1]: 2025-01-08 01:34:30,428 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:34:30.429042+00:00 app[worker.1]: 2025-01-08 01:34:30,428 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:34:30.429119+00:00 app[worker.1]: 2025-01-08 01:34:30,429 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:34:30.429159+00:00 app[worker.1]: 2025-01-08 01:34:30,429 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:34:30.749750+00:00 app[worker.1]: 2025-01-08 01:34:30,749 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:34:30.951407+00:00 app[worker.1]: 2025-01-08 01:34:30,951 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:34:30.954522+00:00 app[worker.1]: 2025-01-08 01:34:30,954 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:34:30.954761+00:00 app[worker.1]: 2025-01-08 01:34:30,954 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:34:30.954816+00:00 app[worker.1]: 2025-01-08 01:34:30,954 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:34:30.954842+00:00 app[worker.1]: 2025-01-08 01:34:30,954 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:34:31.291907+00:00 app[worker.1]: 2025-01-08 01:34:31,291 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:34:31.810561+00:00 app[worker.1]: 2025-01-08 01:34:31,810 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:34:31.810762+00:00 app[worker.1]: 2025-01-08 01:34:31,810 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:35:29.219715+00:00 app[worker.1]: 2025-01-08 01:35:29,219 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:35:29.219763+00:00 app[worker.1]: 2025-01-08 01:35:29,219 - bot_logger - INFO - current date 2025-01-08 01:35:29.219698
+2025-01-08T01:35:29.219897+00:00 app[worker.1]: 2025-01-08 01:35:29,219 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:35:29.219929+00:00 app[worker.1]: 2025-01-08 01:35:29,219 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:35:29.219969+00:00 app[worker.1]: 2025-01-08 01:35:29,219 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:35:29.220121+00:00 app[worker.1]: 2025-01-08 01:35:29,220 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:35:29.220200+00:00 app[worker.1]: 2025-01-08 01:35:29,220 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:35:29.220242+00:00 app[worker.1]: 2025-01-08 01:35:29,220 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:35:29.554111+00:00 app[worker.1]: 2025-01-08 01:35:29,553 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:35:30.374064+00:00 app[worker.1]: 2025-01-08 01:35:30,373 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:35:30.379188+00:00 app[worker.1]: 2025-01-08 01:35:30,379 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:35:30.379601+00:00 app[worker.1]: 2025-01-08 01:35:30,379 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:35:30.379673+00:00 app[worker.1]: 2025-01-08 01:35:30,379 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:35:30.379702+00:00 app[worker.1]: 2025-01-08 01:35:30,379 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:35:31.139702+00:00 app[worker.1]: 2025-01-08 01:35:31,139 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:35:31.319989+00:00 app[worker.1]: 2025-01-08 01:35:31,319 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:35:31.323078+00:00 app[worker.1]: 2025-01-08 01:35:31,323 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:35:31.323326+00:00 app[worker.1]: 2025-01-08 01:35:31,323 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:35:31.323452+00:00 app[worker.1]: 2025-01-08 01:35:31,323 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:35:31.323454+00:00 app[worker.1]: 2025-01-08 01:35:31,323 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:35:31.704921+00:00 app[worker.1]: 2025-01-08 01:35:31,704 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:35:32.440873+00:00 app[worker.1]: 2025-01-08 01:35:32,440 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:35:32.441067+00:00 app[worker.1]: 2025-01-08 01:35:32,441 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:36:29.212356+00:00 app[worker.1]: 2025-01-08 01:36:29,212 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:36:29.212405+00:00 app[worker.1]: 2025-01-08 01:36:29,212 - bot_logger - INFO - current date 2025-01-08 01:36:29.212347
+2025-01-08T01:36:29.212525+00:00 app[worker.1]: 2025-01-08 01:36:29,212 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:36:29.212556+00:00 app[worker.1]: 2025-01-08 01:36:29,212 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:36:29.212586+00:00 app[worker.1]: 2025-01-08 01:36:29,212 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:36:29.212726+00:00 app[worker.1]: 2025-01-08 01:36:29,212 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:36:29.212793+00:00 app[worker.1]: 2025-01-08 01:36:29,212 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:36:29.212839+00:00 app[worker.1]: 2025-01-08 01:36:29,212 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:36:29.550083+00:00 app[worker.1]: 2025-01-08 01:36:29,549 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:36:30.259038+00:00 app[worker.1]: 2025-01-08 01:36:30,258 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:36:30.264364+00:00 app[worker.1]: 2025-01-08 01:36:30,264 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:36:30.264701+00:00 app[worker.1]: 2025-01-08 01:36:30,264 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:36:30.264778+00:00 app[worker.1]: 2025-01-08 01:36:30,264 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:36:30.264816+00:00 app[worker.1]: 2025-01-08 01:36:30,264 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:36:30.591446+00:00 app[worker.1]: 2025-01-08 01:36:30,591 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:36:30.802998+00:00 app[worker.1]: 2025-01-08 01:36:30,802 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:36:30.808249+00:00 app[worker.1]: 2025-01-08 01:36:30,808 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:36:30.808511+00:00 app[worker.1]: 2025-01-08 01:36:30,808 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:36:30.808564+00:00 app[worker.1]: 2025-01-08 01:36:30,808 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:36:30.808591+00:00 app[worker.1]: 2025-01-08 01:36:30,808 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:36:31.193436+00:00 app[worker.1]: 2025-01-08 01:36:31,193 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:36:31.776273+00:00 app[worker.1]: 2025-01-08 01:36:31,776 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:36:31.776604+00:00 app[worker.1]: 2025-01-08 01:36:31,776 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:37:29.215746+00:00 app[worker.1]: 2025-01-08 01:37:29,215 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:37:29.215801+00:00 app[worker.1]: 2025-01-08 01:37:29,215 - bot_logger - INFO - current date 2025-01-08 01:37:29.215735
+2025-01-08T01:37:29.215936+00:00 app[worker.1]: 2025-01-08 01:37:29,215 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:37:29.215971+00:00 app[worker.1]: 2025-01-08 01:37:29,215 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:37:29.216010+00:00 app[worker.1]: 2025-01-08 01:37:29,215 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:37:29.216163+00:00 app[worker.1]: 2025-01-08 01:37:29,216 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:37:29.216239+00:00 app[worker.1]: 2025-01-08 01:37:29,216 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:37:29.216279+00:00 app[worker.1]: 2025-01-08 01:37:29,216 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:37:29.578161+00:00 app[worker.1]: 2025-01-08 01:37:29,578 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:37:30.305676+00:00 app[worker.1]: 2025-01-08 01:37:30,305 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:37:30.308515+00:00 app[worker.1]: 2025-01-08 01:37:30,308 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:37:30.308762+00:00 app[worker.1]: 2025-01-08 01:37:30,308 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:37:30.308816+00:00 app[worker.1]: 2025-01-08 01:37:30,308 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:37:30.308844+00:00 app[worker.1]: 2025-01-08 01:37:30,308 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:37:30.558677+00:00 app[worker.1]: 2025-01-08 01:37:30,558 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:37:30.776327+00:00 app[worker.1]: 2025-01-08 01:37:30,776 - bot_logger - INFO - bot has sent 94 messages over the last 3 days
+2025-01-08T01:37:32.009334+00:00 app[worker.1]: 2025-01-08 01:37:32,009 - bot_logger - INFO - sent 1 messages
+2025-01-08T01:37:32.009820+00:00 app[worker.1]: 2025-01-08 01:37:32,009 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:37:32.009912+00:00 app[worker.1]: 2025-01-08 01:37:32,009 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:37:32.009955+00:00 app[worker.1]: 2025-01-08 01:37:32,009 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:37:32.377317+00:00 app[worker.1]: 2025-01-08 01:37:32,377 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:37:32.891198+00:00 app[worker.1]: 2025-01-08 01:37:32,891 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:37:32.891438+00:00 app[worker.1]: 2025-01-08 01:37:32,891 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:38:29.235739+00:00 app[worker.1]: 2025-01-08 01:38:29,235 - bot_logger - INFO - checking if we are going to send a message in check new day
+2025-01-08T01:38:29.235790+00:00 app[worker.1]: 2025-01-08 01:38:29,235 - bot_logger - INFO - current date 2025-01-08 01:38:29.235723
+2025-01-08T01:38:29.235925+00:00 app[worker.1]: 2025-01-08 01:38:29,235 - bot_logger - INFO - checking if we're sending a new message in get_hot_posts_from_subreddit
+2025-01-08T01:38:29.235957+00:00 app[worker.1]: 2025-01-08 01:38:29,235 - bot_logger - INFO - inside get_hot_posts_from_subreddit
+2025-01-08T01:38:29.235993+00:00 app[worker.1]: 2025-01-08 01:38:29,235 - bot_logger - INFO - fetching hot posts
+2025-01-08T01:38:29.236139+00:00 app[worker.1]: 2025-01-08 01:38:29,236 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:38:29.236210+00:00 app[worker.1]: 2025-01-08 01:38:29,236 - bot_logger - INFO - Inside send_nba_hot_posts nba-chat-🏀 to send hot posts from NBA subreddits
+2025-01-08T01:38:29.236248+00:00 app[worker.1]: 2025-01-08 01:38:29,236 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:38:29.637617+00:00 app[worker.1]: 2025-01-08 01:38:29,637 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:38:30.230513+00:00 app[worker.1]: 2025-01-08 01:38:30,230 - bot_logger - INFO - bot has sent 85 messages over the last 3 days
+2025-01-08T01:38:30.235729+00:00 app[worker.1]: 2025-01-08 01:38:30,235 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:38:30.236089+00:00 app[worker.1]: 2025-01-08 01:38:30,236 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:38:30.236167+00:00 app[worker.1]: 2025-01-08 01:38:30,236 - bot_logger - INFO - Inside send_nba_hot_posts futbol-chat-⚽ to send hot posts from FUTBOL subreddits
+2025-01-08T01:38:30.236210+00:00 app[worker.1]: 2025-01-08 01:38:30,236 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:38:30.472406+00:00 app[worker.1]: 2025-01-08 01:38:30,472 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:38:30.694155+00:00 app[worker.1]: 2025-01-08 01:38:30,694 - bot_logger - INFO - bot has sent 95 messages over the last 3 days
+2025-01-08T01:38:30.699918+00:00 app[worker.1]: 2025-01-08 01:38:30,699 - bot_logger - INFO - sent 0 messages
+2025-01-08T01:38:30.700284+00:00 app[worker.1]: 2025-01-08 01:38:30,700 - bot_logger - INFO - Attempting to send a hot posts message
+2025-01-08T01:38:30.700361+00:00 app[worker.1]: 2025-01-08 01:38:30,700 - bot_logger - INFO - Inside send_nba_hot_posts tv-movies-🎥 to send hot posts from MOVIES subreddits
+2025-01-08T01:38:30.700400+00:00 app[worker.1]: 2025-01-08 01:38:30,700 - bot_logger - INFO - inside fetch hot posts
+2025-01-08T01:38:31.023320+00:00 app[worker.1]: 2025-01-08 01:38:31,023 - bot_logger - INFO - inside fetch_bot_messages_from_days_ago
+2025-01-08T01:38:31.555265+00:00 app[worker.1]: 2025-01-08 01:38:31,555 - bot_logger - INFO - bot has sent 17 messages over the last 3 days
+2025-01-08T01:38:31.555793+00:00 app[worker.1]: 2025-01-08 01:38:31,555 - bot_logger - INFO - sent 0 messages
+2025-01-08T08:36:12.620962+00:00 app[worker.1]: 2025-01-08 08:36:12,620 - bot_logger - INFO - Bot disconnected at 2025-01-08T08:36:12.620832
+2025-01-08T08:36:12.620987+00:00 app[worker.1]: 2025-01-08 08:36:12,620 - bot_logger - INFO - Bot user: yacht-club-bot#6339
+2025-01-08T08:36:12.621013+00:00 app[worker.1]: 2025-01-08 08:36:12,620 - bot_logger - INFO - Bot is_ready: True
+2025-01-08T08:36:12.621042+00:00 app[worker.1]: 2025-01-08 08:36:12,621 - bot_logger - INFO - Tasks stopped and disconnection handled.

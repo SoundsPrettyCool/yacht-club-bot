@@ -393,7 +393,7 @@ async def send_hot_posts(channel, posts, bot_messages):
             except Exception as e:
                 logger.info("There was an error sending a message in channel %s", e)
     
-    logger.info("sent %s messages", messages_sent)
+    logger.info("sent %s messages to %s", messages_sent, channel.name)
  
 async def send_hot_posts_manager(channel, channel_attributes):
     name_of_subreddit = channel_attributes["name"]

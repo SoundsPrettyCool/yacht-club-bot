@@ -55,6 +55,9 @@ async def fetch_hot_posts(subreddit, flairs, limit=25):
     params = {"limit": limit}
 
     response = requests.get(url, headers=headers, params=params)
+    logger.info(f"Rate limit used: {response.headers.get('X-Ratelimit-Used')}")
+    logger.info(f"Rate limit remaining: {response.headers.get('X-Ratelimit-Remaining')}")
+    logger.info(f"Rate limit reset: {response.headers.get('X-Ratelimit-Reset')} seconds")
     if response.status_code == 200:
         response_data = response.json()
         if "data" in response_data and "children" in response_data["data"]:
