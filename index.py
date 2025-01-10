@@ -24,6 +24,7 @@ MMA = "mma"
 NBA="NBA"
 FUTBOL="FUTBOL"
 TV_MOVIES="MOVIES"
+TALKING_BREAD="TALKING_BREAD"
 # Command dictionary
 Commands = {
     "!ayo": "https://media.giphy.com/media/zGlR7xPioTWaRXGZDZ/giphy.gif",
@@ -68,6 +69,12 @@ CHANNELS_TO_TRACK_HOT_POSTS_SUBREDDITS = {
         "callback": send_hot_posts_manager,
         "name": TV_MOVIES,
         "flairs": {"News"}
+    },
+    os.getenv("TALKING_BREAD_CHAT_CHANNEL_ID"): {
+        "subreddits": [{"subreddit_name":"stocks"}],
+        "callback": send_hot_posts_manager,
+        "name": TALKING_BREAD,
+        "flairs": {"Company News"}
     },
 }
 
